@@ -190,3 +190,11 @@ if st.button("🔄 Load New Case"):
 # Footer
 st.markdown("---")
 st.caption("💡 Tip: Use the sidebar to switch between different presentation categories.")
+st.markdown(
+    """
+    <div class="footer">
+        🧠 Psychiatry Case Simulator · Case-based psychiatry education · © 2026 · Only to be used for educational purpose
+    </div>
+    """,
+    unsafe_allow_html=True
+)
