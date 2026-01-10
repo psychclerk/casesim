@@ -211,8 +211,9 @@ def main():
                 for symptom in symptoms:
                     # Use emoji indicators for completion status
                     indicator = "✅" if symptom['id'] in st.session_state.completed_symptoms else "🔵"
-                    if st.button(f"{indicator} {symptom['id']:02d}: {symptom['name']}", 
-                               key=f"nav_{symptom['id']}"):
+                    button_label = f"{indicator} {symptom['id']:02d}: {symptom['name']}"
+                    button_key = f"sidebar_nav_{symptom['id']}"
+                    if st.button(button_label, key=button_key):
                         st.session_state.current_symptom = symptom['id']
                         st.rerun()
     
@@ -302,7 +303,7 @@ def show_home_screen(symptoms: List[Dict], completed: int, total: int):
                     </div>
                     """, unsafe_allow_html=True)
                     
-                    if st.button(f"Analyze {symptom['name']}", key=f"analyze_{symptom_id}"):
+                    if st.button(f"Analyze {symptom['name']}", key=f"home_analyze_{symptom_id}"):
                         st.session_state.current_symptom = symptom_id
                         st.rerun()
     
@@ -352,7 +353,7 @@ def show_symptom_analysis(engine: DiagnosticEngine, symptom_id: int):
                 closest_symptom = min(all_symptoms, key=lambda x: abs(x['id'] - symptom_id))
                 st.info(f"Closest available symptom: {closest_symptom['id']}: {closest_symptom['name']}")
                 
-                if st.button(f"Go to {closest_symptom['id']}: {closest_symptom['name']}"):
+                if st.button(f"Go to {closest_symptom['id']}: {closest_symptom['name']}", key=f"analysis_go_to_{closest_symptom['id']}"):
                     st.session_state.current_symptom = closest_symptom['id']
                     st.rerun()
             else:
@@ -391,18 +392,18 @@ def show_symptom_analysis(engine: DiagnosticEngine, symptom_id: int):
         col1, col2, col3 = st.columns(3)
         
         with col1:
-            if st.button("⬅️ Previous Symptom"):
+            if st.button("⬅️ Previous Symptom", key="nav_previous"):
                 if symptom_id > 1:
                     st.session_state.current_symptom = symptom_id - 1
                     st.rerun()
         
         with col2:
-            if st.button("🏠 Back to Home"):
+            if st.button("🏠 Back to Home", key="nav_home"):
                 st.session_state.current_symptom = 0
                 st.rerun()
         
         with col3:
-            if st.button("Next Symptom ➡️"):
+            if st.button("Next Symptom ➡️", key="nav_next"):
                 all_symptoms = engine.get_all_symptoms()
                 if all_symptoms:
                     max_id = max([s['id'] for s in all_symptoms])
@@ -420,7 +421,7 @@ def show_symptom_analysis(engine: DiagnosticEngine, symptom_id: int):
             if all_symptoms:
                 st.markdown("### Available Symptoms:")
                 for symptom in all_symptoms[:10]:  # Show first 10
-                    if st.button(f"{symptom['id']}: {symptom['name']}", key=f"fallback_{symptom['id']}"):
+                    if st.button(f"{symptom['id']}: {symptom['name']}", key=f"fallback_symptom_{symptom['id']}"):
                         st.session_state.current_symptom = symptom['id']
                         st.rerun()
         except:
@@ -461,7 +462,7 @@ def show_questions_tab(engine: DiagnosticEngine, symptom_id: int, symptom_data: 
     if not questions_data or 'questions' not in questions_data:
         st.info("No specific questions available for this symptom yet. The diagnostic reasoning will be based on general clinical knowledge.")
         # Still show differentials based on typical presentation
-        if st.button("Generate Differential Diagnosis"):
+        if st.button("Generate Differential Diagnosis", key="generate_diff_main"):
             # Use empty answers to get base differentials
             answers = {}
             differentials = engine.generate_differentials(symptom_id, answers)
@@ -507,11 +508,11 @@ def show_questions_tab(engine: DiagnosticEngine, symptom_id: int, symptom_data: 
     st.session_state.user_answers[symptom_id] = current_answers
     
     # Generate differentials button
-    if st.button("🔍 Generate Differential Diagnosis", use_container_width=True):
+    if st.button("🔍 Generate Differential Diagnosis", use_container_width=True, key="generate_diff_questions"):
         if current_answers:
             differentials = engine.generate_differentials(symptom_id, current_answers)
             show_differentials_content(differentials)
-            
+
             # Mark as completed
             st.session_state.completed_symptoms.add(symptom_id)
         else:
@@ -664,7 +665,7 @@ def show_checkpoint_tab(engine: DiagnosticEngine, symptom_id: int):
         key=f"checkpoint_{symptom_id}"
     )
     
-    if st.button("Submit Answer"):
+    if st.button("Submit Answer", key="submit_checkpoint"):
         # Check if answer is correct
         correct_answer = checkpoint['correct_answer']
         is_correct = user_answer == correct_answer
