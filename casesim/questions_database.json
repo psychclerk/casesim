@@ -1,0 +1,268 @@
+{
+  "questions": {
+    "1": {
+      "symptom_id": 1,
+      "symptom_name": "Persistent Sadness",
+      "questions": [
+        {
+          "id": "1_1",
+          "question": "How long has the sadness been present?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "Less than 2 weeks", "value": "lt_2w"},
+            {"text": "2 weeks to 1 month", "value": "2w_1m"},
+            {"text": "1-3 months", "value": "1_3m"},
+            {"text": "3+ months", "value": "3m_plus"},
+            {"text": "Years", "value": "years"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"lt_2w": 20, "2w_1m": 70, "1_3m": 85, "3m_plus": 90, "years": 60},
+            "Persistent Depressive Disorder": {"lt_2w": 10, "2w_1m": 30, "1_3m": 40, "3m_plus": 70, "years": 90},
+            "Adjustment Disorder": {"lt_2w": 60, "2w_1m": 80, "1_3m": 70, "3m_plus": 20, "years": 5},
+            "Bipolar Disorder": {"lt_2w": 25, "2w_1m": 50, "1_3m": 60, "3m_plus": 45, "years": 30},
+            "Medical Conditions": {"lt_2w": 30, "2w_1m": 40, "1_3m": 50, "3m_plus": 60, "years": 70}
+          }
+        },
+        {
+          "id": "1_2",
+          "question": "Is the sadness constant or episodic?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "Constant, all day every day", "value": "constant"},
+            {"text": "Worse at certain times (morning/evening)", "value": "diurnal"},
+            {"text": "Comes and goes in episodes", "value": "episodic"},
+            {"text": "Varies with circumstances", "value": "reactive"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"constant": 90, "diurnal": 80, "episodic": 40, "reactive": 30},
+            "Persistent Depressive Disorder": {"constant": 80, "diurnal": 70, "episodic": 60, "reactive": 50},
+            "Adjustment Disorder": {"constant": 30, "diurnal": 40, "episodic": 70, "reactive": 90},
+            "Bipolar Disorder": {"constant": 60, "diurnal": 50, "episodic": 90, "reactive": 20},
+            "Medical Conditions": {"constant": 85, "diurnal": 60, "episodic": 20, "reactive": 10}
+          }
+        },
+        {
+          "id": "1_3",
+          "question": "What triggered the sadness?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "Clear stressor (loss, relationship, work)", "value": "clear_stressor"},
+            {"text": "Gradual onset, no clear trigger", "value": "gradual"},
+            {"text": "Multiple stressors", "value": "multiple"},
+            {"text": "Seasonal pattern", "value": "seasonal"},
+            {"text": "Unknown", "value": "unknown"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"clear_stressor": 60, "gradual": 70, "multiple": 80, "seasonal": 90, "unknown": 50},
+            "Persistent Depressive Disorder": {"clear_stressor": 40, "gradual": 80, "multiple": 60, "seasonal": 70, "unknown": 70},
+            "Adjustment Disorder": {"clear_stressor": 90, "gradual": 20, "multiple": 70, "seasonal": 30, "unknown": 10},
+            "Bipolar Disorder": {"clear_stressor": 30, "gradual": 80, "multiple": 50, "seasonal": 40, "unknown": 60},
+            "Medical Conditions": {"clear_stressor": 20, "gradual": 70, "multiple": 40, "seasonal": 20, "unknown": 80}
+          }
+        },
+        {
+          "id": "1_4",
+          "question": "Can anything improve your mood temporarily?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "Yes, several things help", "value": "several_things"},
+            {"text": "Sometimes, but not reliably", "value": "sometimes"},
+            {"text": "Rarely", "value": "rarely"},
+            {"text": "Nothing helps", "value": "nothing"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"several_things": 40, "sometimes": 60, "rarely": 80, "nothing": 90},
+            "Persistent Depressive Disorder": {"several_things": 50, "sometimes": 70, "rarely": 85, "nothing": 75},
+            "Adjustment Disorder": {"several_things": 80, "sometimes": 70, "rarely": 40, "nothing": 20},
+            "Bipolar Disorder": {"several_things": 30, "sometimes": 50, "rarely": 70, "nothing": 80},
+            "Medical Conditions": {"several_things": 20, "sometimes": 30, "rarely": 60, "nothing": 90}
+          }
+        },
+        {
+          "id": "1_5",
+          "question": "Which associated symptoms do you experience? (Select all that apply)",
+          "type": "checkbox",
+          "options": [
+            {"text": "Sleep problems (insomnia/hypersomnia)", "value": "sleep"},
+            {"text": "Appetite/weight changes", "value": "appetite"},
+            {"text": "Loss of interest in activities", "value": "anhedonia"},
+            {"text": "Fatigue or low energy", "value": "fatigue"},
+            {"text": "Feelings of guilt or worthlessness", "value": "guilt"},
+            {"text": "Difficulty concentrating", "value": "concentration"},
+            {"text": "Restlessness or feeling slowed down", "value": "psychomotor"},
+            {"text": "Thoughts of death or suicide", "value": "suicidal"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"sleep": 85, "appetite": 80, "anhedonia": 90, "fatigue": 85, "guilt": 75, "concentration": 80, "psychomotor": 70, "suicidal": 60},
+            "Persistent Depressive Disorder": {"sleep": 70, "appetite": 60, "anhedonia": 80, "fatigue": 80, "guilt": 60, "concentration": 70, "psychomotor": 50, "suicidal": 30},
+            "Adjustment Disorder": {"sleep": 50, "appetite": 50, "anhedonia": 60, "fatigue": 60, "guilt": 40, "concentration": 50, "psychomotor": 30, "suicidal": 20},
+            "Bipolar Disorder": {"sleep": 80, "appetite": 70, "anhedonia": 85, "fatigue": 80, "guilt": 80, "concentration": 75, "psychomotor": 80, "suicidal": 70},
+            "Medical Conditions": {"sleep": 60, "appetite": 70, "anhedonia": 40, "fatigue": 90, "guilt": 20, "concentration": 60, "psychomotor": 40, "suicidal": 10}
+          }
+        },
+        {
+          "id": "1_6",
+          "question": "Current or recent substance use?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "None", "value": "none"},
+            {"text": "Alcohol", "value": "alcohol"},
+            {"text": "Cannabis", "value": "cannabis"},
+            {"text": "Stimulants (cocaine, amphetamines)", "value": "stimulants"},
+            {"text": "Opioids", "value": "opioids"},
+            {"text": "Multiple substances", "value": "multiple"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"none": 80, "alcohol": 60, "cannabis": 40, "stimulants": 20, "opioids": 30, "multiple": 40},
+            "Persistent Depressive Disorder": {"none": 70, "alcohol": 50, "cannabis": 60, "stimulants": 30, "opioids": 40, "multiple": 50},
+            "Adjustment Disorder": {"none": 70, "alcohol": 80, "cannabis": 70, "stimulants": 50, "opioids": 60, "multiple": 70},
+            "Bipolar Disorder": {"none": 60, "alcohol": 70, "cannabis": 50, "stimulants": 80, "opioids": 40, "multiple": 60},
+            "Medical Conditions": {"none": 90, "alcohol": 40, "cannabis": 30, "stimulants": 20, "opioids": 30, "multiple": 30}
+          }
+        },
+        {
+          "id": "1_7",
+          "question": "Relevant medical history?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "None significant", "value": "none"},
+            {"text": "Thyroid disease", "value": "thyroid"},
+            {"text": "Chronic pain conditions", "value": "chronic_pain"},
+            {"text": "Diabetes", "value": "diabetes"},
+            {"text": "Cancer or serious illness", "value": "cancer"},
+            {"text": "Neurological conditions", "value": "neurological"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"none": 80, "thyroid": 60, "chronic_pain": 70, "diabetes": 50, "cancer": 40, "neurological": 30},
+            "Persistent Depressive Disorder": {"none": 70, "thyroid": 50, "chronic_pain": 80, "diabetes": 60, "cancer": 50, "neurological": 40},
+            "Adjustment Disorder": {"none": 80, "thyroid": 30, "chronic_pain": 50, "diabetes": 40, "cancer": 70, "neurological": 20},
+            "Bipolar Disorder": {"none": 80, "thyroid": 40, "chronic_pain": 30, "diabetes": 40, "cancer": 30, "neurological": 50},
+            "Medical Conditions": {"none": 40, "thyroid": 90, "chronic_pain": 85, "diabetes": 70, "cancer": 80, "neurological": 90}
+          }
+        },
+        {
+          "id": "1_8",
+          "question": "Current medications?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "None", "value": "none"},
+            {"text": "Beta-blockers", "value": "beta_blockers"},
+            {"text": "Steroids", "value": "steroids"},
+            {"text": "Antipsychotics", "value": "antipsychotics"},
+            {"text": "Interferon", "value": "interferon"},
+            {"text": "Other medications", "value": "other"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"none": 70, "beta_blockers": 50, "steroids": 40, "antipsychotics": 30, "interferon": 20, "other": 40},
+            "Persistent Depressive Disorder": {"none": 70, "beta_blockers": 40, "steroids": 30, "antipsychotics": 40, "interferon": 30, "other": 50},
+            "Adjustment Disorder": {"none": 80, "beta_blockers": 60, "steroids": 70, "antipsychotics": 20, "interferon": 60, "other": 50},
+            "Bipolar Disorder": {"none": 60, "beta_blockers": 30, "steroids": 20, "antipsychotics": 80, "interferon": 10, "other": 30},
+            "Medical Conditions": {"none": 50, "beta_blockers": 80, "steroids": 90, "antipsychotics": 20, "interferon": 80, "other": 70}
+          }
+        }
+      ]
+    },
+    "2": {
+      "symptom_id": 2,
+      "symptom_name": "Loss of Interest (Anhedonia)",
+      "questions": [
+        {
+          "id": "2_1",
+          "question": "How long have you lost interest in activities?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "Less than 2 weeks", "value": "lt_2w"},
+            {"text": "2 weeks to 2 months", "value": "2w_2m"},
+            {"text": "2-6 months", "value": "2_6m"},
+            {"text": "6+ months", "value": "6m_plus"},
+            {"text": "Years", "value": "years"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"lt_2w": 30, "2w_2m": 80, "2_6m": 85, "6m_plus": 80, "years": 40},
+            "Persistent Depressive Disorder": {"lt_2w": 20, "2w_2m": 40, "2_6m": 60, "6m_plus": 80, "years": 90},
+            "Schizophrenia": {"lt_2w": 10, "2w_2m": 30, "2_6m": 50, "6m_plus": 70, "years": 80},
+            "Parkinson's Disease": {"lt_2w": 5, "2w_2m": 20, "2_6m": 40, "6m_plus": 60, "years": 90},
+            "Substance Use Disorder": {"lt_2w": 40, "2w_2m": 60, "2_6m": 70, "6m_plus": 60, "years": 30}
+          }
+        },
+        {
+          "id": "2_2",
+          "question": "Which activities have you lost interest in?",
+          "type": "checkbox",
+          "options": [
+            {"text": "Hobbies and recreational activities", "value": "hobbies"},
+            {"text": "Social activities and friendships", "value": "social"},
+            {"text": "Work or school performance", "value": "work"},
+            {"text": "Personal care and grooming", "value": "self_care"},
+            {"text": "Family relationships", "value": "family"},
+            {"text": "Sexual activity", "value": "sexual"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"hobbies": 90, "social": 85, "work": 80, "self_care": 70, "family": 75, "sexual": 85},
+            "Persistent Depressive Disorder": {"hobbies": 85, "social": 80, "work": 75, "self_care": 60, "family": 70, "sexual": 70},
+            "Schizophrenia": {"hobbies": 70, "social": 90, "work": 85, "self_care": 80, "family": 75, "sexual": 60},
+            "Parkinson's Disease": {"hobbies": 80, "social": 70, "work": 60, "self_care": 50, "family": 50, "sexual": 40},
+            "Substance Use Disorder": {"hobbies": 60, "social": 50, "work": 70, "self_care": 40, "family": 60, "sexual": 70}
+          }
+        },
+        {
+          "id": "2_3",
+          "question": "How does this loss of interest compare to your normal self?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "Completely different from my usual self", "value": "completely_different"},
+            {"text": "Somewhat different", "value": "somewhat"},
+            {"text": "Slightly different", "value": "slightly"},
+            {"text": "This is my normal pattern", "value": "normal"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"completely_different": 90, "somewhat": 70, "slightly": 40, "normal": 10},
+            "Persistent Depressive Disorder": {"completely_different": 60, "somewhat": 80, "slightly": 70, "normal": 40},
+            "Schizophrenia": {"completely_different": 85, "somewhat": 60, "slightly": 30, "normal": 10},
+            "Parkinson's Disease": {"completely_different": 70, "somewhat": 70, "slightly": 50, "normal": 30},
+            "Substance Use Disorder": {"completely_different": 50, "somewhat": 60, "slightly": 40, "normal": 20}
+          }
+        },
+        {
+          "id": "2_4",
+          "question": "Do you feel any pleasure when you do engage in activities?",
+          "type": "multiple_choice",
+          "options": [
+            {"text": "No pleasure at all", "value": "no_pleasure"},
+            {"text": "Very little pleasure", "value": "little_pleasure"},
+            {"text": "Some pleasure", "value": "some_pleasure"},
+            {"text": "Normal pleasure", "value": "normal_pleasure"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"no_pleasure": 90, "little_pleasure": 80, "some_pleasure": 50, "normal_pleasure": 20},
+            "Persistent Depressive Disorder": {"no_pleasure": 70, "little_pleasure": 80, "some_pleasure": 60, "normal_pleasure": 30},
+            "Schizophrenia": {"no_pleasure": 80, "little_pleasure": 70, "some_pleasure": 40, "normal_pleasure": 15},
+            "Parkinson's Disease": {"no_pleasure": 60, "little_pleasure": 70, "some_pleasure": 50, "normal_pleasure": 25},
+            "Substance Use Disorder": {"no_pleasure": 60, "little_pleasure": 50, "some_pleasure": 40, "normal_pleasure": 30}
+          }
+        },
+        {
+          "id": "2_5",
+          "question": "Are you currently experiencing other symptoms?",
+          "type": "checkbox",
+          "options": [
+            {"text": "Persistent sadness or low mood", "value": "sadness"},
+            {"text": "Sleep problems", "value": "sleep"},
+            {"text": "Appetite changes", "value": "appetite"},
+            {"text": "Fatigue", "value": "fatigue"},
+            {"text": "Difficulty concentrating", "value": "concentration"},
+            {"text": "Feeling worthless or guilty", "value": "guilt"},
+            {"text": "Motor symptoms (tremor, stiffness)", "value": "motor"}
+          ],
+          "diagnostic_weights": {
+            "Major Depressive Disorder": {"sadness": 90, "sleep": 85, "appetite": 80, "fatigue": 85, "concentration": 80, "guilt": 75, "motor": 10},
+            "Persistent Depressive Disorder": {"sadness": 80, "sleep": 70, "appetite": 60, "fatigue": 80, "concentration": 70, "guilt": 60, "motor": 15},
+            "Schizophrenia": {"sadness": 40, "sleep": 60, "appetite": 50, "fatigue": 50, "concentration": 70, "guilt": 30, "motor": 20},
+            "Parkinson's Disease": {"sadness": 60, "sleep": 70, "appetite": 60, "fatigue": 80, "concentration": 60, "guilt": 20, "motor": 90},
+            "Substance Use Disorder": {"sadness": 70, "sleep": 80, "appetite": 70, "fatigue": 70, "concentration": 60, "guilt": 50, "motor": 30}
+          }
+        }
+      ]
+    }
+  }
+}

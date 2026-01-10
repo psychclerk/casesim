@@ -1,0 +1,400 @@
+{
+  "diagnostic_content": {
+    "Major Depressive Disorder": {
+      "dsm5_criteria": {
+        "criteria_a": "Five (or more) of the following symptoms have been present during the same 2-week period and represent a change from previous functioning; at least one of the symptoms is either (1) depressed mood or (2) loss of interest or pleasure.",
+        "symptoms": [
+          "Depressed mood most of the day, nearly every day",
+          "Markedly diminished interest or pleasure in all, or almost all, activities most of the day",
+          "Significant weight loss when not dieting or weight gain, or decrease or increase in appetite nearly every day",
+          "Insomnia or hypersomnia nearly every day",
+          "Psychomotor agitation or retardation nearly every day",
+          "Fatigue or loss of energy nearly every day",
+          "Feelings of worthlessness or excessive or inappropriate guilt",
+          "Diminished ability to think or concentrate, or indecisiveness",
+          "Recurrent thoughts of death, recurrent suicidal ideation without a specific plan, or a suicide attempt or a specific plan for committing suicide"
+        ],
+        "duration": "Symptoms must persist for at least 2 weeks",
+        "severity": "Symptoms cause clinically significant distress or impairment in social, occupational, or other important areas of functioning",
+        "exclusion": "Symptoms are not attributable to the physiological effects of a substance or another medical condition"
+      },
+      "icd10_code": "F32.x (Major depressive disorder, single episode), F33.x (Major depressive disorder, recurrent)",
+      "clinical_pearls": [
+        "Screen for bipolar disorder - ask about previous manic or hypomanic episodes",
+        "Anhedonia and early morning awakening are particularly suggestive of melancholic depression",
+        "Women are 1.5-2x more likely to develop MDD than men",
+        "Family history of depression increases risk 2-4 fold",
+        "Symptoms must represent a change from previous functioning",
+        "Seasonal pattern suggests seasonal affective disorder",
+        "Postpartum depression can occur within 4 weeks of delivery"
+      ],
+      "common_pitfalls": [
+        "Missing medical causes: thyroid disease, B12 deficiency, autoimmune disorders",
+        "Failing to assess for substance use as primary cause",
+        "Not screening for suicide risk adequately",
+        "Confusing grief with major depression - grief symptoms decrease in intensity over time",
+        "Underestimating the impact of chronic medical conditions",
+        "Not considering bipolar disorder in treatment-resistant depression"
+      ],
+      "red_flags": [
+        "Suicidal ideation or plan (immediate safety assessment required)",
+        "Psychotic features (delusions, hallucinations)",
+        "Catatonic symptoms",
+        "Severe functional impairment",
+        "Previous suicide attempts",
+        "Access to lethal means",
+        "Social isolation",
+        "Substance abuse"
+      ],
+      "investigations": [
+        "Complete blood count",
+        "Comprehensive metabolic panel",
+        "Thyroid function tests (TSH, T3, T4)",
+        "Vitamin B12 and folate levels",
+        "Urinalysis",
+        "Urine toxicology screen",
+        "Pregnancy test (women of childbearing age)"
+      ],
+      "management": {
+        "mild": "Psychotherapy alone (CBT, IPT)",
+        "moderate": "Combination of psychotherapy and antidepressant medication",
+        "severe": "Antidepressant medication + psychotherapy, consider ECT if psychotic features",
+        "psychotic_features": "Antipsychotic + antidepressant combination, consider ECT",
+        "maintenance": "Continue medication for 6-12 months after remission"
+      }
+    },
+    "Persistent Depressive Disorder": {
+      "dsm5_criteria": {
+        "criteria_a": "Depressed mood for most of the day, for more days than not, for at least 2 years.",
+        "symptoms": [
+          "Poor appetite or overeating",
+          "Insomnia or hypersomnia",
+          "Low energy or fatigue",
+          "Low self-esteem",
+          "Poor concentration or difficulty making decisions",
+          "Feelings of hopelessness"
+        ],
+        "duration": "At least 2 years (1 year in children/adolescents)",
+        "severity": "Not better explained by other disorders",
+        "exclusion": "Not attributable to substances or medical conditions"
+      },
+      "icd10_code": "F34.1 (Persistent depressive disorder [dysthymia])",
+      "clinical_pearls": [
+        "Often begins in adolescence or early adulthood",
+        "Patients may not remember being asymptomatic",
+        "Poor treatment response compared to major depression",
+        "High rate of comorbid personality disorders",
+        "Often preceded by childhood trauma or adversity",
+        "Risk for developing major depressive episodes"
+      ],
+      "common_pitfalls": [
+        "Missing the chronic nature of symptoms",
+        "Underestimating functional impairment",
+        "Not assessing for early-onset personality disorders",
+        "Failing to recognize comorbid substance use",
+        "Expecting rapid treatment response"
+      ],
+      "red_flags": [
+        "Suicidal ideation",
+        "Comorbid substance use disorder",
+        "Severe functional impairment",
+        "Psychotic features",
+        "Self-harm behaviors"
+      ],
+      "investigations": [
+        "Same as major depressive disorder",
+        "Consider personality assessment",
+        "Trauma history evaluation"
+      ],
+      "management": {
+        "first_line": "SSRI antidepressant medication",
+        "psychotherapy": "CBT or IPT for at least 1 year",
+        "combination": "Medication + psychotherapy often needed",
+        "duration": "Longer treatment duration often required"
+      }
+    },
+    "Adjustment Disorder with Depressed Mood": {
+      "dsm5_criteria": {
+        "criteria_a": "Emotional or behavioral symptoms in response to an identifiable stressor within 3 months of onset of the stressor.",
+        "symptoms": [
+          "Depressed mood",
+          "Anxiety",
+          "Worry",
+          "Inability to plan or continue in situation"
+        ],
+        "duration": "Symptoms resolve within 6 months after stressor ends",
+        "severity": "Clinically significant distress or impairment",
+        "exclusion": "Not better explained by other disorders"
+      },
+      "icd10_code": "F43.20 (Adjustment disorder, unspecified)",
+      "clinical_pearls": [
+        "Symptoms develop within 3 months of stressor",
+        "Stressor is usually identifiable",
+        "Symptoms are disproportionate to the stressor",
+        "Common after relationship breakups, job loss, health issues",
+        "Generally good prognosis with proper support"
+      ],
+      "common_pitfalls": [
+        "Missing the temporal relationship with stressor",
+        "Not assessing stressor's impact adequately",
+        "Over-medicating when support is needed",
+        "Failing to provide adequate psychosocial interventions"
+      ],
+      "red_flags": [
+        "Suicidal thoughts",
+        "Self-harm behaviors",
+        "Complete social withdrawal",
+        "Inability to function at all",
+        "Substance use to cope"
+      ],
+      "investigations": [
+        "Minimal laboratory testing needed",
+        "Assess for substance use",
+        "Evaluate social support systems"
+      ],
+      "management": {
+        "first_line": "Psychotherapy (supportive, CBT, IPT)",
+        "medication": "Consider short-term if severe symptoms",
+        "support": "Address stressors and build coping skills"
+      }
+    },
+    "Bipolar Disorder": {
+      "dsm5_criteria": {
+        "manic_episode": "Distinct period of abnormally and persistently elevated, expansive, or irritable mood and abnormally and persistently increased activity or energy lasting at least 1 week (or any duration if hospitalization is necessary)",
+        "hypomanic_episode": "Distinct period of abnormally and persistently elevated, expansive, or irritable mood and abnormally and persistently increased activity or energy lasting at least 4 consecutive days and present most of the day, nearly every day",
+        "depressive_episode": "Same criteria as major depressive episode, but in context of history of manic or hypomanic episode"
+      },
+      "icd10_code": "F31.x (Bipolar affective disorder)",
+      "clinical_pearls": [
+        "Ask specifically about previous manic or hypomanic episodes",
+        "Sleep deprivation can precipitate manic episodes",
+        "Family history of bipolar disorder is strong risk factor",
+        "First episode often depression - miss bipolar diagnosis",
+        "Seasonal pattern may be present",
+        "Substance use common comorbidity"
+      ],
+      "common_pitfalls": [
+        "Missing hypomanic episodes in depression treatment",
+        "Not asking about sleep, energy, and goal-directed activity",
+        "Misdiagnosing bipolar depression as unipolar depression",
+        "Underestimating suicide risk in bipolar disorder",
+        "Not assessing for rapid cycling"
+      ],
+      "red_flags": [
+        "History of manic or hypomanic episodes",
+        "Family history of bipolar disorder",
+        "Early age of onset (<25 years)",
+        "Atypical features in depression",
+        "Psychotic features",
+        "Poor response to antidepressants",
+        "Seasonal pattern"
+      ],
+      "investigations": [
+        "Urine toxicology screen",
+        "Thyroid function",
+        "Brain imaging if indicated",
+        "EEG if seizure history",
+        "Collateral information about mood episodes"
+      ],
+      "management": {
+        "mania": "Mood stabilizers (lithium, valproate, carbamazepine) + antipsychotics",
+        "depression": "Mood stabilizers + psychotherapy, avoid antidepressants alone",
+        "maintenance": "Long-term mood stabilizer therapy",
+        "psychosocial": "Psychoeducation, family therapy, social rhythm therapy"
+      }
+    },
+    "Panic Disorder": {
+      "dsm5_criteria": {
+        "criteria_a": "Recurrent unexpected panic attacks.",
+        "criteria_b": "At least one of the attacks has been followed by 1 month (or more) of one or both of the following: (1) Persistent concern or worry about additional panic attacks or their consequences; (2) A significant maladaptive change in behavior related to the attacks.",
+        "exclusion": "Not attributable to physiological effects of a substance or another medical condition"
+      },
+      "icd10_code": "F41.0 (Panic disorder)",
+      "clinical_pearls": [
+        "Panic attacks are discrete episodes that peak within 10 minutes",
+        "Physical symptoms can be severe and mimic medical emergencies",
+        "Patients often fear having a heart attack or going crazy",
+        "Interoceptive conditioning perpetuates the disorder",
+        "Agoraphobia commonly develops",
+        "Lifetime prevalence is 2-3%"
+      ],
+      "common_pitfalls": [
+        "Missing agoraphobia development",
+        "Not providing adequate education about panic attacks",
+        "Focusing only on symptoms without addressing avoidance",
+        "Not assessing for other anxiety disorders",
+        "Missing medical causes (thyroid, cardiac)"
+      ],
+      "red_flags": [
+        "Chest pain with panic attacks",
+        "Loss of consciousness",
+        "Severe shortness of breath",
+        "Suicidal ideation",
+        "Complete avoidance of leaving home",
+        "Substance use to prevent panic"
+      ],
+      "investigations": [
+        "ECG and cardiac evaluation",
+        "Chest X-ray",
+        "Thyroid function tests",
+        "Substance screening",
+        "Consider panic attack diary"
+      ],
+      "management": {
+        "first_line": "CBT with exposure therapy",
+        "medication": "SSRIs (start low, go slow)",
+        "benzodiazepines": "Short-term use only due to dependence risk",
+        "exposure": "Interoceptive and situational exposure therapy"
+      }
+    },
+    "Generalized Anxiety Disorder": {
+      "dsm5_criteria": {
+        "criteria_a": "Excessive anxiety and worry (apprehensive expectation), occurring more days than not for at least 6 months, about a number of events or activities.",
+        "symptoms": [
+          "Restlessness or feeling keyed up or on edge",
+          "Being easily fatigued",
+          "Difficulty concentrating or mind going blank",
+          "Irritability",
+          "Muscle tension",
+          "Sleep disturbance"
+        ],
+        "duration": "At least 6 months",
+        "severity": "Difficult to control worry, causes impairment",
+        "exclusion": "Not attributable to substances or medical conditions"
+      },
+      "icd10_code": "F41.1 (Generalized anxiety disorder)",
+      "clinical_pearls": [
+        "Worry is pervasive and difficult to control",
+        "Multiple areas of life affected",
+        "Physical symptoms often prominent",
+        "Often comorbid with depression or other anxiety disorders",
+        "Family history of anxiety disorders common",
+        "Childhood onset may indicate chronic course"
+      ],
+      "common_pitfalls": [
+        "Missing the 6-month duration requirement",
+        "Not assessing functional impairment adequately",
+        "Overlooking medical causes",
+        "Focusing only on symptoms without understanding worry pattern",
+        "Not considering comorbid conditions"
+      ],
+      "red_flags": [
+        "Suicidal thoughts",
+        "Substance use to manage anxiety",
+        "Severe functional impairment",
+        "Self-harm behaviors",
+        "Comorbid depression with psychotic features"
+      ],
+      "investigations": [
+        "Thyroid function tests",
+        "Substance screening",
+        "Medical evaluation if indicated",
+        "Anxiety assessment scales"
+      ],
+      "management": {
+        "first_line": "CBT and/or SSRI medication",
+        "medications": "SSRIs, SNRIs, buspirone",
+        "psychotherapy": "CBT with worry exposure and cognitive restructuring",
+        "lifestyle": "Regular exercise, sleep hygiene, stress management"
+      }
+    },
+    "Obsessive-Compulsive Disorder": {
+      "dsm5_criteria": {
+        "criteria_a": "Presence of obsessions, compulsions, or both.",
+        "obsessions": "Recurrent and persistent thoughts, urges, or images that are intrusive and unwanted, causing anxiety or distress; individual attempts to ignore or suppress them or neutralize them with some other thought or action.",
+        "compulsions": "Repetitive behaviors or mental acts that the individual feels driven to perform in response to an obsession or according to rigid rules; behaviors aimed at reducing anxiety or preventing some dreaded event.",
+        "duration": "Time-consuming or causes clinically significant distress or impairment",
+        "exclusion": "Not attributable to substances or medical conditions"
+      },
+      "icd10_code": "F42 (Obsessive-compulsive disorder)",
+      "clinical_pearls": [
+        "Insight can range from good to absent",
+        "Common comorbid conditions: depression, tic disorders, eating disorders",
+        "Early onset (before age 10) often indicates tic-related OCD",
+        "Hoarding now separate disorder but can be comorbid",
+        "Body dysmorphic disorder often comorbid"
+      ],
+      "common_pitfalls": [
+        "Missing subthreshold symptoms that cause impairment",
+        "Not assessing insight level",
+        "Confusing perfectionism with OCD",
+        "Underestimating time spent on rituals",
+        "Missing comorbid tic disorders"
+      ],
+      "red_flags": [
+        "Self-harm from compulsions",
+        "Complete ritualization of daily life",
+        "Suicidal ideation",
+        "Skin damage from washing",
+        "Inability to function without rituals",
+        "Psychotic features"
+      ],
+      "investigations": [
+        "Skin examination for damage",
+        "Assessment of functional impairment",
+        "Comorbid conditions screening",
+        "Family history of OCD/tics"
+      ],
+      "management": {
+        "first_line": "CBT with exposure and response prevention (ERP)",
+        "medication": "SSRIs at higher doses than depression",
+        "treatment_resistant": "Clomipramine or combination therapy",
+        "severe": "Consider deep brain stimulation in extreme cases"
+      }
+    },
+    "Borderline Personality Disorder": {
+      "dsm5_criteria": {
+        "criteria_a": "A pervasive pattern of instability of interpersonal relationships, self-image, and affects, and marked impulsivity beginning by early adulthood and present in a variety of contexts.",
+        "symptoms": [
+          "Frantic efforts to avoid real or imagined abandonment",
+          "A pattern of unstable and intense interpersonal relationships",
+          "Identity disturbance",
+          "Impulsivity in at least two areas (spending, sex, substance use, reckless driving, binge eating)",
+          "Recurrent suicidal behavior, gestures, or threats, or self-mutilating behavior",
+          "Affective instability due to marked reactivity of mood",
+          "Chronic feelings of emptiness",
+          "Inappropriate, intense anger",
+          "Transient, stress-related paranoid ideation or severe dissociative symptoms"
+        ],
+        "duration": "Present across contexts and time",
+        "exclusion": "Not better explained by other disorders"
+      },
+      "icd10_code": "F60.3 (Borderline personality disorder)",
+      "clinical_pearls": [
+        "Emotional dysregulation is core feature",
+        "Fear of abandonment often drives behavior",
+        "Splitting (black-and-white thinking) common",
+        "Self-harm often non-suicidal but high risk",
+        "Therapeutic relationship can be challenging",
+        "Dialectical behavior therapy most effective treatment"
+      ],
+      "common_pitfalls": [
+        "Missing comorbid conditions (depression, PTSD, substance use)",
+        "Not recognizing self-harm as non-suicidal",
+        "Avoiding therapy due to challenging behavior",
+        "Not addressing trauma history",
+        "Expecting rapid improvement"
+      ],
+      "red_flags": [
+        "Severe self-harm behaviors",
+        "Suicidal ideation with plan and means",
+        "Substance use disorders",
+        "Eating disorders",
+        "Complete interpersonal chaos",
+        "Psychotic symptoms under stress"
+      ],
+      "investigations": [
+        "Substance screening",
+        "Trauma history assessment",
+        "Comorbid psychiatric evaluation",
+        "Medical evaluation for self-harm injuries"
+      ],
+      "management": {
+        "first_line": "Dialectical behavior therapy (DBT)",
+        "medication": "Treat specific symptoms (mood swings, anxiety)",
+        "therapy": "Schema therapy, mentalization-based therapy",
+        "crisis": "Crisis intervention and safety planning"
+      }
+    }
+  }
+}

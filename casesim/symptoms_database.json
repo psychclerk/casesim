@@ -1,0 +1,4899 @@
+{
+  "symptoms": {
+    "1": {
+      "id": 1,
+      "name": "Persistent Sadness",
+      "category": "Mood & Affect",
+      "definition": "A pervasive feeling of sadness, unhappiness, or low mood that persists over time and significantly impacts daily functioning.",
+      "clinical_significance": "Core symptom of depressive disorders and can occur in various psychiatric and medical conditions. Essential to assess duration, severity, and associated features for accurate diagnosis.",
+      "common_descriptions": [
+        "Feeling down or blue",
+        "Heavy weight on chest",
+        "Emotional pain",
+        "Lack of joy in life",
+        "Overwhelming sorrow"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 85,
+          "key_features": ["Duration >2 weeks", "Sleep disturbance", "Appetite changes", "Guilt/worthlessness", "Fatigue"],
+          "reasoning": "Meets core criteria for MDD when persistent sadness occurs with other depressive symptoms for >2 weeks"
+        },
+        {
+          "diagnosis": "Persistent Depressive Disorder (Dysthymia)",
+          "likelihood": 70,
+          "key_features": ["Duration >2 years", "Milder symptoms", "Chronic course"],
+          "reasoning": "Consider when sadness is chronic but less severe than MDD, lasting >2 years"
+        },
+        {
+          "diagnosis": "Adjustment Disorder with Depressed Mood",
+          "likelihood": 60,
+          "key_features": ["Clear stressor", "Onset within 3 months", "Symptoms resolve within 6 months"],
+          "reasoning": "When sadness is clearly related to identifiable stressor and within timeframe"
+        },
+        {
+          "diagnosis": "Bipolar Disorder - Depressed Phase",
+          "likelihood": 45,
+          "key_features": ["History of mania/hypomania", "Psychomotor changes", "Family history"],
+          "reasoning": "Consider if patient has history of manic episodes or strong family history of bipolar disorder"
+        },
+        {
+          "diagnosis": "Medical Conditions (Hypothyroidism, Chronic Pain)",
+          "likelihood": 40,
+          "key_features": ["Medical history", "Physical symptoms", "No response to antidepressants"],
+          "reasoning": "Secondary depression from medical conditions should be ruled out"
+        }
+      ],
+      "red_flags": [
+        "Suicidal ideation or plan",
+        "Psychotic features",
+        "Catatonic symptoms",
+        "Substance intoxication/withdrawal",
+        "Medical emergency (suicide risk)"
+      ],
+      "investigations": [
+        "Complete blood count",
+        "Comprehensive metabolic panel",
+        "Thyroid function tests",
+        "Vitamin B12, folate",
+        "Urinalysis",
+        "Urine toxicology"
+      ]
+    },
+    "2": {
+      "id": 2,
+      "name": "Loss of Interest (Anhedonia)",
+      "category": "Mood & Affect",
+      "definition": "Significant reduction in interest or pleasure in previously enjoyed activities, hobbies, or social interactions.",
+      "clinical_significance": "Core symptom of depression and a key diagnostic marker. Important to distinguish from general fatigue or avoidance due to anxiety.",
+      "common_descriptions": [
+        "Nothing seems enjoyable anymore",
+        "Lost passion for hobbies",
+        "Don't care about things I used to love",
+        "Everything feels like a chore",
+        "No motivation to socialize"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 80,
+          "key_features": ["Loss of pleasure in most activities", "Persistent for >2 weeks", "Associated depressive symptoms"],
+          "reasoning": "Anhedonia is one of the two core symptoms required for MDD diagnosis"
+        },
+        {
+          "diagnosis": "Persistent Depressive Disorder",
+          "likelihood": 75,
+          "key_features": ["Chronic loss of interest", "Duration >2 years", "Mild depression symptoms"],
+          "reasoning": "Chronic anhedonia with long duration suggests dysthymia"
+        },
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 35,
+          "key_features": ["Social withdrawal", "Negative symptoms", "Gradual onset"],
+          "reasoning": "Anhedonia can be a negative symptom of schizophrenia"
+        },
+        {
+          "diagnosis": "Parkinson's Disease",
+          "likelihood": 30,
+          "key_features": ["Motor symptoms", "Progressive course", "Older age"],
+          "reasoning": "Anhedonia can occur in neurodegenerative disorders"
+        },
+        {
+          "diagnosis": "Substance Use Disorder",
+          "likelihood": 25,
+          "key_features": ["Substance history", "Cravings", "Withdrawal symptoms"],
+          "reasoning": "Anhedonia can occur during substance use or withdrawal"
+        }
+      ],
+      "red_flags": [
+        "Complete social withdrawal",
+        "Self-neglect",
+        "Suicidal thoughts",
+        "Gradual cognitive decline",
+        "Motor symptoms"
+      ],
+      "investigations": [
+        "Neurological examination",
+        "Brain imaging if indicated",
+        "Substance screening",
+        "Cognitive assessment"
+      ]
+    },
+    "3": {
+      "id": 3,
+      "name": "Feeling Hopeless/Worthless",
+      "category": "Mood & Affect",
+      "definition": "Pervasive feelings of despair, lack of hope for the future, and excessive self-criticism or feelings of inadequacy.",
+      "clinical_significance": "Strong predictor of suicide risk and a core symptom of major depression. Requires immediate assessment of safety.",
+      "common_descriptions": [
+        "Nothing will ever get better",
+        "I'm a failure at everything",
+        "I don't deserve happiness",
+        "What's the point of trying",
+        "I'm worthless"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 90,
+          "key_features": ["Severe hopelessness", "Self-blame", "Guilt", "Suicidal ideation"],
+          "reasoning": "Hopelessness and worthlessness are core depressive symptoms associated with high suicide risk"
+        },
+        {
+          "diagnosis": "Adjustment Disorder with Depressed Mood",
+          "likelihood": 50,
+          "key_features": ["Stressor-related", "Less severe", "Time-limited"],
+          "reasoning": "Hopelessness in context of identifiable stressor"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 40,
+          "key_features": ["History of mania", "Mood cycling", "Severe depression"],
+          "reasoning": "Can occur in bipolar depression, especially with psychotic features"
+        },
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 35,
+          "key_features": ["Identity disturbance", "Interpersonal instability", "Chronic emptiness"],
+          "reasoning": "Chronic feelings of emptiness and worthlessness common in BPD"
+        },
+        {
+          "diagnosis": "Post-Traumatic Stress Disorder",
+          "likelihood": 30,
+          "key_features": ["Trauma history", "Intrusive memories", "Hypervigilance"],
+          "reasoning": "Hopelessness can occur following trauma exposure"
+        }
+      ],
+      "red_flags": [
+        "Active suicide plan",
+        "Access to means",
+        "Previous suicide attempts",
+        "Psychotic features",
+        "Substance use",
+        "Social isolation"
+      ],
+      "investigations": [
+        "Suicide risk assessment",
+        "Mental status examination",
+        "Collateral information",
+        "Substance screening"
+      ]
+    },
+    "4": {
+      "id": 4,
+      "name": "Crying Spells",
+      "category": "Mood & Affect",
+      "definition": "Involuntary episodes of crying or tearfulness that may occur without obvious triggers or be disproportionate to circumstances.",
+      "clinical_significance": "Can indicate depression, adjustment disorder, or emotional dysregulation. Important to assess context and associated symptoms.",
+      "common_descriptions": [
+        "Crying for no reason",
+        "Can't stop crying",
+        "Crying over small things",
+        "Tears come easily",
+        "Emotional breakdown"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 70,
+          "key_features": ["Frequent crying", "Other depressive symptoms", "Persistent mood"],
+          "reasoning": "Crying spells are common in depression, especially in women"
+        },
+        {
+          "diagnosis": "Adjustment Disorder",
+          "likelihood": 65,
+          "key_features": ["Recent stressor", "Excessive emotional response", "Time-limited"],
+          "reasoning": "Disproportionate emotional response to identifiable stressor"
+        },
+        {
+          "diagnosis": "Persistent Depressive Disorder",
+          "likelihood": 45,
+          "key_features": ["Chronic low mood", "Long duration", "Less severe symptoms"],
+          "reasoning": "Chronic emotional dysregulation in dysthymia"
+        },
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 40,
+          "key_features": ["Emotional instability", "Interpersonal problems", "Identity issues"],
+          "reasoning": "Emotional dysregulation is core feature of BPD"
+        },
+        {
+          "diagnosis": "Normal Grief",
+          "likelihood": 35,
+          "key_features": ["Loss event", "Gradual improvement", "Mixed emotions"],
+          "reasoning": "Crying can be normal part of grief process"
+        }
+      ],
+      "red_flags": [
+        "Suicidal thoughts during crying",
+        "Inability to stop crying",
+        "Social/occupational impairment",
+        "Psychotic features",
+        "Self-harm behaviors"
+      ],
+      "investigations": [
+        "Depression screening",
+        "Grief assessment",
+        "Trauma history",
+        "Social support evaluation"
+      ]
+    },
+    "5": {
+      "id": 5,
+      "name": "Fatigue/Low Energy",
+      "category": "Mood & Affect",
+      "definition": "Persistent feelings of tiredness, lack of energy, or physical exhaustion that is not relieved by rest.",
+      "clinical_significance": "Common symptom across many psychiatric and medical conditions. Requires thorough evaluation to distinguish primary from secondary causes.",
+      "common_descriptions": [
+        "Exhausted all the time",
+        "No energy for anything",
+        "Feels like weights on my body",
+        "Everything takes enormous effort",
+        "Can't get motivated"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 75,
+          "key_features": ["Persistent fatigue", "Not relieved by rest", "Other depressive symptoms"],
+          "reasoning": "Fatigue is a core symptom of depression, often severe"
+        },
+        {
+          "diagnosis": "Chronic Fatigue Syndrome",
+          "likelihood": 50,
+          "key_features": ["6+ months duration", "Post-exertional malaise", "Unrefreshing sleep"],
+          "reasoning": "Chronic fatigue syndrome involves severe, disabling fatigue"
+        },
+        {
+          "diagnosis": "Medical Conditions (Anemia, Thyroid, Autoimmune)",
+          "likelihood": 60,
+          "key_features": ["Physical symptoms", "Laboratory abnormalities", "No psychiatric symptoms"],
+          "reasoning": "Fatigue can be primary symptom of medical conditions"
+        },
+        {
+          "diagnosis": "Persistent Depressive Disorder",
+          "likelihood": 55,
+          "key_features": ["Chronic fatigue", "Long duration", "Mild depression"],
+          "reasoning": "Chronic fatigue in dysthymia"
+        },
+        {
+          "diagnosis": "Sleep Disorders",
+          "likelihood": 45,
+          "key_features": ["Sleep disturbance", "Daytime sleepiness", "Snoring"],
+          "reasoning": "Sleep disorders commonly cause fatigue"
+        }
+      ],
+      "red_flags": [
+        "Rapid weight loss",
+        "Fever",
+        "Shortness of breath",
+        "Chest pain",
+        "Neurological symptoms",
+        "Cancer history"
+      ],
+      "investigations": [
+        "Complete blood count",
+        "Comprehensive metabolic panel",
+        "Thyroid function",
+        "ESR, CRP",
+        "Sleep study if indicated",
+        "Vitamin levels"
+      ]
+    },
+    "6": {
+      "id": 6,
+      "name": "Excessive Happiness/Elevated Mood",
+      "category": "Mood & Affect",
+      "definition": "Abnormally elevated, expansive, or irritable mood that is disproportionate to circumstances and persists over time.",
+      "clinical_significance": "Key symptom of manic or hypomanic episodes. Requires careful assessment to distinguish from normal happiness, substance use, or other conditions.",
+      "common_descriptions": [
+        "Feel on top of the world",
+        "Like I'm invincible",
+        "Everything is amazing",
+        "Best I've ever felt",
+        "Nothing can bring me down"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 85,
+          "key_features": ["Duration >1 week", "Severe impairment", "Grandiosity", "Decreased sleep"],
+          "reasoning": "Classic manic episode with elevated mood and functional impairment"
+        },
+        {
+          "diagnosis": "Bipolar Disorder - Hypomanic Episode",
+          "likelihood": 80,
+          "key_features": ["Duration >4 days", "Mild impairment", "Elevated mood", "Increased energy"],
+          "reasoning": "Hypomanic episode with elevated mood but less severe impairment"
+        },
+        {
+          "diagnosis": "Substance-Induced Manic Episode",
+          "likelihood": 50,
+          "key_features": ["Substance use", "Temporal relationship", "Resolution with abstinence"],
+          "reasoning": "Elevated mood due to substance intoxication"
+        },
+        {
+          "diagnosis": "Cyclothymic Disorder",
+          "likelihood": 40,
+          "key_features": ["Chronic mood swings", "Subthreshold symptoms", "Duration >2 years"],
+          "reasoning": "Chronic mood instability with hypomanic and depressive symptoms"
+        },
+        {
+          "diagnosis": "Normal Reaction (Celebration, Achievement)",
+          "likelihood": 30,
+          "key_features": ["Appropriate context", "Time-limited", "Proportional response"],
+          "reasoning": "Normal happiness in response to positive events"
+        }
+      ],
+      "red_flags": [
+        "Involvement in dangerous activities",
+        "Grandiosity with psychosis",
+        "Violent behavior",
+        "Inability to function",
+        "Risk-taking behaviors",
+        "Financial problems"
+      ],
+      "investigations": [
+        "Urine toxicology",
+        "Medical history",
+        "Collateral information",
+        "Mental status examination"
+      ]
+    },
+    "7": {
+      "id": 7,
+      "name": "Irritability",
+      "category": "Mood & Affect",
+      "definition": "Abnormally increased proneness to anger, frustration, or annoyance in response to minor stressors.",
+      "clinical_significance": "Can occur in various psychiatric conditions including depression, bipolar disorder, anxiety disorders, and personality disorders.",
+      "common_descriptions": [
+        "Everything annoys me",
+        "Quick to anger",
+        "On edge all the time",
+        "Easily frustrated",
+        "Can't control temper"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 65,
+          "key_features": ["Irritable mood", "Other depressive symptoms", "Mood reactivity"],
+          "reasoning": "Irritability can be prominent in depression, especially in children/adolescents"
+        },
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 70,
+          "key_features": ["Severe irritability", "Manic symptoms", "Functional impairment"],
+          "reasoning": "Irritability is common during manic episodes"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 55,
+          "key_features": ["Chronic worry", "Muscle tension", "Restlessness"],
+          "reasoning": "Chronic anxiety often presents with irritability"
+        },
+        {
+          "diagnosis": "Intermittent Explosive Disorder",
+          "likelihood": 50,
+          "key_features": ["Discrete episodes", "Aggressive outbursts", "No mood episodes"],
+          "reasoning": "Characterized by recurrent aggressive outbursts"
+        },
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 45,
+          "key_features": ["Emotional instability", "Interpersonal issues", "Identity disturbance"],
+          "reasoning": "Irritability and anger are common in BPD"
+        }
+      ],
+      "red_flags": [
+        "Violent behavior",
+        "Aggressive outbursts",
+        "Substance use",
+        "Psychotic features",
+        "Head injury",
+        "Medical illness"
+      ],
+      "investigations": [
+        "Violence risk assessment",
+        "Substance screening",
+        "Medical evaluation",
+        "Collateral information"
+      ]
+    },
+    "8": {
+      "id": 8,
+      "name": "Increased Activity/Goal-Directed Behavior",
+      "category": "Mood & Affect",
+      "definition": "Abnormally increased level of goal-directed activity or physical restlessness that is disproportionate to circumstances.",
+      "clinical_significance": "Key symptom of manic/hypomanic episodes. Important to distinguish from normal productivity, anxiety-driven activity, or agitation.",
+      "common_descriptions": [
+        "Can't sit still",
+        "Always doing something",
+        "Multiple projects at once",
+        "Need to be active",
+        "Driven to accomplish"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 80,
+          "key_features": ["Excessive activity", "Goal-directed behavior", "Other manic symptoms"],
+          "reasoning": "Increased activity is core symptom of mania"
+        },
+        {
+          "diagnosis": "Bipolar Disorder - Hypomanic Episode",
+          "likelihood": 75,
+          "key_features": ["Increased activity", "Productive behavior", "Mild impairment"],
+          "reasoning": "Increased activity during hypomanic episodes"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 40,
+          "key_features": ["Anxiety-driven activity", "Worry", "Restlessness"],
+          "reasoning": "Anxiety can drive excessive activity"
+        },
+        {
+          "diagnosis": "Attention Deficit Hyperactivity Disorder",
+          "likelihood": 35,
+          "key_features": ["Childhood onset", "Inattention", "Impulsivity"],
+          "reasoning": "Hyperactivity can persist into adulthood in ADHD"
+        },
+        {
+          "diagnosis": "Normal High Productivity",
+          "likelihood": 25,
+          "key_features": ["Appropriate context", "Controlled", "Proportional response"],
+          "reasoning": "Normal increased activity during positive life events"
+        }
+      ],
+      "red_flags": [
+        "Dangerous activities",
+        "Financial overspending",
+        "Sexual indiscretions",
+        "Psychotic features",
+        "Inability to rest",
+        "Physical exhaustion"
+      ],
+      "investigations": [
+        "Collateral information",
+        "Sleep assessment",
+        "Substance screening",
+        "Functional assessment"
+      ]
+    },
+    "9": {
+      "id": 9,
+      "name": "Decreased Need for Sleep",
+      "category": "Mood & Affect",
+      "definition": "Requirement for significantly less sleep than usual without feeling tired or fatigued the next day.",
+      "clinical_significance": "Core symptom of manic/hypomanic episodes. Important to assess quality and restorative nature of sleep when obtained.",
+      "common_descriptions": [
+        "Only need 3-4 hours of sleep",
+        "Feel rested on little sleep",
+        "Can't fall asleep anyway",
+        "Too much to do to sleep",
+        "Sleep feels like a waste of time"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 85,
+          "key_features": ["<3 hours sleep", "Feel rested", "Other manic symptoms"],
+          "reasoning": "Decreased need for sleep is pathognomonic for manic episodes"
+        },
+        {
+          "diagnosis": "Bipolar Disorder - Hypomanic Episode",
+          "likelihood": 80,
+          "key_features": ["<6 hours sleep", "Feel rested", "Other hypomanic symptoms"],
+          "reasoning": "Decreased sleep need during hypomanic episodes"
+        },
+        {
+          "diagnosis": "Substance Use (Stimulants, Cocaine)",
+          "likelihood": 60,
+          "key_features": ["Substance history", "Temporal relationship", "Withdrawal symptoms"],
+          "reasoning": "Stimulants can decrease sleep need"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 30,
+          "key_features": ["Sleep-onset insomnia", "Worry", "Hyperarousal"],
+          "reasoning": "Anxiety can interfere with sleep initiation"
+        },
+        {
+          "diagnosis": "Normal Variation",
+          "likelihood": 20,
+          "key_features": ["Long-term pattern", "No impairment", "Appropriate functioning"],
+          "reasoning": "Some people naturally require less sleep"
+        }
+      ],
+      "red_flags": [
+        "Psychotic symptoms",
+        "Dangerous behavior",
+        "Physical exhaustion",
+        "Substance use",
+        "Mood elevation",
+        "Financial/sexual indiscretions"
+      ],
+      "investigations": [
+        "Sleep diary",
+        "Substance screening",
+        "Medical evaluation",
+        "Collateral information"
+      ]
+    },
+    "10": {
+      "id": 10,
+      "name": "Grandiosity/Inflated Self-Esteem",
+      "category": "Mood & Affect",
+      "definition": "Exaggerated sense of self-importance, abilities, or achievements that is disproportionate to actual circumstances.",
+      "clinical_significance": "Core symptom of manic episodes. Can also occur in psychotic disorders, personality disorders, and as cultural or religious expressions.",
+      "common_descriptions": [
+        "I can do anything",
+        "I'm destined for greatness",
+        "I have special powers",
+        "I'm better than everyone",
+        "I'm going to be famous"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 90,
+          "key_features": ["Extreme grandiosity", "Other manic symptoms", "Functional impairment"],
+          "reasoning": "Grandiosity is core diagnostic feature of mania"
+        },
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 45,
+          "key_features": ["Grandiose delusions", "Other psychotic symptoms", "Gradual onset"],
+          "reasoning": "Grandiose delusions can occur in schizophrenia"
+        },
+        {
+          "diagnosis": "Substance-Induced Psychotic Disorder",
+          "likelihood": 35,
+          "key_features": ["Substance use", "Temporal relationship", "Other psychotic symptoms"],
+          "reasoning": "Substances can induce grandiose delusions"
+        },
+        {
+          "diagnosis": "Narcissistic Personality Disorder",
+          "likelihood": 40,
+          "key_features": ["Chronic pattern", "Interpersonal problems", "Entitlement"],
+          "reasoning": "Narcissistic traits can include grandiose self-view"
+        },
+        {
+          "diagnosis": "Cultural/Religious Expression",
+          "likelihood": 25,
+          "key_features": ["Cultural context", "Appropriate behavior", "No other symptoms"],
+          "reasoning": "Religious or cultural beliefs may include grandiosity"
+        }
+      ],
+      "red_flags": [
+        "Dangerous behavior due to grandiosity",
+        "Violence due to delusions",
+        "Inability to function",
+        "Psychotic symptoms",
+        "Poor insight",
+        "Risk-taking behaviors"
+      ],
+      "investigations": [
+        "Cultural/religious assessment",
+        "Substance screening",
+        "Psychotic symptoms evaluation",
+        "Collateral information"
+      ]
+    },
+    "11": {
+      "id": 11,
+      "name": "Mood Fluctuations/Cycling",
+      "category": "Mood & Affect",
+      "definition": "Recurrent shifts in mood between depressed, normal, and elevated states that occur over days to weeks.",
+      "clinical_significance": "Key feature of bipolar disorder spectrum. Requires careful assessment of duration, severity, and triggers for accurate diagnosis.",
+      "common_descriptions": [
+        "My mood goes up and down",
+        "Cycles between good and bad",
+        "Mood changes daily",
+        "Hard to predict my feelings",
+        "Emotional rollercoaster"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Bipolar II Disorder",
+          "likelihood": 80,
+          "key_features": ["Hypomanic episodes", "Depressive episodes", "No full mania"],
+          "reasoning": "Mood cycling between depression and hypomania is characteristic of Bipolar II"
+        },
+        {
+          "diagnosis": "Cyclothymic Disorder",
+          "likelihood": 70,
+          "key_features": ["Chronic cycling", "Subthreshold symptoms", "Duration >2 years"],
+          "reasoning": "Chronic mood instability with subthreshold bipolar symptoms"
+        },
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 50,
+          "key_features": ["Rapid mood swings", "Interpersonal triggers", "Identity issues"],
+          "reasoning": "Emotional instability is core feature of BPD"
+        },
+        {
+          "diagnosis": "Substance Use Disorder",
+          "likelihood": 45,
+          "key_features": ["Substance history", "Withdrawal effects", "Cravings"],
+          "reasoning": "Mood swings can occur with substance use and withdrawal"
+        },
+        {
+          "diagnosis": "Medical Conditions (Thyroid, Neurological)",
+          "likelihood": 35,
+          "key_features": ["Medical history", "Physical symptoms", "Laboratory findings"],
+          "reasoning": "Medical conditions can cause mood instability"
+        }
+      ],
+      "red_flags": [
+        "Rapid cycling (4+ episodes/year)",
+        "Suicidal ideation",
+        "Psychotic features",
+        "Substance use",
+        "Medical causes",
+        "Severe impairment"
+      ],
+      "investigations": [
+        "Thyroid function",
+        "Substance screening",
+        "Medical evaluation",
+        "Mood charting",
+        "Collateral information"
+      ]
+    },
+    "12": {
+      "id": 12,
+      "name": "Rapid Mood Swings",
+      "category": "Mood & Affect",
+      "definition": "Abrupt, intense shifts in mood that occur over minutes to hours, often in response to minor stressors.",
+      "clinical_significance": "Most characteristic of borderline personality disorder but can occur in other conditions including bipolar disorder and substance use.",
+      "common_descriptions": [
+        "Mood changes in seconds",
+        "Feel different every hour",
+        "Explosive anger",
+        "Crying one minute, laughing the next",
+        "Can't control my emotions"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 85,
+          "key_features": ["Rapid mood shifts", "Interpersonal triggers", "Identity disturbance", "Fear of abandonment"],
+          "reasoning": "Emotional dysregulation with rapid mood swings is hallmark of BPD"
+        },
+        {
+          "diagnosis": "Cyclothymic Disorder",
+          "likelihood": 55,
+          "key_features": ["Chronic mood changes", "Subthreshold symptoms", "Duration >2 years"],
+          "reasoning": "Chronic mood instability in cyclothymia"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 45,
+          "key_features": ["Episodic mood changes", "Manic episodes", "Depressive episodes"],
+          "reasoning": "Mood swings can occur in bipolar disorder"
+        },
+        {
+          "diagnosis": "Substance Use Disorder",
+          "likelihood": 40,
+          "key_features": ["Substance history", "Withdrawal", "Intoxication"],
+          "reasoning": "Substances can cause rapid mood changes"
+        },
+        {
+          "diagnosis": "Histrionic Personality Disorder",
+          "likelihood": 35,
+          "key_features": ["Dramatic expression", "Attention-seeking", "Emotional manipulation"],
+          "reasoning": "Emotional lability can occur in histrionic personality disorder"
+        }
+      ],
+      "red_flags": [
+        "Self-harm behaviors",
+        "Suicidal ideation",
+        "Violence",
+        "Substance abuse",
+        "Psychotic symptoms",
+        "Severe interpersonal problems"
+      ],
+      "investigations": [
+        "Personality assessment",
+        "Substance screening",
+        "Medical evaluation",
+        "Psychiatric evaluation"
+      ]
+    },
+    "13": {
+      "id": 13,
+      "name": "Excessive Worry",
+      "category": "Anxiety & Fear",
+      "definition": "Persistent, excessive, and uncontrollable worry about multiple areas of life that is disproportionate to actual circumstances.",
+      "clinical_significance": "Core feature of generalized anxiety disorder and can occur in other anxiety disorders, depression, and medical conditions.",
+      "common_descriptions": [
+        "Constantly worried about everything",
+        "Can't stop thinking about problems",
+        "Worry keeps me up at night",
+        "Something bad will happen",
+        "Overthink everything"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 85,
+          "key_features": ["Excessive worry >6 months", "Multiple domains", "Difficulty controlling"],
+          "reasoning": "Excessive, uncontrollable worry about multiple areas for >6 months is diagnostic of GAD"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 60,
+          "key_features": ["Worry about future", "Hopelessness", "Other depressive symptoms"],
+          "reasoning": "Worry can be prominent in depression, especially with anxiety features"
+        },
+        {
+          "diagnosis": "Panic Disorder",
+          "likelihood": 45,
+          "key_features": ["Worry about panic attacks", "Anticipatory anxiety", "Avoidance"],
+          "reasoning": "Worry about having panic attacks is common in panic disorder"
+        },
+        {
+          "diagnosis": "Social Anxiety Disorder",
+          "likelihood": 40,
+          "key_features": ["Worry about social situations", "Performance anxiety", "Embarrassment"],
+          "reasoning": "Excessive worry about social evaluation characterizes social anxiety"
+        },
+        {
+          "diagnosis": "Adjustment Disorder with Anxiety",
+          "likelihood": 50,
+          "key_features": ["Stressor-related", "Onset <3 months", "Resolution <6 months"],
+          "reasoning": "Anxiety in response to identifiable stressor"
+        }
+      ],
+      "red_flags": [
+        "Suicidal thoughts",
+        "Self-harm behaviors",
+        "Substance use",
+        "Psychotic features",
+        "Severe functional impairment",
+        "Violence risk"
+      ],
+      "investigations": [
+        "Depression screening",
+        "Substance screening",
+        "Medical evaluation",
+        "Trauma history"
+      ]
+    },
+    "14": {
+      "id": 14,
+      "name": "Panic Attacks",
+      "category": "Anxiety & Fear",
+      "definition": "Discrete episodes of intense fear or discomfort accompanied by somatic and cognitive symptoms that peak within minutes.",
+      "clinical_significance": "Core feature of panic disorder but can occur in other anxiety disorders, medical conditions, and substance use.",
+      "common_descriptions": [
+        "Sudden intense fear",
+        "Heart pounding",
+        "Can't breathe",
+        "Feel like dying",
+        "Going crazy"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Panic Disorder",
+          "likelihood": 80,
+          "key_features": ["Recurrent attacks", "Worry about attacks", "Avoidance behavior"],
+          "reasoning": "Recurrent unexpected panic attacks with concern about future attacks"
+        },
+        {
+          "diagnosis": "Agoraphobia",
+          "likelihood": 70,
+          "key_features": ["Fear of situations", "Avoidance", "Panic attacks in specific situations"],
+          "reasoning": "Panic attacks often occur in feared situations in agoraphobia"
+        },
+        {
+          "diagnosis": "Social Anxiety Disorder",
+          "likelihood": 55,
+          "key_features": ["Social triggers", "Performance anxiety", "Fear of evaluation"],
+          "reasoning": "Panic attacks can occur in social situations"
+        },
+        {
+          "diagnosis": "Medical Conditions (Cardiac, Respiratory)",
+          "likelihood": 45,
+          "key_features": ["Physical symptoms", "Medical history", "No psychological triggers"],
+          "reasoning": "Medical conditions can mimic panic attacks"
+        },
+        {
+          "diagnosis": "Substance-Induced Panic Disorder",
+          "likelihood": 35,
+          "key_features": ["Substance use", "Temporal relationship", "Resolution with abstinence"],
+          "reasoning": "Substances can precipitate panic attacks"
+        }
+      ],
+      "red_flags": [
+        "Chest pain",
+        "Shortness of breath",
+        "Loss of consciousness",
+        "Suicidal ideation",
+        "Severe agoraphobia",
+        "Medical emergency"
+      ],
+      "investigations": [
+        "Cardiac evaluation",
+        "Chest X-ray",
+        "ECG",
+        "Substance screening",
+        "Thyroid function"
+      ]
+    },
+    "15": {
+      "id": 15,
+      "name": "Palpitations/Breathlessness",
+      "category": "Anxiety & Fear",
+      "definition": "Awareness of rapid or irregular heartbeat and sensation of shortness of breath or difficulty breathing.",
+      "clinical_significance": "Common somatic symptoms of anxiety and panic attacks but can indicate serious medical conditions requiring evaluation.",
+      "common_descriptions": [
+        "Heart beating out of my chest",
+        "Can't catch my breath",
+        "Feeling of impending doom",
+        "Chest tightness",
+        "Need to get more air"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Panic Disorder",
+          "likelihood": 75,
+          "key_features": ["Episodic symptoms", "Anxiety triggers", "Other panic symptoms"],
+          "reasoning": "Palpitations and breathlessness are common during panic attacks"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 65,
+          "key_features": ["Chronic worry", "Hyperarousal", "Multiple physical symptoms"],
+          "reasoning": "Chronic anxiety can cause persistent physical symptoms"
+        },
+        {
+          "diagnosis": "Cardiac Conditions (Arrhythmia, Heart Failure)",
+          "likelihood": 50,
+          "key_features": ["Cardiac history", "Exercise intolerance", "Chest pain"],
+          "reasoning": "Cardiac conditions commonly cause these symptoms"
+        },
+        {
+          "diagnosis": "Respiratory Conditions (Asthma, COPD)",
+          "likelihood": 45,
+          "key_features": ["Respiratory history", "Wheezing", "Exercise limitations"],
+          "reasoning": "Respiratory conditions cause breathlessness"
+        },
+        {
+          "diagnosis": "Hyperthyroidism",
+          "likelihood": 35,
+          "key_features": ["Weight loss", "Heat intolerance", "Tremor"],
+          "reasoning": "Thyroid disease can cause palpitations and anxiety symptoms"
+        }
+      ],
+      "red_flags": [
+        "Chest pain",
+        "Syncope",
+        "Severe shortness of breath",
+        "History of heart disease",
+        "Diabetes",
+        "Family history of sudden death"
+      ],
+      "investigations": [
+        "ECG",
+        "Echocardiogram",
+        "Chest X-ray",
+        "Thyroid function",
+        "Complete metabolic panel",
+        "Anxiety scales"
+      ]
+    },
+    "16": {
+      "id": 16,
+      "name": "Fear of Dying/Losing Control",
+      "category": "Anxiety & Fear",
+      "definition": "Intense fear of death, dying, or losing control during panic attacks or anxiety episodes.",
+      "clinical_significance": "Common feature of panic attacks but can indicate severe anxiety disorders or specific phobias.",
+      "common_descriptions": [
+        "I'm going to die",
+        "Losing control of my mind",
+        "Something terrible will happen",
+        "Can't cope with this",
+        "Fear of the unknown"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Panic Disorder",
+          "likelihood": 85,
+          "key_features": ["During panic attacks", "Fear of future attacks", "Catastrophic thinking"],
+          "reasoning": "Fear of dying or losing control is characteristic of panic attacks"
+        },
+        {
+          "diagnosis": "Agoraphobia",
+          "likelihood": 70,
+          "key_features": ["Fear of situations", "Avoidance", "Panic in specific places"],
+          "reasoning": "Fear of not being able to escape or get help in feared situations"
+        },
+        {
+          "diagnosis": "Specific Phobia (Death/Heights)",
+          "likelihood": 55,
+          "key_features": ["Specific triggers", "Persistent fear", "Avoidance"],
+          "reasoning": "Phobic fear of death or situations associated with death"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 50,
+          "key_features": ["Chronic worry", "Catastrophic thinking", "Multiple worries"],
+          "reasoning": "Excessive worry about health and safety in GAD"
+        },
+        {
+          "diagnosis": "Obsessive-Compulsive Disorder",
+          "likelihood": 40,
+          "key_features": ["Obsessions about harm", "Compulsions", "Intrusive thoughts"],
+          "reasoning": "Obsessions about death or losing control can occur in OCD"
+        }
+      ],
+      "red_flags": [
+        "Suicidal ideation",
+        "Avoidance of medical care",
+        "Panic attacks with medical symptoms",
+        "Substance use",
+        "Psychotic features",
+        "Severe functional impairment"
+      ],
+      "investigations": [
+        "Anxiety assessment",
+        "Panic attack history",
+        "Medical evaluation",
+        "Suicide risk assessment"
+      ]
+    },
+    "17": {
+      "id": 17,
+      "name": "Avoidance Behavior",
+      "category": "Anxiety & Fear",
+      "definition": "Persistent avoidance of situations, objects, or activities that trigger anxiety or panic symptoms.",
+      "clinical_significance": "Central feature of phobic disorders and agoraphobia. Can significantly impact daily functioning and quality of life.",
+      "common_descriptions": [
+        "Won't go places that trigger anxiety",
+        "Avoid situations where I might panic",
+        "Need to have an escape plan",
+        "Stay home to feel safe",
+        "Can't face my fears"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Agoraphobia",
+          "likelihood": 80,
+          "key_features": ["Fear of situations", "Avoidance of multiple places", "Need for companion"],
+          "reasoning": "Avoidance of situations where escape might be difficult is characteristic of agoraphobia"
+        },
+        {
+          "diagnosis": "Social Anxiety Disorder",
+          "likelihood": 75,
+          "key_features": ["Social avoidance", "Performance situations", "Fear of judgment"],
+          "reasoning": "Avoidance of social situations due to fear of negative evaluation"
+        },
+        {
+          "diagnosis": "Specific Phobia",
+          "likelihood": 85,
+          "key_features": ["Specific triggers", "Marked avoidance", "Persistent fear"],
+          "reasoning": "Avoidance of specific objects or situations is defining feature of specific phobias"
+        },
+        {
+          "diagnosis": "Panic Disorder",
+          "likelihood": 65,
+          "key_features": ["Avoidance of panic triggers", "Anticipatory anxiety", "Safety behaviors"],
+          "reasoning": "Avoidance of situations associated with panic attacks"
+        },
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 50,
+          "key_features": ["Trauma-related avoidance", "Intrusive memories", "Hypervigilance"],
+          "reasoning": "Avoidance of trauma reminders is core PTSD symptom"
+        }
+      ],
+      "red_flags": [
+        "Complete social isolation",
+        "Inability to leave home",
+        "Suicidal ideation",
+        "Self-neglect",
+        "Severe functional impairment",
+        "Substance use"
+      ],
+      "investigations": [
+        "Phobia assessment",
+        "Functional assessment",
+        "Collateral information",
+        "Anxiety scales"
+      ]
+    },
+    "18": {
+      "id": 18,
+      "name": "Phobic Fear (Social/Specific)",
+      "category": "Anxiety & Fear",
+      "definition": "Marked, persistent, and excessive fear of specific objects, situations, or social contexts that leads to significant avoidance.",
+      "clinical_significance": "Defines specific phobia and social anxiety disorder. Important to identify triggers and assess functional impairment.",
+      "common_descriptions": [
+        "Terrified of [specific object/situation]",
+        "Panic when facing my fear",
+        "Will do anything to avoid it",
+        "Know it's irrational but can't help it",
+        "Heart pounds just thinking about it"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Specific Phobia",
+          "likelihood": 90,
+          "key_features": ["Specific trigger", "Immediate fear response", "Clear avoidance"],
+          "reasoning": "Marked fear of specific object or situation with immediate anxiety response"
+        },
+        {
+          "diagnosis": "Social Anxiety Disorder",
+          "likelihood": 85,
+          "key_features": ["Social situations", "Fear of evaluation", "Performance anxiety"],
+          "reasoning": "Fear of social situations where negative evaluation is feared"
+        },
+        {
+          "diagnosis": "Panic Disorder",
+          "likelihood": 45,
+          "key_features": ["Fear of panic attacks", "Anticipatory anxiety", "Interoceptive fear"],
+          "reasoning": "Fear centered on having panic attacks rather than specific situations"
+        },
+        {
+          "diagnosis": "Agoraphobia",
+          "likelihood": 40,
+          "key_features": ["Fear of situations", "Multiple avoidance", "Need for escape"],
+          "reasoning": "Fear of situations where escape might be difficult"
+        },
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 35,
+          "key_features": ["Trauma-related fear", "Intrusive memories", "Hyperarousal"],
+          "reasoning": "Fear related to trauma reminders or anniversaries"
+        }
+      ],
+      "red_flags": [
+        "Dangerous avoidance",
+        "Self-harm to avoid fears",
+        "Inability to function",
+        "Suicidal thoughts",
+        "Substance use to cope",
+        "Medical complications from avoidance"
+      ],
+      "investigations": [
+        "Specific phobia assessment",
+        "Social anxiety evaluation",
+        "Functional assessment",
+        "Treatment history"
+      ]
+    },
+    "17": {
+      "id": 19,
+      "name": "Obsessions",
+      "category": "Anxiety & Fear",
+      "definition": "Persistent, intrusive, unwanted thoughts, images, or impulses that cause significant anxiety or distress.",
+      "clinical_significance": "Core feature of obsessive-compulsive disorder and can occur in other anxiety disorders and depression.",
+      "common_descriptions": [
+        "Intrusive thoughts won't go away",
+        "Worried I might harm someone",
+        "Contamination fears",
+        "Forbidden thoughts",
+        "Need to check things constantly"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Obsessive-Compulsive Disorder",
+          "likelihood": 90,
+          "key_features": ["Obsessions and compulsions", "Time-consuming", "Impairment"],
+          "reasoning": "Obsessions with accompanying compulsions are diagnostic of OCD"
+        },
+        {
+          "diagnosis": "Depression with Obsessive Features",
+          "likelihood": 55,
+          "key_features": ["Depressive symptoms", "Guilt-laden thoughts", "Less severe compulsions"],
+          "reasoning": "Obsessive thoughts can occur in depression"
+        },
+        {
+          "diagnosis": "Anxiety Disorder - Other Specified",
+          "likelihood": 45,
+          "key_features": ["Intrusive thoughts", "Minimal compulsions", "Anxiety symptoms"],
+          "reasoning": "Obsessive thoughts without full OCD criteria"
+        },
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 40,
+          "key_features": ["Trauma-related thoughts", "Intrusive memories", "Avoidance"],
+          "reasoning": "Intrusive thoughts related to trauma can occur in PTSD"
+        },
+        {
+          "diagnosis": "Schizoobsessive Disorder",
+          "likelihood": 25,
+          "key_features": ["Obsessions with psychotic features", "Thought disorder", "Functional decline"],
+          "reasoning": "OCD with psychotic features or concurrent schizophrenia"
+        }
+      ],
+      "red_flags": [
+        "Psychotic features",
+        "Command hallucinations",
+        "Violent obsessions",
+        "Inability to function",
+        "Self-harm behaviors",
+        "Severe anxiety"
+      ],
+      "investigations": [
+        "OCD assessment",
+        "Depression screening",
+        "Psychotic symptoms evaluation",
+        "Collateral information"
+      ]
+    },
+    "19": {
+      "id": 19,
+      "name": "Obsessions",
+      "category": "Anxiety & Fear",
+      "definition": "Persistent, intrusive, unwanted thoughts, images, or impulses that cause significant anxiety or distress.",
+      "clinical_significance": "Core feature of obsessive-compulsive disorder and can occur in other anxiety disorders and depression.",
+      "common_descriptions": [
+        "Intrusive thoughts won't go away",
+        "Worried I might harm someone",
+        "Contamination fears",
+        "Forbidden thoughts",
+        "Need to check things constantly"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Obsessive-Compulsive Disorder",
+          "likelihood": 90,
+          "key_features": ["Obsessions and compulsions", "Time-consuming", "Impairment"],
+          "reasoning": "Obsessions with accompanying compulsions are diagnostic of OCD"
+        },
+        {
+          "diagnosis": "Depression with Obsessive Features",
+          "likelihood": 55,
+          "key_features": ["Depressive symptoms", "Guilt-laden thoughts", "Less severe compulsions"],
+          "reasoning": "Obsessive thoughts can occur in depression"
+        },
+        {
+          "diagnosis": "Anxiety Disorder - Other Specified",
+          "likelihood": 45,
+          "key_features": ["Intrusive thoughts", "Minimal compulsions", "Anxiety symptoms"],
+          "reasoning": "Obsessive thoughts without full OCD criteria"
+        },
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 40,
+          "key_features": ["Trauma-related thoughts", "Intrusive memories", "Avoidance"],
+          "reasoning": "Intrusive thoughts related to trauma can occur in PTSD"
+        },
+        {
+          "diagnosis": "Schizoobsessive Disorder",
+          "likelihood": 25,
+          "key_features": ["Obsessions with psychotic features", "Thought disorder", "Functional decline"],
+          "reasoning": "OCD with psychotic features or concurrent schizophrenia"
+        }
+      ],
+      "red_flags": [
+        "Psychotic features",
+        "Command hallucinations",
+        "Violent obsessions",
+        "Inability to function",
+        "Self-harm behaviors",
+        "Severe anxiety"
+      ],
+      "investigations": [
+        "OCD assessment",
+        "Depression screening",
+        "Psychotic symptoms evaluation",
+        "Collateral information"
+      ]
+    },
+    "20": {
+      "id": 20,
+      "name": "Compulsions",
+      "category": "Anxiety & Fear",
+      "definition": "Repetitive behaviors or mental acts performed in response to obsessions or according to rigid rules to reduce anxiety.",
+      "clinical_significance": "Core feature of OCD that distinguishes it from other anxiety disorders. Important to assess time consumption and impairment.",
+      "common_descriptions": [
+        "Must wash hands repeatedly",
+        "Need to check locks constantly",
+        "Counting rituals",
+        "Mental compulsions",
+        "Can't stop the behaviors"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Obsessive-Compulsive Disorder",
+          "likelihood": 95,
+          "key_features": ["Obsessions precede compulsions", "Time-consuming", "Rules-based"],
+          "reasoning": "Compulsions performed to reduce anxiety from obsessions are diagnostic of OCD"
+        },
+        {
+          "diagnosis": "Obsessive-Compulsive Personality Disorder",
+          "likelihood": 60,
+          "key_features": ["Perfectionism", "Orderliness", "Control", "Less anxiety"],
+          "reasoning": "OCPD has rigid behaviors but less anxiety and obsessions"
+        },
+        {
+          "diagnosis": "Body Dysmorphic Disorder",
+          "likelihood": 45,
+          "key_features": ["Appearance preoccupation", "Mirror checking", "Camouflaging"],
+          "reasoning": "Compulsive behaviors focused on appearance concerns"
+        },
+        {
+          "diagnosis": "Trichotillomania",
+          "likelihood": 40,
+          "key_features": ["Hair pulling", "Tension relief", "Bald patches"],
+          "reasoning": "Body-focused repetitive behavior with compulsive features"
+        },
+        {
+          "diagnosis": "Tic Disorders",
+          "likelihood": 35,
+          "key_features": ["Motor/vocal tics", "Premonitory urge", "Suppressible"],
+          "reasoning": "Tics can resemble compulsions but have different characteristics"
+        }
+      ],
+      "red_flags": [
+        "Self-injury from compulsions",
+        "Skin damage from washing",
+        "Complete ritualization",
+        "Inability to function",
+        "Suicidal ideation",
+        "Psychotic features"
+      ],
+      "investigations": [
+        "OCD severity assessment",
+        "Skin examination",
+        "Hair/skin damage",
+        "Functional impairment",
+        "Treatment history"
+      ]
+    },
+    "21": {
+      "id": 21,
+      "name": "Hearing Voices",
+      "category": "Thought Disturbances",
+      "definition": "Auditory hallucinations where individuals hear sounds, voices, or noises that are not perceived by others.",
+      "clinical_significance": "Can occur in psychotic disorders, mood disorders with psychotic features, substance use, and medical conditions. Requires immediate assessment for safety.",
+      "common_descriptions": [
+        "People talking when no one is there",
+        "Hearing voices commenting on my behavior",
+        "Voices arguing or arguing with each other",
+        "Commanding voices telling me what to do",
+        "Hearing music or sounds"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 90,
+          "key_features": ["Auditory hallucinations", "Duration >6 months", "Functional decline", "Other psychotic symptoms"],
+          "reasoning": "Auditory hallucinations are core symptom of schizophrenia"
+        },
+        {
+          "diagnosis": "Bipolar Disorder with Psychotic Features",
+          "likelihood": 70,
+          "key_features": ["Mood episode", "History of mania", "Psychotic symptoms during mood episodes"],
+          "reasoning": "Psychotic symptoms can occur during manic or depressive episodes"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder with Psychotic Features",
+          "likelihood": 65,
+          "key_features": ["Severe depression", "Mood-congruent delusions", "Guilt themes"],
+          "reasoning": "Psychotic features can occur in severe depression"
+        },
+        {
+          "diagnosis": "Post-Traumatic Stress Disorder",
+          "likelihood": 45,
+          "key_features": ["Trauma history", "Intrusive memories", "Hypervigilance"],
+          "reasoning": "Can have auditory hallucinations related to trauma"
+        },
+        {
+          "diagnosis": "Substance-Induced Psychotic Disorder",
+          "likelihood": 55,
+          "key_features": ["Substance use", "Temporal relationship", "Resolution with abstinence"],
+          "reasoning": "Substances can induce auditory hallucinations"
+        }
+      ],
+      "red_flags": [
+        "Command hallucinations to harm self/others",
+        "Inability to distinguish reality",
+        "Severe functional impairment",
+        "Violent behavior",
+        "Suicidal ideation",
+        "Medical causes (tumors, seizures)"
+      ],
+      "investigations": [
+        "Brain MRI if indicated",
+        "EEG if seizure history",
+        "Substance screening",
+        "Thyroid function",
+        "Audiology evaluation",
+        "Collateral information"
+      ]
+    },
+    "22": {
+      "id": 22,
+      "name": "Delusions (Persecution/Reference/Grandeur)",
+      "category": "Thought Disturbances",
+      "definition": "Fixed, false beliefs that are resistant to reason or contradictory evidence, involving persecution, reference, or grandiosity.",
+      "clinical_significance": "Core psychotic symptom requiring differentiation between primary psychiatric and secondary medical/substance causes.",
+      "common_descriptions": [
+        "People are trying to harm me",
+        "TV/radio is sending me messages",
+        "I have special powers or abilities",
+        "Government is monitoring me",
+        "I'm being watched or followed"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 85,
+          "key_features": ["Fixed false beliefs", "Duration >6 months", "Functional decline", "Other psychotic symptoms"],
+          "reasoning": "Delusions are core diagnostic feature of schizophrenia"
+        },
+        {
+          "diagnosis": "Delusional Disorder",
+          "likelihood": 75,
+          "key_features": ["Non-bizarre delusions", "Functioning preserved", "Duration >1 month"],
+          "reasoning": "Delusions without other psychotic symptoms and preserved functioning"
+        },
+        {
+          "diagnosis": "Bipolar Disorder with Psychotic Features",
+          "likelihood": 60,
+          "key_features": ["Mood episode", "Grandiosity common", "Episodic course"],
+          "reasoning": "Psychotic features occur during mood episodes"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder with Psychotic Features",
+          "likelihood": 55,
+          "key_features": ["Severe depression", "Mood-congruent delusions", "Self-blame themes"],
+          "reasoning": "Psychotic features in severe depression"
+        },
+        {
+          "diagnosis": "Substance-Induced Psychotic Disorder",
+          "likelihood": 50,
+          "key_features": ["Substance use", "Temporal relationship", "Other substance effects"],
+          "reasoning": "Substances can induce delusional thinking"
+        }
+      ],
+      "red_flags": [
+        "Violence due to delusions",
+        "Command delusions",
+        "Complete functional impairment",
+        "Poor insight",
+        "Non-compliance with treatment",
+        "Medical emergencies"
+      ],
+      "investigations": [
+        "Substance screening",
+        "Brain imaging if indicated",
+        "Thyroid function",
+        "Collaterals",
+        "Mental status examination",
+        "Neurological examination"
+      ]
+    },
+    "23": {
+      "id": 23,
+      "name": "Disorganized Speech",
+      "category": "Thought Disturbances",
+      "definition": "Speech that is difficult to understand due to disorganization, incoherence, or tangential thinking.",
+      "clinical_significance": "Core symptom of schizophrenia and can occur in other psychotic disorders, mood disorders, and medical conditions.",
+      "common_descriptions": [
+        "Jumping from topic to topic",
+        "Speech doesn't make sense",
+        "Hard to follow conversation",
+        "Repeating phrases",
+        "Making up words"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 80,
+          "key_features": ["Disorganized speech", "Other psychotic symptoms", "Functional decline"],
+          "reasoning": "Disorganized speech is characteristic of schizophrenia"
+        },
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 70,
+          "key_features": ["Elevated mood", "Rapid speech", "Flight of ideas"],
+          "reasoning": "Disorganization can occur during manic episodes"
+        },
+        {
+          "diagnosis": "Brief Psychotic Disorder",
+          "likelihood": 60,
+          "key_features": ["Acute onset", "Duration 1-30 days", "Recovery"],
+          "reasoning": "Disorganized speech in brief psychotic episodes"
+        },
+        {
+          "diagnosis": "Substance Intoxication",
+          "likelihood": 50,
+          "key_features": ["Substance use", "Temporal relationship", "Other intoxication signs"],
+          "reasoning": "Substances can cause disorganized speech"
+        },
+        {
+          "diagnosis": "Medical Conditions (Delirium, Dementia)",
+          "likelihood": 40,
+          "key_features": ["Medical history", "Acute onset", "Other medical symptoms"],
+          "reasoning": "Medical conditions can cause disorganized thinking"
+        }
+      ],
+      "red_flags": [
+        "Sudden onset",
+        "Medical illness",
+        "Fever or infection",
+        "Substance intoxication",
+        "Severe disorganization",
+        "Inability to communicate"
+      ],
+      "investigations": [
+        "Substance screening",
+        "Medical evaluation",
+        "Brain imaging if indicated",
+        "Cognitive assessment",
+        "Collateral information"
+      ]
+    },
+    "24": {
+      "id": 24,
+      "name": "Suspiciousness",
+      "category": "Thought Disturbances",
+      "definition": "Excessive mistrust, wariness, or suspicion of others that interferes with relationships and functioning.",
+      "clinical_significance": "Can be early sign of psychotic disorders or occur in anxiety disorders, personality disorders, and trauma-related conditions.",
+      "common_descriptions": [
+        "Don't trust people easily",
+        "Think others have ulterior motives",
+        "Assume the worst about people",
+        "Feel like people are against me",
+        "Always looking for hidden meanings"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Paranoid Personality Disorder",
+          "likelihood": 70,
+          "key_features": ["Long-standing pattern", "Distrust of others", "Interpersonal problems"],
+          "reasoning": "Chronic suspiciousness without psychotic features"
+        },
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 65,
+          "key_features": ["Progressive suspiciousness", "Other psychotic symptoms", "Functional decline"],
+          "reasoning": "Suspiciousness can be early or prominent symptom of schizophrenia"
+        },
+        {
+          "diagnosis": "Post-Traumatic Stress Disorder",
+          "likelihood": 60,
+          "key_features": ["Trauma history", "Hypervigilance", "Trust issues"],
+          "reasoning": "Suspiciousness common following trauma exposure"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 45,
+          "key_features": ["Chronic worry", "Multiple concerns", "Anxiety symptoms"],
+          "reasoning": "Anxiety can manifest as suspiciousness"
+        },
+        {
+          "diagnosis": "Substance Use",
+          "likelihood": 40,
+          "key_features": ["Substance history", "Paranoid ideation", "Temporal relationship"],
+          "reasoning": "Substances can cause suspiciousness"
+        }
+      ],
+      "red_flags": [
+        "Violence due to suspiciousness",
+        "Social isolation",
+        "Functional impairment",
+        "Psychotic features",
+        "Self-neglect",
+        "Dangerous behaviors"
+      ],
+      "investigations": [
+        "Trauma history",
+        "Substance screening",
+        "Personality assessment",
+        "Collateral information",
+        "Functional assessment"
+      ]
+    },
+    "25": {
+      "id": 25,
+      "name": "Flight of Ideas",
+      "category": "Thought Disturbances",
+      "definition": "Rapid, continuous flow of speech with abrupt changes from topic to topic, often based on understandable associations.",
+      "clinical_significance": "Classic symptom of manic episodes but can occur in other conditions including severe anxiety and substance use.",
+      "common_descriptions": [
+        "Thoughts racing so fast",
+        "Can't finish one thought before moving to next",
+        "Jumping from topic to topic",
+        "Too many ideas at once",
+        "Speech can't keep up with thinking"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 85,
+          "key_features": ["Elevated mood", "Increased activity", "Pressured speech"],
+          "reasoning": "Flight of ideas is characteristic of manic episodes"
+        },
+        {
+          "diagnosis": "Bipolar Disorder - Hypomanic Episode",
+          "likelihood": 75,
+          "key_features": ["Elevated mood", "Mild impairment", "Duration >4 days"],
+          "reasoning": "Flight of ideas can occur in hypomanic episodes"
+        },
+        {
+          "diagnosis": "Cyclothymic Disorder",
+          "likelihood": 55,
+          "key_features": ["Chronic mood swings", "Subthreshold symptoms", "Duration >2 years"],
+          "reasoning": "Mood instability with subthreshold manic symptoms"
+        },
+        {
+          "diagnosis": "Substance-Induced Manic Episode",
+          "likelihood": 50,
+          "key_features": ["Substance use", "Temporal relationship", "Other intoxication effects"],
+          "reasoning": "Stimulants can cause flight of ideas"
+        },
+        {
+          "diagnosis": "Attention Deficit Hyperactivity Disorder",
+          "likelihood": 35,
+          "key_features": ["Childhood onset", "Inattention", "Impulsivity"],
+          "reasoning": "Hyperactivity and racing thoughts in ADHD"
+        }
+      ],
+      "red_flags": [
+        "Dangerous behaviors",
+        "Psychotic features",
+        "Severe functional impairment",
+        "Violence risk",
+        "Substance intoxication",
+        "Inability to communicate"
+      ],
+      "investigations": [
+        "Substance screening",
+        "Medical evaluation",
+        "Mood assessment",
+        "Cognitive evaluation",
+        "Collateral information"
+      ]
+    },
+    "26": {
+      "id": 26,
+      "name": "Tangentiality",
+      "category": "Thought Disturbances",
+      "definition": "Speech that veers off the topic and doesn't return, making communication difficult and goal-directed thinking impaired.",
+      "clinical_significance": "Common in psychotic disorders and can occur in mood disorders, ADHD, and anxiety disorders.",
+      "common_descriptions": [
+        "Hard to stay on topic",
+        "Thoughts go off in different directions",
+        "Hard to follow my own logic",
+        "Concentrating is difficult",
+        "Conversations go nowhere"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 75,
+          "key_features": ["Disorganized thinking", "Other psychotic symptoms", "Functional decline"],
+          "reasoning": "Tangentiality is common in schizophrenia thought disorder"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 60,
+          "key_features": ["Mood episodes", "Flight of ideas", "Episodic course"],
+          "reasoning": "Thought disorder can occur during mood episodes"
+        },
+        {
+          "diagnosis": "Attention Deficit Hyperactivity Disorder",
+          "likelihood": 50,
+          "key_features": ["Childhood onset", "Inattention", "Impulsivity"],
+          "reasoning": "Inattention and distractibility in ADHD"
+        },
+        {
+          "diagnosis": "Anxiety Disorders",
+          "likelihood": 40,
+          "key_features": ["Worry", "Racing thoughts", "Restlessness"],
+          "reasoning": "Anxiety can cause racing, tangential thoughts"
+        },
+        {
+          "diagnosis": "Brief Psychotic Disorder",
+          "likelihood": 45,
+          "key_features": ["Acute onset", "Duration 1-30 days", "Recovery"],
+          "reasoning": "Thought disorder in brief psychotic episodes"
+        }
+      ],
+      "red_flags": [
+        "Sudden onset",
+        "Functional impairment",
+        "Other psychotic symptoms",
+        "Medical illness",
+        "Substance use",
+        "Communication breakdown"
+      ],
+      "investigations": [
+        "Cognitive assessment",
+        "Mood evaluation",
+        "Substance screening",
+        "Medical evaluation",
+        "Collateral information"
+      ]
+    },
+    "27": {
+      "id": 27,
+      "name": "Thought Blocking",
+      "category": "Thought Disturbances",
+      "definition": "Sudden interruption in speech or thought process where the person stops speaking mid-sentence and cannot continue.",
+      "clinical_significance": "Common in schizophrenia and can occur in other psychotic disorders, severe anxiety, and medical conditions.",
+      "common_descriptions": [
+        "Mind goes blank suddenly",
+        "Can't remember what I was saying",
+        "Speech stops in the middle",
+        "Thoughts disappear",
+        "Feels like mind shuts off"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 70,
+          "key_features": ["Other psychotic symptoms", "Thought disorder", "Functional decline"],
+          "reasoning": "Thought blocking is characteristic of schizophrenia thought disorder"
+        },
+        {
+          "diagnosis": "Anxiety Disorders",
+          "likelihood": 55,
+          "key_features": ["Anxiety", "Panic attacks", "Worry"],
+          "reasoning": "Severe anxiety can cause thought blocking"
+        },
+        {
+          "diagnosis": "Post-Traumatic Stress Disorder",
+          "likelihood": 45,
+          "key_features": ["Trauma history", "Intrusive memories", "Hyperarousal"],
+          "reasoning": "Dissociation and hyperarousal in PTSD"
+        },
+        {
+          "diagnosis": "Brief Psychotic Disorder",
+          "likelihood": 50,
+          "key_features": ["Acute onset", "Duration 1-30 days", "Other psychotic symptoms"],
+          "reasoning": "Thought blocking in brief psychotic episodes"
+        },
+        {
+          "diagnosis": "Medical Conditions",
+          "likelihood": 30,
+          "key_features": ["Medical history", "Neurological symptoms", "Acute onset"],
+          "reasoning": "Neurological conditions can cause thought blocking"
+        }
+      ],
+      "red_flags": [
+        "Neurological symptoms",
+        "Medical illness",
+        "Substance effects",
+        "Severe impairment",
+        "Other psychotic symptoms",
+        "Communication breakdown"
+      ],
+      "investigations": [
+        "Neurological examination",
+        "Medical evaluation",
+        "Substance screening",
+        "Psychiatric evaluation",
+        "Cognitive assessment"
+      ]
+    },
+    "28": {
+      "id": 28,
+      "name": "Aggression/Violence",
+      "category": "Behavioral Disturbances",
+      "definition": "Hostile, threatening, or violent behavior directed toward others, including verbal threats, physical violence, or property damage.",
+      "clinical_significance": "Requires immediate safety assessment and can indicate various psychiatric, medical, or substance-related conditions.",
+      "common_descriptions": [
+        "Feel like hurting someone",
+        "Destroying property when angry",
+        "Physical fights",
+        "Threatening others",
+        "Can't control my temper"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Intermittent Explosive Disorder",
+          "likelihood": 80,
+          "key_features": ["Discrete aggressive episodes", "Out of proportion to stressor", "No pattern"],
+          "reasoning": "Recurrent aggressive outbursts characterize IED"
+        },
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 75,
+          "key_features": ["Emotional dysregulation", "Interpersonal instability", "Identity issues"],
+          "reasoning": "Impulsive aggression common in BPD"
+        },
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 65,
+          "key_features": ["Elevated mood", "Irritability", "Poor judgment"],
+          "reasoning": "Irritability and poor judgment in mania"
+        },
+        {
+          "diagnosis": "Substance Intoxication",
+          "likelihood": 60,
+          "key_features": ["Substance use", "Temporal relationship", "Other intoxication effects"],
+          "reasoning": "Substances can cause aggression and disinhibition"
+        },
+        {
+          "diagnosis": "Conduct Disorder (if <18 years)",
+          "likelihood": 70,
+          "key_features": ["Pattern of behavior", "Violation of rights", "Early onset"],
+          "reasoning": "Aggression is core feature of conduct disorder"
+        }
+      ],
+      "red_flags": [
+        "Access to weapons",
+        "Premeditated violence",
+        "Psychotic features",
+        "Substance intoxication",
+        "Medical emergency",
+        "Escalating pattern"
+      ],
+      "investigations": [
+        "Violence risk assessment",
+        "Substance screening",
+        "Medical evaluation",
+        "Collateral information",
+        "Legal history"
+      ]
+    },
+    "29": {
+      "id": 29,
+      "name": "Disinhibition",
+      "category": "Behavioral Disturbances",
+      "definition": "Failure to control impulses or inhibitions, leading to socially inappropriate or harmful behaviors.",
+      "clinical_significance": "Can indicate frontal lobe dysfunction, mania, substance use, personality disorders, or dementia.",
+      "common_descriptions": [
+        "Say inappropriate things",
+        "Can't control urges",
+        "Behave without thinking",
+        "Make impulsive decisions",
+        "Don't consider consequences"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 85,
+          "key_features": ["Elevated mood", "Increased activity", "Poor judgment"],
+          "reasoning": "Disinhibition is common during manic episodes"
+        },
+        {
+          "diagnosis": "Frontotemporal Dementia",
+          "likelihood": 70,
+          "key_features": ["Progressive decline", "Behavioral variant", "Early age onset"],
+          "reasoning": "Behavioral disinhibition is early symptom of FTD"
+        },
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 65,
+          "key_features": ["Emotional instability", "Impulsivity", "Identity issues"],
+          "reasoning": "Impulsive behaviors are core BPD feature"
+        },
+        {
+          "diagnosis": "Substance Intoxication",
+          "likelihood": 75,
+          "key_features": ["Substance use", "Temporal relationship", "Other intoxication signs"],
+          "reasoning": "Substances commonly cause disinhibition"
+        },
+        {
+          "diagnosis": "ADHD",
+          "likelihood": 50,
+          "key_features": ["Childhood onset", "Inattention", "Impulsivity"],
+          "reasoning": "Impulsivity can persist into adulthood"
+        }
+      ],
+      "red_flags": [
+        "Legal consequences",
+        "Financial problems",
+        "Relationship breakdown",
+        "Occupational impairment",
+        "Medical emergencies",
+        "Progressive decline"
+      ],
+      "investigations": [
+        "Neuropsychological testing",
+        "Brain imaging",
+        "Substance screening",
+        "Cognitive assessment",
+        "Collateral information"
+      ]
+    },
+    "30": {
+      "id": 30,
+      "name": "Social Withdrawal",
+      "category": "Behavioral Disturbances",
+      "definition": "Decreased engagement with others, reduced social activities, and preference for being alone.",
+      "clinical_significance": "Can indicate depression, anxiety, psychosis, personality disorders, or medical conditions.",
+      "common_descriptions": [
+        "Avoid social situations",
+        "Don't want to be around people",
+        "Prefer being alone",
+        "Don't return calls or messages",
+        "Skip social events"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 80,
+          "key_features": ["Depressed mood", "Anhedonia", "Other depressive symptoms"],
+          "reasoning": "Social withdrawal is common in depression"
+        },
+        {
+          "diagnosis": "Social Anxiety Disorder",
+          "likelihood": 75,
+          "key_features": ["Fear of social evaluation", "Performance anxiety", "Avoidance"],
+          "reasoning": "Social withdrawal due to fear of judgment"
+        },
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 70,
+          "key_features": ["Social isolation", "Negative symptoms", "Functional decline"],
+          "reasoning": "Social withdrawal is negative symptom of schizophrenia"
+        },
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 60,
+          "key_features": ["Identity disturbance", "Fear of abandonment", "Relationship problems"],
+          "reasoning": "Social withdrawal can occur in BPD"
+        },
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 55,
+          "key_features": ["Trauma history", "Avoidance symptoms", "Hypervigilance"],
+          "reasoning": "Avoidance of trauma reminders"
+        }
+      ],
+      "red_flags": [
+        "Complete isolation",
+        "Self-neglect",
+        "Suicidal ideation",
+        "Psychotic symptoms",
+        "Substance use",
+        "Medical deterioration"
+      ],
+      "investigations": [
+        "Depression screening",
+        "Anxiety assessment",
+        "Psychotic symptoms evaluation",
+        "Social support assessment",
+        "Functional evaluation"
+      ]
+    },
+    "31": {
+      "id": 31,
+      "name": "Self-Neglect",
+      "category": "Behavioral Disturbances",
+      "definition": "Failure to maintain basic self-care needs including hygiene, nutrition, safety, and health care.",
+      "clinical_significance": "Can indicate severe mental illness, dementia, medical conditions, or personal choice requiring assessment.",
+      "common_descriptions": [
+        "Don't care about appearance",
+        "Skip meals or don't eat",
+        "Live in unsafe conditions",
+        "Don't take medications",
+        "Ignore personal hygiene"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Severe Mental Illness (Psychosis)",
+          "likelihood": 85,
+          "key_features": ["Psychotic symptoms", "Poor insight", "Functional decline"],
+          "reasoning": "Severe psychosis can lead to complete self-neglect"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 75,
+          "key_features": ["Severe depression", "Psychomotor retardation", "Hopelessness"],
+          "reasoning": "Severe depression can cause self-neglect"
+        },
+        {
+          "diagnosis": "Dementia",
+          "likelihood": 80,
+          "key_features": ["Cognitive decline", "Memory problems", "Progressive course"],
+          "reasoning": "Cognitive impairment leads to self-neglect"
+        },
+        {
+          "diagnosis": "Substance Use Disorder",
+          "likelihood": 70,
+          "key_features": ["Substance priority", "Tolerance", "Withdrawal"],
+          "reasoning": "Substance use can cause severe self-neglect"
+        },
+        {
+          "diagnosis": "Personality Disorder",
+          "likelihood": 50,
+          "key_features": ["Chronic pattern", "Identity issues", "Interpersonal problems"],
+          "reasoning": "Some personality disorders can involve self-neglect"
+        }
+      ],
+      "red_flags": [
+        "Life-threatening conditions",
+        "Malnutrition",
+        "Medical emergencies",
+        "Suicide risk",
+        "Homicide risk",
+        "Medical complications"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Cognitive assessment",
+        "Mental status examination",
+        "Collateral information",
+        "Safety assessment"
+      ]
+    },
+    "32": {
+      "id": 32,
+      "name": "Wandering Behavior",
+      "category": "Behavioral Disturbances",
+      "definition": "Aimless or purposeful movement away from home or safe environments, common in dementia but can occur in other conditions.",
+      "clinical_significance": "Safety concern requiring immediate attention, most common in dementia but can occur in delirium, psychosis, and other conditions.",
+      "common_descriptions": [
+        "Gets lost in familiar places",
+        "Tries to leave home",
+        "Paces constantly",
+        "Aimless walking",
+        "Can't remember where they live"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Alzheimer's Disease",
+          "likelihood": 90,
+          "key_features": ["Progressive dementia", "Memory loss", "Spatial disorientation"],
+          "reasoning": "Wandering is common in moderate to severe Alzheimer's"
+        },
+        {
+          "diagnosis": "Dementia with Lewy Bodies",
+          "likelihood": 85,
+          "key_features": ["Visual hallucinations", "Parkinsonism", "Fluctuating cognition"],
+          "reasoning": "Wandering occurs in Lewy body dementia"
+        },
+        {
+          "diagnosis": "Frontotemporal Dementia",
+          "likelihood": 75,
+          "key_features": ["Behavioral variant", "Disinhibition", "Early onset"],
+          "reasoning": "Wandering can occur in behavioral variant FTD"
+        },
+        {
+          "diagnosis": "Delirium",
+          "likelihood": 60,
+          "key_features": ["Acute onset", "Fluctuating course", "Medical illness"],
+          "reasoning": "Disorientation in delirium can cause wandering"
+        },
+        {
+          "diagnosis": "ADHD",
+          "likelihood": 40,
+          "key_features": ["Childhood onset", "Inattention", "Hyperactivity"],
+          "reasoning": "Hyperactivity and impulsivity in ADHD"
+        }
+      ],
+      "red_flags": [
+        "Getting lost and not found",
+        "Exposure to dangers",
+        "Weather-related risks",
+        "Traffic accidents",
+        "Medical emergencies",
+        "Family safety concerns"
+      ],
+      "investigations": [
+        "Cognitive assessment",
+        "Brain imaging",
+        "Medical evaluation",
+        "Safety assessment",
+        "Caregiver evaluation"
+      ]
+    },
+    "33": {
+      "id": 33,
+      "name": "Impulsivity",
+      "category": "Behavioral Disturbances",
+      "definition": "Rapid, unplanned reactions to internal or external stimuli without regard to consequences.",
+      "clinical_significance": "Can indicate ADHD, bipolar disorder, personality disorders, substance use, or frontal lobe dysfunction.",
+      "common_descriptions": [
+        "Act without thinking",
+        "Can't wait my turn",
+        "Interrupt others constantly",
+        "Make quick decisions",
+        "Hard to control urges"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Attention Deficit Hyperactivity Disorder",
+          "likelihood": 80,
+          "key_features": ["Childhood onset", "Inattention", "Hyperactivity"],
+          "reasoning": "Impulsivity is core ADHD symptom"
+        },
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 75,
+          "key_features": ["Emotional instability", "Identity disturbance", "Interpersonal problems"],
+          "reasoning": "Impulsivity is core BPD feature"
+        },
+        {
+          "diagnosis": "Bipolar Disorder - Manic Episode",
+          "likelihood": 70,
+          "key_features": ["Elevated mood", "Increased activity", "Poor judgment"],
+          "reasoning": "Poor impulse control during manic episodes"
+        },
+        {
+          "diagnosis": "Substance Use Disorder",
+          "likelihood": 65,
+          "key_features": ["Substance seeking", "Tolerance", "Withdrawal"],
+          "reasoning": "Impulsivity can be trait marker for addiction"
+        },
+        {
+          "diagnosis": "Intermittent Explosive Disorder",
+          "likelihood": 60,
+          "key_features": ["Aggressive outbursts", "Disproportionate response", "No pattern"],
+          "reasoning": "Impulsivity manifests as explosive behavior"
+        }
+      ],
+      "red_flags": [
+        "Dangerous behaviors",
+        "Legal problems",
+        "Financial consequences",
+        "Relationship breakdown",
+        "Self-harm behaviors",
+        "Substance abuse"
+      ],
+      "investigations": [
+        "ADHD assessment",
+        "Mood evaluation",
+        "Substance screening",
+        "Personality assessment",
+        "Cognitive testing"
+      ]
+    },
+    "34": {
+      "id": 34,
+      "name": "Forgetfulness",
+      "category": "Cognitive & Memory",
+      "definition": "Difficulty recalling recent events, forgetting appointments, misplacing items, or failing to remember new information.",
+      "clinical_significance": "Can indicate normal aging, mild cognitive impairment, dementia, depression, medical conditions, or medication effects.",
+      "common_descriptions": [
+        "Keep forgetting where I put things",
+        "Miss appointments I wrote down",
+        "Can't remember conversations",
+        "Forget names quickly",
+        "Seem more forgetful lately"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Mild Cognitive Impairment",
+          "likelihood": 80,
+          "key_features": ["Memory complaints", "Objective impairment", "Preserved function"],
+          "reasoning": "Forgetfulness is primary symptom of MCI"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 70,
+          "key_features": ["Concentration problems", "Depressed mood", "Psychomotor changes"],
+          "reasoning": "Depression can cause cognitive slowing and memory problems"
+        },
+        {
+          "diagnosis": "Alzheimer's Disease",
+          "likelihood": 75,
+          "key_features": ["Progressive decline", "Memory loss", "Other cognitive domains"],
+          "reasoning": "Memory problems are earliest symptom of Alzheimer's"
+        },
+        {
+          "diagnosis": "Normal Aging",
+          "likelihood": 60,
+          "key_features": ["Age-appropriate", "Stable course", "No functional impact"],
+          "reasoning": "Mild forgetfulness can be normal part of aging"
+        },
+        {
+          "diagnosis": "Medication Effects",
+          "likelihood": 50,
+          "key_features": ["Polypharmacy", "Cholinergic drugs", "Benzodiazepines"],
+          "reasoning": "Medications can cause memory problems"
+        }
+      ],
+      "red_flags": [
+        "Rapid progression",
+        "Functional impairment",
+        "Language problems",
+        "Visuospatial deficits",
+        "Behavioral changes",
+        "Medical causes"
+      ],
+      "investigations": [
+        "Cognitive assessment",
+        "Neuropsychological testing",
+        "Brain imaging",
+        "Medication review",
+        "Laboratory studies"
+      ]
+    },
+    "35": {
+      "id": 35,
+      "name": "Disorientation",
+      "category": "Cognitive & Memory",
+      "definition": "Confusion about person, place, time, or situation, indicating impaired cognitive processing.",
+      "clinical_significance": "Serious symptom requiring immediate evaluation for delirium, dementia, medical causes, or psychiatric emergencies.",
+      "common_descriptions": [
+        "Don't know what day it is",
+        "Confused about location",
+        "Don't recognize familiar people",
+        "Can't remember recent events",
+        "Feel lost and confused"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Delirium",
+          "likelihood": 90,
+          "key_features": ["Acute onset", "Fluctuating course", "Medical illness"],
+          "reasoning": "Disorientation is core feature of delirium"
+        },
+        {
+          "diagnosis": "Dementia",
+          "likelihood": 85,
+          "key_features": ["Progressive decline", "Memory impairment", "Multiple cognitive domains"],
+          "reasoning": "Disorientation occurs in moderate to severe dementia"
+        },
+        {
+          "diagnosis": "Wernicke's Encephalopathy",
+          "likelihood": 70,
+          "key_features": ["Thiamine deficiency", "Ataxia", "Confusion"],
+          "reasoning": "Thiamine deficiency causes acute confusion"
+        },
+        {
+          "diagnosis": "Severe Depression",
+          "likelihood": 50,
+          "key_features": ["Psychotic features", "Cognitive slowing", "Severe mood"],
+          "reasoning": "Severe depression can cause disorientation"
+        },
+        {
+          "diagnosis": "Substance Intoxication/Withdrawal",
+          "likelihood": 75,
+          "key_features": ["Substance history", "Temporal relationship", "Other effects"],
+          "reasoning": "Substances commonly cause disorientation"
+        }
+      ],
+      "red_flags": [
+        "Medical emergency",
+        "Infection or fever",
+        "Medications or toxins",
+        "Head injury",
+        "Hypoxia",
+        "Metabolic abnormalities"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Laboratory studies",
+        "Brain imaging",
+        "Toxicology screen",
+        "Neurological examination"
+      ]
+    },
+    "36": {
+      "id": 36,
+      "name": "Poor Attention/Concentration",
+      "category": "Cognitive & Memory",
+      "definition": "Difficulty maintaining focus, sustaining mental effort, or staying on task for appropriate periods.",
+      "clinical_significance": "Can indicate ADHD, depression, anxiety, medical conditions, or normal aging.",
+      "common_descriptions": [
+        "Can't focus on conversations",
+        "Mind wanders easily",
+        "Hard to complete tasks",
+        "Easily distracted",
+        "Forget what I was doing"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Attention Deficit Hyperactivity Disorder",
+          "likelihood": 85,
+          "key_features": ["Childhood onset", "Inattention", "Hyperactivity/impulsivity"],
+          "reasoning": "Inattention is core ADHD symptom"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 75,
+          "key_features": ["Depressed mood", "Psychomotor changes", "Cognitive slowing"],
+          "reasoning": "Depression commonly affects concentration"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 70,
+          "key_features": ["Excessive worry", "Restlessness", "Muscle tension"],
+          "reasoning": "Anxiety can impair attention and concentration"
+        },
+        {
+          "diagnosis": "Normal Aging",
+          "likelihood": 50,
+          "key_features": ["Age-appropriate", "Stable", "Preserved function"],
+          "reasoning": "Mild attention changes can occur with age"
+        },
+        {
+          "diagnosis": "Medical Conditions",
+          "likelihood": 40,
+          "key_features": ["Chronic illness", "Medications", "Sleep disorders"],
+          "reasoning": "Medical conditions can affect concentration"
+        }
+      ],
+      "red_flags": [
+        "Sudden onset",
+        "Medical symptoms",
+        "Medication changes",
+        "Progressive decline",
+        "Functional impairment",
+        "Other cognitive changes"
+      ],
+      "investigations": [
+        "ADHD assessment",
+        "Depression screening",
+        "Anxiety evaluation",
+        "Medical review",
+        "Cognitive testing"
+      ]
+    },
+    "37": {
+      "id": 37,
+      "name": "Difficulty Planning",
+      "category": "Cognitive & Memory",
+      "definition": "Problems organizing thoughts, sequencing tasks, problem-solving, or making decisions.",
+      "clinical_significance": "Can indicate executive dysfunction from various causes including ADHD, frontal lobe disorders, dementia, or medical conditions.",
+      "common_descriptions": [
+        "Can't organize my thoughts",
+        "Hard to plan ahead",
+        "Struggle with decisions",
+        "Tasks feel overwhelming",
+        "Don't know where to start"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Attention Deficit Hyperactivity Disorder",
+          "likelihood": 80,
+          "key_features": ["Childhood onset", "Executive dysfunction", "Organizational problems"],
+          "reasoning": "Executive dysfunction is core ADHD feature"
+        },
+        {
+          "diagnosis": "Frontotemporal Dementia",
+          "likelihood": 85,
+          "key_features": ["Executive impairment", "Behavioral changes", "Early onset"],
+          "reasoning": "Executive dysfunction is early feature of FTD"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 65,
+          "key_features": ["Cognitive slowing", "Decision-making problems", "Concentration issues"],
+          "reasoning": "Depression can cause executive dysfunction"
+        },
+        {
+          "diagnosis": "Vascular Dementia",
+          "likelihood": 70,
+          "key_features": ["Stepwise decline", "Executive dysfunction", "Vascular risk factors"],
+          "reasoning": "Executive impairment in vascular dementia"
+        },
+        {
+          "diagnosis": "Normal Aging",
+          "likelihood": 40,
+          "key_features": ["Age-appropriate", "Preserved function", "Stable course"],
+          "reasoning": "Mild planning changes can occur with age"
+        }
+      ],
+      "red_flags": [
+        "Progressive decline",
+        "Motor symptoms",
+        "Language problems",
+        "Behavioral changes",
+        "Medical illness",
+        "Functional impairment"
+      ],
+      "investigations": [
+        "Neuropsychological testing",
+        "Brain imaging",
+        "Cognitive assessment",
+        "Medical evaluation",
+        "Functional assessment"
+      ]
+    },
+    "38": {
+      "id": 38,
+      "name": "Sudden Confusion",
+      "category": "Cognitive & Memory",
+      "definition": "Acute onset of confusion, disorientation, or altered mental status that represents a change from baseline.",
+      "clinical_significance": "Medical emergency requiring immediate evaluation for delirium, stroke, infection, or other acute medical conditions.",
+      "common_descriptions": [
+        "Suddenly very confused",
+        "Not acting like myself",
+        "Can't think clearly",
+        "Don't know what's happening",
+        "Very disoriented"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Delirium",
+          "likelihood": 90,
+          "key_features": ["Acute onset", "Fluctuating course", "Medical illness"],
+          "reasoning": "Sudden confusion is hallmark of delirium"
+        },
+        {
+          "diagnosis": "Stroke/TIA",
+          "likelihood": 75,
+          "key_features": ["Focal neurological signs", "Acute onset", "Risk factors"],
+          "reasoning": "Cerebrovascular events can cause acute confusion"
+        },
+        {
+          "diagnosis": "Substance Intoxication/Withdrawal",
+          "likelihood": 80,
+          "key_features": ["Substance history", "Temporal relationship", "Other effects"],
+          "reasoning": "Substances commonly cause acute confusion"
+        },
+        {
+          "diagnosis": "Infection (UTI, Pneumonia)",
+          "likelihood": 85,
+          "key_features": ["Fever", "Medical illness", "Elderly patients"],
+          "reasoning": "Infections commonly cause confusion in elderly"
+        },
+        {
+          "diagnosis": "Hypoglycemia",
+          "likelihood": 70,
+          "key_features": ["Diabetes", "Low blood sugar", "Rapid onset"],
+          "reasoning": "Hypoglycemia causes acute confusion"
+        }
+      ],
+      "red_flags": [
+        "Medical emergency",
+        "Fever or infection",
+        "Focal neurological signs",
+        "Vital sign abnormalities",
+        "Medications or toxins",
+        "Rapid deterioration"
+      ],
+      "investigations": [
+        "Emergency medical evaluation",
+        "Laboratory studies",
+        "Brain imaging",
+        "Toxicology screen",
+        "Vital signs"
+      ]
+    },
+    "39": {
+      "id": 39,
+      "name": "Insomnia (Initial)",
+      "category": "Sleep Presentations",
+      "definition": "Difficulty falling asleep at the beginning of the night, taking 30 minutes or more to initiate sleep.",
+      "clinical_significance": "Can indicate primary sleep disorders, psychiatric conditions, medical conditions, or medication/substance effects.",
+      "common_descriptions": [
+        "Can't fall asleep",
+        "Lie awake for hours",
+        "Mind races when trying to sleep",
+        "Take too long to fall asleep",
+        "Worry about not sleeping"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 80,
+          "key_features": ["Worry", "Racing thoughts", "Hyperarousal"],
+          "reasoning": "Anxiety is common cause of sleep-onset insomnia"
+        },
+        {
+          "diagnosis": "Adjustment Disorder",
+          "likelihood": 70,
+          "key_features": ["Recent stressor", "Time-limited", "Emotional distress"],
+          "reasoning": "Stressors commonly cause initial insomnia"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 60,
+          "key_features": ["Early morning awakening", "Depressed mood", "Other symptoms"],
+          "reasoning": "Depression can cause sleep-onset difficulties"
+        },
+        {
+          "diagnosis": "Primary Insomnia",
+          "likelihood": 75,
+          "key_features": ["Chronic course", "Sleep-onset difficulty", "Daytime impairment"],
+          "reasoning": "Primary sleep disorder characterized by initial insomnia"
+        },
+        {
+          "diagnosis": "Substance Use",
+          "likelihood": 55,
+          "key_features": ["Stimulant use", "Withdrawal effects", "Temporal relationship"],
+          "reasoning": "Substances can disrupt sleep initiation"
+        }
+      ],
+      "red_flags": [
+        "Bipolar disorder",
+        "Sleep apnea",
+        "Restless leg syndrome",
+        "Medical illness",
+        "Medication effects",
+        "Substance withdrawal"
+      ],
+      "investigations": [
+        "Sleep history",
+        "Medication review",
+        "Substance screening",
+        "Sleep study if indicated",
+        "Anxiety assessment"
+      ]
+    },
+    "40": {
+      "id": 40,
+      "name": "Insomnia (Middle)",
+      "category": "Sleep Presentations",
+      "definition": "Frequent awakening during the night with difficulty returning to sleep.",
+      "common_descriptions": [
+        "Wake up multiple times",
+        "Hard to fall back asleep",
+        "Frequent awakenings",
+        "Restless sleep",
+        "Light sleep patterns"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Depression",
+          "likelihood": 85,
+          "key_features": ["Early morning awakening", "Depressed mood", "Diurnal variation"],
+          "reasoning": "Middle insomnia is common in depression"
+        },
+        {
+          "diagnosis": "Sleep Apnea",
+          "likelihood": 70,
+          "key_features": ["Snoring", "Daytime sleepiness", "Obesity"],
+          "reasoning": "Sleep apnea causes frequent awakenings"
+        },
+        {
+          "diagnosis": "Pain Conditions",
+          "likelihood": 65,
+          "key_features": ["Chronic pain", "Medical history", "Nocturnal pain"],
+          "reasoning": "Pain can cause sleep fragmentation"
+        },
+        {
+          "diagnosis": "Substance Use",
+          "likelihood": 60,
+          "key_features": ["Alcohol withdrawal", "Stimulant use", "Withdrawal symptoms"],
+          "reasoning": "Substance effects can cause sleep disruption"
+        },
+        {
+          "diagnosis": "Primary Insomnia",
+          "likelihood": 50,
+          "key_features": ["Chronic course", "Sleep maintenance difficulty", "Daytime impairment"],
+          "reasoning": "Difficulty maintaining sleep is primary insomnia feature"
+        }
+      ],
+      "red_flags": [
+        "Breathing problems",
+        "Cardiac conditions",
+        "Nocturnal seizures",
+        "Pain emergencies",
+        "Substance withdrawal",
+        "Medical deterioration"
+      ],
+      "investigations": [
+        "Sleep study",
+        "Pain assessment",
+        "Cardiac evaluation",
+        "Substance screening",
+        "Medication review"
+      ]
+    },
+    "41": {
+      "id": 41,
+      "name": "Insomnia (Terminal)",
+      "category": "Sleep Presentations",
+      "definition": "Early morning awakening (before desired wake time) with inability to return to sleep.",
+      "common_descriptions": [
+        "Wake up too early",
+        "Can't fall back asleep",
+        "Final awakening too soon",
+        "Sleep doesn't last long enough",
+        "Early morning restlessness"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 90,
+          "key_features": ["Early morning awakening", "Diurnal mood variation", "Other depressive symptoms"],
+          "reasoning": "Terminal insomnia is classic sign of depression"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 75,
+          "key_features": ["History of mania", "Mood cycling", "Atypical features"],
+          "reasoning": "Early awakening can occur in bipolar depression"
+        },
+        {
+          "diagnosis": "Anxiety Disorders",
+          "likelihood": 60,
+          "key_features": ["Worry", "Hyperarousal", "Anticipatory anxiety"],
+          "reasoning": "Anxiety can cause early morning awakening"
+        },
+        {
+          "diagnosis": "Aging",
+          "likelihood": 55,
+          "key_features": ["Age-related changes", "Advanced sleep phase", "Preserved function"],
+          "reasoning": "Advanced sleep phase can occur with aging"
+        },
+        {
+          "diagnosis": "Substance Withdrawal",
+          "likelihood": 70,
+          "key_features": ["Recent cessation", "Withdrawal symptoms", "Substance history"],
+          "reasoning": "Withdrawal can cause early awakening"
+        }
+      ],
+      "red_flags": [
+        "Suicidal ideation",
+        "Bipolar disorder",
+        "Medical illness",
+        "Substance withdrawal",
+        "Pain conditions",
+        "Medications"
+      ],
+      "investigations": [
+        "Depression screening",
+        "Mood assessment",
+        "Substance history",
+        "Medical evaluation",
+        "Sleep diary"
+      ]
+    },
+    "42": {
+      "id": 42,
+      "name": "Hypersomnia",
+      "category": "Sleep Presentations",
+      "definition": "Excessive daytime sleepiness or prolonged nighttime sleep that is not refreshing.",
+      "common_descriptions": [
+        "Sleep too much",
+        "Always tired",
+        "Can't stay awake",
+        "Sleep not refreshing",
+        "Need multiple naps"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 80,
+          "key_features": ["Hypersomnia", "Depressed mood", "Other depressive symptoms"],
+          "reasoning": "Hypersomnia can occur in atypical depression"
+        },
+        {
+          "diagnosis": "Narcolepsy",
+          "likelihood": 75,
+          "key_features": ["Cataplexy", "Sleep attacks", "Hypnagogic hallucinations"],
+          "reasoning": "Excessive daytime sleepiness is core narcolepsy symptom"
+        },
+        {
+          "diagnosis": "Idiopathic Hypersomnia",
+          "likelihood": 70,
+          "key_features": ["Prolonged sleep", "Unrefreshing sleep", "No cataplexy"],
+          "reasoning": "Excessive sleep without clear cause"
+        },
+        {
+          "diagnosis": "Sleep Apnea",
+          "likelihood": 65,
+          "key_features": ["Snoring", "Apneas", "Daytime sleepiness"],
+          "reasoning": "Sleep apnea causes unrefreshing sleep"
+        },
+        {
+          "diagnosis": "Medical Conditions",
+          "likelihood": 60,
+          "key_features": ["Neurological disease", "Metabolic disorders", "Chronic fatigue"],
+          "reasoning": "Medical conditions can cause excessive sleepiness"
+        }
+      ],
+      "red_flags": [
+        "Cataplexy",
+        "Sleep paralysis",
+        "Neurological symptoms",
+        "Medical deterioration",
+        "Breathing problems",
+        "Medication effects"
+      ],
+      "investigations": [
+        "Sleep study",
+        "Multiple sleep latency test",
+        "Medical evaluation",
+        "Neurological examination",
+        "Medication review"
+      ]
+    },
+    "43": {
+      "id": 43,
+      "name": "Daytime Sleepiness",
+      "category": "Sleep Presentations",
+      "definition": "Inability to stay awake and alert during normal waking hours, leading to unintended sleep episodes.",
+      "common_descriptions": [
+        "Fall asleep during day",
+        "Can't stay awake",
+        "Need frequent naps",
+        "Doze off unexpectedly",
+        "Always sleepy"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Sleep Apnea",
+          "likelihood": 85,
+          "key_features": ["Snoring", "Apneas", "Morning headaches"],
+          "reasoning": "Sleep apnea is most common cause of daytime sleepiness"
+        },
+        {
+          "diagnosis": "Narcolepsy",
+          "likelihood": 70,
+          "key_features": ["Sleep attacks", "Cataplexy", "Sleep hallucinations"],
+          "reasoning": "Excessive daytime sleepiness with cataplexy suggests narcolepsy"
+        },
+        {
+          "diagnosis": "Insufficient Sleep Syndrome",
+          "likelihood": 75,
+          "key_features": ["Voluntary sleep restriction", "Weekend catch-up", "Normal function when rested"],
+          "reasoning": "Daytime sleepiness due to inadequate nighttime sleep"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 60,
+          "key_features": ["Depressed mood", "Low energy", "Other symptoms"],
+          "reasoning": "Depression can cause excessive sleepiness"
+        },
+        {
+          "diagnosis": "Restless Leg Syndrome",
+          "likelihood": 55,
+          "key_features": ["Leg discomfort", "Urge to move legs", "Evening symptoms"],
+          "reasoning": "RLS can disrupt sleep and cause daytime sleepiness"
+        }
+      ],
+      "red_flags": [
+        "Sudden sleep attacks",
+        "Cataplexy",
+        "Sleep paralysis",
+        "Breathing pauses",
+        "Neurological symptoms",
+        "Medication effects"
+      ],
+      "investigations": [
+        "Sleep study",
+        "Multiple sleep latency test",
+        "Epworth Sleepiness Scale",
+        "Medical evaluation",
+        "Medication review"
+      ]
+    },
+    "44": {
+      "id": 44,
+      "name": "Nightmares",
+      "category": "Sleep Presentations",
+      "definition": "Disturbing dreams that cause awakening with fear, terror, or anxiety.",
+      "common_descriptions": [
+        "Scary dreams",
+        "Wake up frightened",
+        "Vivid disturbing dreams",
+        "Dream of being chased",
+        "Terrifying nightmares"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 85,
+          "key_features": ["Trauma history", "Intrusive memories", "Avoidance"],
+          "reasoning": "Nightmares are core PTSD symptom"
+        },
+        {
+          "diagnosis": "Nightmare Disorder",
+          "likelihood": 75,
+          "key_features": ["Recurrent nightmares", "Distress", "Sleep avoidance"],
+          "reasoning": "Primary sleep disorder characterized by disturbing dreams"
+        },
+        {
+          "diagnosis": "Substance Withdrawal",
+          "likelihood": 65,
+          "key_features": ["Recent cessation", "Withdrawal symptoms", "Substance history"],
+          "reasoning": "Withdrawal can cause vivid disturbing dreams"
+        },
+        {
+          "diagnosis": "Anxiety Disorders",
+          "likelihood": 60,
+          "key_features": ["Anxiety", "Worry", "Hyperarousal"],
+          "reasoning": "Anxiety can manifest as nightmares"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 45,
+          "key_features": ["Depressed mood", "Anxiety", "Sleep disturbance"],
+          "reasoning": "Depression can cause sleep disturbance including nightmares"
+        }
+      ],
+      "red_flags": [
+        "Trauma history",
+        "Sleep avoidance",
+        "Self-harm behaviors",
+        "Substance withdrawal",
+        "Psychotic features",
+        "Severe distress"
+      ],
+      "investigations": [
+        "Trauma history",
+        "Sleep study if indicated",
+        "Substance history",
+        "PTSD assessment",
+        "Anxiety screening"
+      ]
+    },
+    "45": {
+      "id": 45,
+      "name": "Chest Pain (Medically Unexplained)",
+      "category": "Somatic Presentations",
+      "definition": "Recurrent chest pain with no clear cardiac, pulmonary, or other medical cause.",
+      "common_descriptions": [
+        "Chest pain with no heart cause",
+        "Pain comes and goes",
+        "Sharp chest discomfort",
+        "Pain with anxiety",
+        "Worried about heart problems"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Panic Disorder",
+          "likelihood": 80,
+          "key_features": ["Panic attacks", "Anxiety", "Cardiac concerns"],
+          "reasoning": "Panic attacks commonly cause chest pain"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 70,
+          "key_features": ["Chronic worry", "Somatic symptoms", "Health anxiety"],
+          "reasoning": "Anxiety can cause chest discomfort"
+        },
+        {
+          "diagnosis": "Somatic Symptom Disorder",
+          "likelihood": 65,
+          "key_features": ["Multiple symptoms", "Distress", "Medical attention seeking"],
+          "reasoning": "Physical symptoms without medical cause"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 50,
+          "key_features": ["Depressed mood", "Somatic symptoms", "Anxiety"],
+          "reasoning": "Depression can cause unexplained physical symptoms"
+        },
+        {
+          "diagnosis": "Illness Anxiety Disorder",
+          "likelihood": 60,
+          "key_features": ["Health preoccupation", "Medical reassurance seeking", "Normal examination"],
+          "reasoning": "Excessive concern about having a serious illness"
+        }
+      ],
+      "red_flags": [
+        "Cardiac symptoms",
+        "Shortness of breath",
+        "Radiating pain",
+        "Syncope",
+        "Palpitations",
+        "Risk factors"
+      ],
+      "investigations": [
+        "Cardiac evaluation",
+        "Chest imaging",
+        "Anxiety assessment",
+        "Depression screening",
+        "Medical clearance"
+      ]
+    },
+    "46": {
+      "id": 46,
+      "name": "Abdominal Pain (No Clear Cause)",
+      "category": "Somatic Presentations",
+      "definition": "Recurrent abdominal pain with normal medical workup and no identifiable organic cause.",
+      "common_descriptions": [
+        "Stomach pain for no reason",
+        "Recurring abdominal discomfort",
+        "Pain with stress",
+        "Worried about stomach problems",
+        "Pain comes and goes"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Somatic Symptom Disorder",
+          "likelihood": 80,
+          "key_features": ["Multiple physical symptoms", "Distress", "Excessive medical care"],
+          "reasoning": "Abdominal pain is common somatic symptom"
+        },
+        {
+          "diagnosis": "Anxiety Disorders",
+          "likelihood": 75,
+          "key_features": ["Anxiety symptoms", "Stress-related", "Somatic complaints"],
+          "reasoning": "Anxiety commonly causes abdominal discomfort"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 65,
+          "key_features": ["Depressed mood", "Somatic symptoms", "Multiple complaints"],
+          "reasoning": "Depression can present with physical symptoms"
+        },
+        {
+          "diagnosis": "Irritable Bowel Syndrome",
+          "likelihood": 70,
+          "key_features": ["Bowel pattern changes", "Relief with defecation", "Stress related"],
+          "reasoning": "Functional GI disorder with abdominal pain"
+        },
+        {
+          "diagnosis": "Illness Anxiety Disorder",
+          "likelihood": 55,
+          "key_features": ["Health preoccupation", "Normal tests", "Anxiety about illness"],
+          "reasoning": "Excessive worry about having a serious disease"
+        }
+      ],
+      "red_flags": [
+        "Alarm symptoms",
+        "Weight loss",
+        "Bleeding",
+        "Fever",
+        "Progressive pain",
+        "Family history"
+      ],
+      "investigations": [
+        "GI workup",
+        "Anxiety assessment",
+        "Depression screening",
+        "Medical evaluation",
+        "Functional assessment"
+      ]
+    },
+    "47": {
+      "id": 47,
+      "name": "Headache with Anxiety",
+      "category": "Somatic Presentations",
+      "definition": "Recurrent headaches that occur in association with anxiety symptoms or panic attacks.",
+      "common_descriptions": [
+        "Headaches when anxious",
+        "Tension headaches",
+        "Stress headaches",
+        "Head pain with worry",
+        "Pressure-like headache"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 85,
+          "key_features": ["Anxiety symptoms", "Muscle tension", "Stress-related"],
+          "reasoning": "Anxiety commonly causes tension headaches"
+        },
+        {
+          "diagnosis": "Tension-Type Headache",
+          "likelihood": 80,
+          "key_features": ["Bilateral", "Pressure-like", "Muscle tension"],
+          "reasoning": "Primary headache disorder often anxiety-related"
+        },
+        {
+          "diagnosis": "Panic Disorder",
+          "likelihood": 70,
+          "key_features": ["Panic attacks", "Hyperventilation", "Acute onset"],
+          "reasoning": "Panic attacks can cause headaches"
+        },
+        {
+          "diagnosis": "Migraine",
+          "likelihood": 45,
+          "key_features": ["Unilateral", "Throbbing", "Associated symptoms"],
+          "reasoning": "Migraines can be triggered by anxiety"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 60,
+          "key_features": ["Depressed mood", "Somatic symptoms", "Sleep disturbance"],
+          "reasoning": "Depression can cause tension-type headaches"
+        }
+      ],
+      "red_flags": [
+        "Sudden severe headache",
+        "Neurological symptoms",
+        "Vision changes",
+        "Fever",
+        "Head injury",
+        "Worst headache ever"
+      ],
+      "investigations": [
+        "Neurological examination",
+        "Headache diary",
+        "Anxiety assessment",
+        "Depression screening",
+        "Medical evaluation"
+      ]
+    },
+    "48": {
+      "id": 48,
+      "name": "Multiple Physical Complaints",
+      "category": "Somatic Presentations",
+      "definition": "Persistent complaints of multiple physical symptoms without adequate medical explanation.",
+      "common_descriptions": [
+        "Many different symptoms",
+        "Aches and pains everywhere",
+        "Always feeling unwell",
+        "Multiple medical problems",
+        "Don't feel healthy"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Somatic Symptom Disorder",
+          "likelihood": 90,
+          "key_features": ["Multiple symptoms", "Excessive thoughts/behaviors", "Distress"],
+          "reasoning": "Characterized by multiple physical symptoms with disproportionate response"
+        },
+        {
+          "diagnosis": "Illness Anxiety Disorder",
+          "likelihood": 70,
+          "key_features": ["Health preoccupation", "Normal examinations", "Anxiety about illness"],
+          "reasoning": "Excessive concern about having a serious illness"
+        },
+        {
+          "diagnosis": "Conversion Disorder",
+          "likelihood": 60,
+          "key_features": ["Neurological symptoms", "Involuntary", "Stress-related"],
+          "reasoning": "Neurological symptoms that suggest neurological disorder"
+        },
+        {
+          "diagnosis": "Factitious Disorder",
+          "likelihood": 25,
+          "key_features": ["Feigned symptoms", "Illness behavior", "Seeking care"],
+          "reasoning": "Intentional production of symptoms for psychological reasons"
+        },
+        {
+          "diagnosis": "Malingering",
+          "likelihood": 20,
+          "key_features": ["External incentives", "Feigned symptoms", "Secondary gain"],
+          "reasoning": "Symptoms produced for external incentives"
+        }
+      ],
+      "red_flags": [
+        "Rapid deterioration",
+        "Life-threatening symptoms",
+        "Self-harm behaviors",
+        "Substance use",
+        "Medical emergencies",
+        "Functional impairment"
+      ],
+      "investigations": [
+        "Comprehensive medical evaluation",
+        "Psychiatric assessment",
+        "Symptom validation",
+        "Collateral information",
+        "Functional assessment"
+      ]
+    },
+    "49": {
+      "id": 49,
+      "name": "Pseudoseizures",
+      "category": "Somatic Presentations",
+      "definition": "Seizure-like episodes that are not caused by abnormal electrical activity in the brain.",
+      "common_descriptions": [
+        "Seizures with normal EEG",
+        "Strange movements",
+        "Loss of consciousness episodes",
+        "Convulsions but no epilepsy",
+        "Strange behavior during episodes"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Conversion Disorder",
+          "likelihood": 85,
+          "key_features": ["Neurological symptoms", "Psychological stress", "Involuntary"],
+          "reasoning": "Pseudoseizures are classic conversion disorder presentation"
+        },
+        {
+          "diagnosis": "Dissociative Seizures",
+          "likelihood": 80,
+          "key_features": ["Dissociation", "Trauma history", "Psychological factors"],
+          "reasoning": "Seizures can be manifestation of dissociation"
+        },
+        {
+          "diagnosis": "Epilepsy",
+          "likelihood": 15,
+          "key_features": ["Abnormal EEG", "Typical seizure pattern", "Response to anticonvulsants"],
+          "reasoning": "True epileptic seizures should be ruled out"
+        },
+        {
+          "diagnosis": "Malingering",
+          "likelihood": 10,
+          "key_features": ["Secondary gain", "Inconsistent history", "External incentives"],
+          "reasoning": "Intentional production for external reasons"
+        },
+        {
+          "diagnosis": "Syncope",
+          "likelihood": 20,
+          "key_features": ["Cardiac cause", "Vasovagal", "Brief episodes"],
+          "reasoning": "Medical conditions can cause seizure-like episodes"
+        }
+      ],
+      "red_flags": [
+        "Status epilepticus",
+        "Injury during episodes",
+        "Medical emergencies",
+        "True epilepsy",
+        "Cardiac arrhythmias",
+        "Metabolic disorders"
+      ],
+      "investigations": [
+        "EEG monitoring",
+        "Video EEG",
+        "Neurological evaluation",
+        "Psychiatric assessment",
+        "Medical workup"
+      ]
+    },
+    "50": {
+      "id": 50,
+      "name": "Craving",
+      "category": "Substance-Related",
+      "definition": "Intense desire or urge to use a substance that is difficult to resist.",
+      "common_descriptions": [
+        "Strong desire to use",
+        "Can't stop thinking about it",
+        "Need for substance",
+        "Obsessed with using",
+        "Overwhelming urge"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Substance Use Disorder",
+          "likelihood": 95,
+          "key_features": ["Tolerance", "Withdrawal", "Continued use despite problems"],
+          "reasoning": "Craving is core symptom of substance use disorders"
+        },
+        {
+          "diagnosis": "Addictive Disorder",
+          "likelihood": 85,
+          "key_features": ["Behavioral addiction", "Loss of control", "Preoccupation"],
+          "reasoning": "Craving occurs in behavioral addictions"
+        },
+        {
+          "diagnosis": "Cannabis Use Disorder",
+          "likelihood": 80,
+          "key_features": ["Cannabis use", "Withdrawal symptoms", "Impairment"],
+          "reasoning": "Cannabis can cause significant craving"
+        },
+        {
+          "diagnosis": "Stimulant Use Disorder",
+          "likelihood": 90,
+          "key_features": ["Cocaine/amphetamines", "Binge use", "Withdrawal"],
+          "reasoning": "Stimulants cause intense craving"
+        },
+        {
+          "diagnosis": "Opioid Use Disorder",
+          "likelihood": 90,
+          "key_features": ["Heroin/prescription opioids", "Tolerance", "Withdrawal"],
+          "reasoning": "Opioids cause severe craving and withdrawal"
+        }
+      ],
+      "red_flags": [
+        "Overdose risk",
+        "Medical complications",
+        "Legal problems",
+        "Suicide risk",
+        "Dangerous behaviors",
+        "Medical withdrawal"
+      ],
+      "investigations": [
+        "Substance screening",
+        "Medical evaluation",
+        "Withdrawal assessment",
+        "Psychiatric evaluation",
+        "Treatment readiness"
+      ]
+    },
+    "51": {
+      "id": 51,
+      "name": "Intoxication Signs",
+      "category": "Substance-Related",
+      "definition": "Behavioral and physiological changes that occur during or shortly after substance use.",
+      "common_descriptions": [
+        "Acting strange when using",
+        "Different behavior on substances",
+        "Slurred speech",
+        "Unsteady gait",
+        "Difficult to wake up"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Alcohol Intoxication",
+          "likelihood": 85,
+          "key_features": ["Slurred speech", "Ataxia", "Memory impairment"],
+          "reasoning": "Classic alcohol intoxication syndrome"
+        },
+        {
+          "diagnosis": "Stimulant Intoxication",
+          "likelihood": 80,
+          "key_features": ["Hyperactivity", "Dilated pupils", "Paranoia"],
+          "reasoning": "Stimulants cause agitation and hyperactivity"
+        },
+        {
+          "diagnosis": "Opioid Intoxication",
+          "likelihood": 85,
+          "key_features": ["Pinpoint pupils", "Sedation", "Respiratory depression"],
+          "reasoning": "Opioids cause characteristic intoxication"
+        },
+        {
+          "diagnosis": "Cannabis Intoxication",
+          "likelihood": 75,
+          "key_features": ["Red eyes", "Dry mouth", "Impaired coordination"],
+          "reasoning": "Cannabis causes characteristic acute effects"
+        },
+        {
+          "diagnosis": "Sedative-Hypnotic Intoxication",
+          "likelihood": 80,
+          "key_features": ["Sedation", "Ataxia", "Memory problems"],
+          "reasoning": "Sedatives cause CNS depression"
+        }
+      ],
+      "red_flags": [
+        "Respiratory depression",
+        "Loss of consciousness",
+        "Seizures",
+        "Cardiac arrhythmias",
+        "Medical emergency",
+        "Overdose risk"
+      ],
+      "investigations": [
+        "Toxicology screening",
+        "Vital signs",
+        "Medical evaluation",
+        "Blood alcohol level",
+        "Emergency treatment"
+      ]
+    },
+    "52": {
+      "id": 52,
+      "name": "Withdrawal Signs",
+      "category": "Substance-Related",
+      "definition": "Physiological and psychological symptoms that occur when substance use is reduced or discontinued.",
+      "common_descriptions": [
+        "Feel sick when not using",
+        "Withdrawal symptoms",
+        "Need to use to feel normal",
+        "Bad reaction without substance",
+        "Physical dependence"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Alcohol Withdrawal",
+          "likelihood": 90,
+          "key_features": ["Tremor", "Anxiety", "Seizures", "Delirium tremens"],
+          "reasoning": "Alcohol withdrawal can be life-threatening"
+        },
+        {
+          "diagnosis": "Opioid Withdrawal",
+          "likelihood": 90,
+          "key_features": ["Yawning", "Lacrimation", "Diarrhea", "Muscle aches"],
+          "reasoning": "Opioid withdrawal causes characteristic symptoms"
+        },
+        {
+          "diagnosis": "Sedative-Hypnotic Withdrawal",
+          "likelihood": 85,
+          "key_features": ["Anxiety", "Insomnia", "Seizures", "Confusion"],
+          "reasoning": "Benzodiazepine withdrawal can be severe"
+        },
+        {
+          "diagnosis": "Stimulant Withdrawal",
+          "likelihood": 75,
+          "key_features": ["Depression", "Fatigue", "Increased sleep", "Hunger"],
+          "reasoning": "Stimulant withdrawal causes dysphoric symptoms"
+        },
+        {
+          "diagnosis": "Cannabis Withdrawal",
+          "likelihood": 60,
+          "key_features": ["Irritability", "Anxiety", "Sleep disturbance", "Decreased appetite"],
+          "reasoning": "Cannabis can cause withdrawal syndrome"
+        }
+      ],
+      "red_flags": [
+        "Seizures",
+        "Delirium",
+        "Suicide risk",
+        "Medical complications",
+        "Psychosis",
+        "Life-threatening withdrawal"
+      ],
+      "investigations": [
+        "Toxicology screening",
+        "Medical evaluation",
+        "Withdrawal severity assessment",
+        "Co-occurring conditions",
+        "Treatment planning"
+      ]
+    },
+    "53": {
+      "id": 53,
+      "name": "Relapse Triggers",
+      "category": "Substance-Related",
+      "definition": "Situations, emotions, or cues that increase risk of returning to substance use.",
+      "common_descriptions": [
+        "Certain situations make me want to use",
+        "Stress triggers cravings",
+        "Being around others using",
+        "Negative emotions lead to use",
+        "Can't resist in certain circumstances"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Substance Use Disorder",
+          "likelihood": 95,
+          "key_features": ["High-risk situations", "Cue reactivity", "Stress response"],
+          "reasoning": "Trigger reactivity is core addiction feature"
+        },
+        {
+          "diagnosis": "Cocaine Use Disorder",
+          "likelihood": 85,
+          "key_features": ["Stress-induced", "Cue reactivity", "Binge patterns"],
+          "reasoning": "Cocaine addiction highly sensitive to triggers"
+        },
+        {
+          "diagnosis": "Alcohol Use Disorder",
+          "likelihood": 80,
+          "key_features": ["Social triggers", "Stress", "Emotional cues"],
+          "reasoning": "Alcohol use strongly triggered by environmental factors"
+        },
+        {
+          "diagnosis": "Opioid Use Disorder",
+          "likelihood": 85,
+          "key_features": ["Pain", "Stress", "Social cues"],
+          "reasoning": "Opioid addiction triggered by physical and emotional pain"
+        },
+        {
+          "diagnosis": "Behavioral Addiction",
+          "likelihood": 75,
+          "key_features": ["Gambling triggers", "Internet use cues", "Shopping triggers"],
+          "reasoning": "Behavioral addictions have specific trigger patterns"
+        }
+      ],
+      "red_flags": [
+        "Suicide risk",
+        "Overdose risk",
+        "Medical complications",
+        "Legal problems",
+        "Relapse prevention failure",
+        "Social isolation"
+      ],
+      "investigations": [
+        "Trigger assessment",
+        "Relapse risk evaluation",
+        "Coping skills assessment",
+        "Support system evaluation",
+        "Treatment planning"
+      ]
+    },
+    "54": {
+      "id": 54,
+      "name": "Suicidal Ideation",
+      "category": "Suicide & Self-Harm",
+      "definition": "Thoughts about killing oneself, ranging from fleeting thoughts to detailed planning.",
+      "clinical_significance": "Requires immediate safety assessment. Can indicate various psychiatric conditions and represents medical emergency.",
+      "common_descriptions": [
+        "Think about dying",
+        "Wish I was dead",
+        "Thoughts of suicide",
+        "Better off dead",
+        "No reason to live"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 85,
+          "key_features": ["Depressed mood", "Hopelessness", "Guilt"],
+          "reasoning": "Depression is strongest risk factor for suicide"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 75,
+          "key_features": ["Mood episodes", "Impulsivity", "Mixed states"],
+          "reasoning": "Bipolar disorder has high suicide risk"
+        },
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 70,
+          "key_features": ["Emotional instability", "Impulsivity", "Identity disturbance"],
+          "reasoning": "BPD associated with high suicide risk"
+        },
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 60,
+          "key_features": ["Psychotic symptoms", "Command hallucinations", "Social isolation"],
+          "reasoning": "Schizophrenia has elevated suicide risk"
+        },
+        {
+          "diagnosis": "Substance Use Disorder",
+          "likelihood": 65,
+          "key_features": ["Impulsivity", "Depression", "Access to means"],
+          "reasoning": "Substance use increases suicide risk"
+        }
+      ],
+      "red_flags": [
+        "Suicide plan",
+        "Access to means",
+        "Previous attempts",
+        "Social isolation",
+        "Substance use",
+        "Command hallucinations",
+        "Hopelessness",
+        "Aggression"
+      ],
+      "investigations": [
+        "Suicide risk assessment",
+        "Mental status examination",
+        "Safety planning",
+        "Collateral information",
+        "Psychiatric evaluation"
+      ]
+    },
+    "55": {
+      "id": 55,
+      "name": "Deliberate Self-Harm",
+      "category": "Suicide & Self-Harm",
+      "definition": "Intentional self-injury without suicidal intent, often used to regulate emotions.",
+      "common_descriptions": [
+        "Cut myself",
+        "Scratch or burn skin",
+        "Hit myself",
+        "Self-injury behavior",
+        "Hurt myself on purpose"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 90,
+          "key_features": ["Emotional dysregulation", "Identity disturbance", "Interpersonal problems"],
+          "reasoning": "Self-harm is most common in BPD"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 70,
+          "key_features": ["Depressed mood", "Emotional pain", "Hopelessness"],
+          "reasoning": "Depression can lead to self-harm behaviors"
+        },
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 75,
+          "key_features": ["Trauma history", "Intrusive memories", "Hyperarousal"],
+          "reasoning": "Trauma survivors may use self-harm for coping"
+        },
+        {
+          "diagnosis": "Dissociative Disorders",
+          "likelihood": 65,
+          "key_features": ["Dissociation", "Identity disturbance", "Amnesia"],
+          "reasoning": "Self-harm can occur during dissociative episodes"
+        },
+        {
+          "diagnosis": "Substance Use Disorder",
+          "likelihood": 60,
+          "key_features": ["Impulsivity", "Emotional dysregulation", "Craving"],
+          "reasoning": "Substance use can increase self-harm risk"
+        }
+      ],
+      "red_flags": [
+        "Severe injuries",
+        "Suicide attempts",
+        "Infection risk",
+        "Medical complications",
+        "Impairment",
+        "Increasing frequency"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Suicide risk assessment",
+        "Trauma history",
+        "Collateral information",
+        "Psychiatric evaluation"
+      ]
+    },
+    "56": {
+      "id": 56,
+      "name": "Flashbacks/Intrusive Memories",
+      "category": "Trauma & Stress",
+      "definition": "Vivid, distressing recollections of traumatic events that feel as if they are happening again.",
+      "common_descriptions": [
+        "Traumatic memories come back",
+        "Feel like I'm reliving trauma",
+        "Vivid recollections",
+        "Intrusive memories",
+        "Feeling like trauma is happening again"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 95,
+          "key_features": ["Trauma exposure", "Intrusion symptoms", "Other PTSD symptoms"],
+          "reasoning": "Intrusive memories are core PTSD symptom"
+        },
+        {
+          "diagnosis": "Acute Stress Disorder",
+          "likelihood": 80,
+          "key_features": ["Recent trauma", "Intrusion symptoms", "Duration <1 month"],
+          "reasoning": "Acute stress reaction with intrusive memories"
+        },
+        {
+          "diagnosis": "Dissociative Disorders",
+          "likelihood": 70,
+          "key_features": ["Identity disturbance", "Amnesia", "Depersonalization"],
+          "reasoning": "Trauma-related dissociation can cause intrusive memories"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 45,
+          "key_features": ["Depressed mood", "Rumination", "Trauma history"],
+          "reasoning": "Depression can involve intrusive negative memories"
+        },
+        {
+          "diagnosis": "Substance Use",
+          "likelihood": 50,
+          "key_features": ["Substance use", "Cue reactivity", "Trauma reminders"],
+          "reasoning": "Substances can trigger trauma-related memories"
+        }
+      ],
+      "red_flags": [
+        "Suicide risk",
+        "Self-harm behaviors",
+        "Dissociation",
+        "Substance abuse",
+        "Functional impairment",
+        "Safety concerns"
+      ],
+      "investigations": [
+        "Trauma history",
+        "PTSD assessment",
+        "Dissociation evaluation",
+        "Suicide risk",
+        "Treatment planning"
+      ]
+    },
+    "57": {
+      "id": 57,
+      "name": "Hypervigilance",
+      "category": "Trauma & Stress",
+      "definition": "Excessive alertness, scanning for threats, and heightened state of arousal.",
+      "common_descriptions": [
+        "Always on edge",
+        "Watching for danger",
+        "Startle easily",
+        "Can't relax",
+        "Scanning for threats"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 90,
+          "key_features": ["Trauma exposure", "Hyperarousal symptoms", "Other PTSD features"],
+          "reasoning": "Hypervigilance is core PTSD symptom"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 75,
+          "key_features": ["Chronic worry", "Muscle tension", "Restlessness"],
+          "reasoning": "Anxiety disorders involve hyperarousal"
+        },
+        {
+          "diagnosis": "Acute Stress Disorder",
+          "likelihood": 80,
+          "key_features": ["Recent trauma", "Hyperarousal", "Duration <1 month"],
+          "reasoning": "Acute stress reaction with hyperarousal"
+        },
+        {
+          "diagnosis": "Social Anxiety Disorder",
+          "likelihood": 60,
+          "key_features": ["Social fear", "Performance anxiety", "Avoidance"],
+          "reasoning": "Social anxiety involves hypervigilance in social situations"
+        },
+        {
+          "diagnosis": "Panic Disorder",
+          "likelihood": 65,
+          "key_features": ["Panic attacks", "Anticipatory anxiety", "Agoraphobia"],
+          "reasoning": "Panic disorder involves hypervigilance for panic attacks"
+        }
+      ],
+      "red_flags": [
+        "Violence risk",
+        "Substance use",
+        "Functional impairment",
+        "Suicide risk",
+        "Social isolation",
+        "Medical complications"
+      ],
+      "investigations": [
+        "Trauma assessment",
+        "Anxiety evaluation",
+        "Safety assessment",
+        "Functional evaluation",
+        "Treatment planning"
+      ]
+    },
+    "58": {
+      "id": 58,
+      "name": "Avoidance of Trauma Reminders",
+      "category": "Trauma & Stress",
+      "definition": "Persistent avoidance of trauma-related stimuli, people, places, or activities.",
+      "common_descriptions": [
+        "Avoid places that remind me",
+        "Stay away from trauma reminders",
+        "Can't talk about the trauma",
+        "Avoid people from the trauma",
+        "Can't face trauma memories"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 95,
+          "key_features": ["Trauma exposure", "Avoidance symptoms", "Other PTSD criteria"],
+          "reasoning": "Avoidance is core PTSD symptom"
+        },
+        {
+          "diagnosis": "Acute Stress Disorder",
+          "likelihood": 85,
+          "key_features": ["Recent trauma", "Avoidance", "Duration <1 month"],
+          "reasoning": "Acute stress with avoidance behaviors"
+        },
+        {
+          "diagnosis": "Specific Phobia",
+          "likelihood": 60,
+          "key_features": ["Specific triggers", "Persistent fear", "Marked avoidance"],
+          "reasoning": "Phobias involve specific avoidance patterns"
+        },
+        {
+          "diagnosis": "Social Anxiety Disorder",
+          "likelihood": 55,
+          "key_features": ["Social situations", "Fear of evaluation", "Social avoidance"],
+          "reasoning": "Social anxiety involves social avoidance"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 50,
+          "key_features": ["Depressed mood", "Social withdrawal", "Loss of interest"],
+          "reasoning": "Depression can cause general avoidance"
+        }
+      ],
+      "red_flags": [
+        "Complete social isolation",
+        "Functional impairment",
+        "Suicide risk",
+        "Substance use",
+        "Medical deterioration",
+        "Treatment resistance"
+      ],
+      "investigations": [
+        "Trauma history",
+        "PTSD assessment",
+        "Functional evaluation",
+        "Collateral information",
+        "Treatment planning"
+      ]
+    },
+    "59": {
+      "id": 59,
+      "name": "Dissociative Symptoms",
+      "category": "Trauma & Stress",
+      "definition": "Disruptions in consciousness, memory, identity, or perception.",
+      "common_descriptions": [
+        "Feel disconnected",
+        "Out of body experience",
+        "Gaps in memory",
+        "Feel like watching myself",
+        "Identity confusion"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Dissociative Identity Disorder",
+          "likelihood": 80,
+          "key_features": ["Multiple identities", "Amnesia", "Identity disturbance"],
+          "reasoning": "DID involves major dissociative symptoms"
+        },
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 85,
+          "key_features": ["Trauma history", "Dissociation", "Other PTSD symptoms"],
+          "reasoning": "PTSD can involve dissociative episodes"
+        },
+        {
+          "diagnosis": "Depersonalization/Derealization Disorder",
+          "likelihood": 75,
+          "key_features": ["Persistent depersonalization", "Derealization", "Reality testing intact"],
+          "reasoning": "Primary dissociative disorder"
+        },
+        {
+          "diagnosis": "Dissociative Amnesia",
+          "likelihood": 70,
+          "key_features": ["Memory loss", "Identity confusion", "Trauma history"],
+          "reasoning": "Dissociative amnesia involves memory disruptions"
+        },
+        {
+          "diagnosis": "Substance Use",
+          "likelihood": 60,
+          "key_features": ["Substance use", "Temporal relationship", "Other effects"],
+          "reasoning": "Substances can cause dissociative symptoms"
+        }
+      ],
+      "red_flags": [
+        "Dangerous behaviors",
+        "Identity confusion",
+        "Memory gaps",
+        "Self-harm",
+        "Suicide risk",
+        "Functional impairment"
+      ],
+      "investigations": [
+        "Trauma history",
+        "Dissociation assessment",
+        "Psychological testing",
+        "Substance screening",
+        "Medical evaluation"
+      ]
+    },
+    "60": {
+      "id": 60,
+      "name": "Conversion Symptoms",
+      "category": "Trauma & Stress",
+      "definition": "Neurological symptoms that suggest neurological disorder but are incompatible with known anatomical pathways.",
+      "common_descriptions": [
+        "Paralysis for no reason",
+        "Blindness but normal eyes",
+        "Seizures with normal EEG",
+        "Can't walk but no medical cause",
+        "Neurological symptoms without cause"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Conversion Disorder",
+          "likelihood": 90,
+          "key_features": ["Neurological symptoms", "Incompatibility with anatomy", "Psychological factors"],
+          "reasoning": "Classic conversion disorder presentation"
+        },
+        {
+          "diagnosis": "Factitious Disorder",
+          "likelihood": 20,
+          "key_features": ["Intentional production", "Illness behavior", "Secondary gain"],
+          "reasoning": "Intentional production for psychological reasons"
+        },
+        {
+          "diagnosis": "Malingering",
+          "likelihood": 15,
+          "key_features": ["External incentives", "Feigned symptoms", "Financial/legal gain"],
+          "reasoning": "Symptoms for external incentives"
+        },
+        {
+          "diagnosis": "Neurological Disorder",
+          "likelihood": 10,
+          "key_features": ["True neurological signs", "Anatomical compatibility", "Medical findings"],
+          "reasoning": "Genuine neurological conditions must be ruled out"
+        },
+        {
+          "diagnosis": "Somatic Symptom Disorder",
+          "likelihood": 25,
+          "key_features": ["Multiple symptoms", "Excessive concern", "Distress"],
+          "reasoning": "Conversion can occur in context of somatic symptoms"
+        }
+      ],
+      "red_flags": [
+        "True neurological signs",
+        "Anatomical compatibility",
+        "Medical emergencies",
+        "Progressive symptoms",
+        "Focal deficits",
+        "Pain symptoms"
+      ],
+      "investigations": [
+        "Neurological examination",
+        "Neuroimaging",
+        "EEG if seizures",
+        "Psychiatric evaluation",
+        "Medical clearance"
+      ]
+    },
+    "61": {
+      "id": 61,
+      "name": "Emotional Instability",
+      "category": "Personality & Interpersonal",
+      "definition": "Rapid and extreme changes in emotional state that are disproportionate to circumstances.",
+      "common_descriptions": [
+        "Mood changes quickly",
+        "Emotions very intense",
+        "Feelings go up and down",
+        "Hard to control emotions",
+        "React very strongly"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 95,
+          "key_features": ["Emotional dysregulation", "Identity disturbance", "Interpersonal problems"],
+          "reasoning": "Emotional instability is core BPD feature"
+        },
+        {
+          "diagnosis": "Cyclothymic Disorder",
+          "likelihood": 75,
+          "key_features": ["Mood swings", "Duration >2 years", "Subthreshold symptoms"],
+          "reasoning": "Chronic mood instability in cyclothymia"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 60,
+          "key_features": ["Mood episodes", "Manic episodes", "Episodic course"],
+          "reasoning": "Mood episodes can cause emotional instability"
+        },
+        {
+          "diagnosis": "Histrionic Personality Disorder",
+          "likelihood": 65,
+          "key_features": ["Emotional manipulation", "Attention-seeking", "Dramatic expression"],
+          "reasoning": "Histrionic traits involve emotional instability"
+        },
+        {
+          "diagnosis": "PTSD",
+          "likelihood": 55,
+          "key_features": ["Trauma history", "Hyperarousal", "Emotional numbing"],
+          "reasoning": "PTSD can cause emotional dysregulation"
+        }
+      ],
+      "red_flags": [
+        "Self-harm behaviors",
+        "Suicide risk",
+        "Violence",
+        "Substance use",
+        "Relationship chaos",
+        "Functional impairment"
+      ],
+      "investigations": [
+        "Personality assessment",
+        "Mood evaluation",
+        "Trauma history",
+        "Substance screening",
+        "Functional assessment"
+      ]
+    },
+    "62": {
+      "id": 62,
+      "name": "Impulsive Anger",
+      "category": "Personality & Interpersonal",
+      "definition": "Sudden, intense anger outbursts that are disproportionate to the triggering situation.",
+      "common_descriptions": [
+        "Explode with anger",
+        "Can't control temper",
+        "Sudden rage",
+        "Anger over small things",
+        "Violent when angry"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 85,
+          "key_features": ["Emotional dysregulation", "Identity disturbance", "Interpersonal instability"],
+          "reasoning": "Impulsive anger is core BPD feature"
+        },
+        {
+          "diagnosis": "Intermittent Explosive Disorder",
+          "likelihood": 80,
+          "key_features": ["Discrete aggressive episodes", "Out of proportion", "No pattern"],
+          "reasoning": "Characterized by recurrent aggressive outbursts"
+        },
+        {
+          "diagnosis": "Conduct Disorder",
+          "likelihood": 75,
+          "key_features": ["Violations of rights", "Pattern of behavior", "Early onset"],
+          "reasoning": "Aggression is core conduct disorder symptom"
+        },
+        {
+          "diagnosis": "Antisocial Personality Disorder",
+          "likelihood": 70,
+          "key_features": ["Disregard for others", "Deceitfulness", "Impulsivity"],
+          "reasoning": "ASPD involves aggression and impulsivity"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 65,
+          "key_features": ["Manic episodes", "Irritability", "Poor judgment"],
+          "reasoning": "Irritability can occur in manic episodes"
+        }
+      ],
+      "red_flags": [
+        "Violence",
+        "Legal problems",
+        "Substance use",
+        "Suicide risk",
+        "Medical emergencies",
+        "Relationship destruction"
+      ],
+      "investigations": [
+        "Violence risk assessment",
+        "Personality evaluation",
+        "Mood assessment",
+        "Substance screening",
+        "Legal history"
+      ]
+    },
+    "63": {
+      "id": 63,
+      "name": "Identity Disturbance",
+      "category": "Personality & Interpersonal",
+      "definition": "Uncertainty about self-identity, personal values, goals, or sense of self.",
+      "common_descriptions": [
+        "Don't know who I am",
+        "Uncertain about goals",
+        "Unstable self-image",
+        "Confused about identity",
+        "Feel different inside"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 90,
+          "key_features": ["Unstable self-image", "Identity disturbance", "Chronic emptiness"],
+          "reasoning": "Identity disturbance is core BPD feature"
+        },
+        {
+          "diagnosis": "Dissociative Identity Disorder",
+          "likelihood": 80,
+          "key_features": ["Multiple identities", "Amnesia", "Identity discontinuity"],
+          "reasoning": "DID involves identity fragmentation"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 60,
+          "key_features": ["Depressed mood", "Low self-esteem", "Hopelessness"],
+          "reasoning": "Severe depression can affect identity"
+        },
+        {
+          "diagnosis": "Psychotic Disorders",
+          "likelihood": 55,
+          "key_features": ["Psychotic symptoms", "Social withdrawal", "Functional decline"],
+          "reasoning": "Psychosis can disrupt identity formation"
+        },
+        {
+          "diagnosis": "Adolescent Development",
+          "likelihood": 40,
+          "key_features": ["Age-appropriate", "Normal development", "No impairment"],
+          "reasoning": "Identity exploration is normal in adolescents"
+        }
+      ],
+      "red_flags": [
+        "Identity confusion",
+        "Self-harm",
+        "Dissociation",
+        "Functional impairment",
+        "Suicide risk",
+        "Social isolation"
+      ],
+      "investigations": [
+        "Personality assessment",
+        "Identity evaluation",
+        "Dissociation assessment",
+        "Mood evaluation",
+        "Developmental history"
+      ]
+    },
+    "64": {
+      "id": 64,
+      "name": "Fear of Abandonment",
+      "category": "Personality & Interpersonal",
+      "definition": "Intense fear of being left alone, rejected, or abandoned by important people.",
+      "common_descriptions": [
+        "Terrified of being alone",
+        "Fear people will leave",
+        "Cling to relationships",
+        "Panic when alone",
+        "Can't bear being abandoned"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Borderline Personality Disorder",
+          "likelihood": 95,
+          "key_features": ["Fear of abandonment", "Interpersonal instability", "Efforts to avoid abandonment"],
+          "reasoning": "Fear of abandonment is core BPD feature"
+        },
+        {
+          "diagnosis": "Dependent Personality Disorder",
+          "likelihood": 80,
+          "key_features": ["Submissive behavior", "Need to be taken care of", "Separation anxiety"],
+          "reasoning": "Dependent personality involves fear of separation"
+        },
+        {
+          "diagnosis": "Avoidant Personality Disorder",
+          "likelihood": 65,
+          "key_features": ["Fear of criticism", "Social inhibition", "Inadequacy"],
+          "reasoning": "Avoidant personality involves fear of rejection"
+        },
+        {
+          "diagnosis": "Social Anxiety Disorder",
+          "likelihood": 60,
+          "key_features": ["Fear of evaluation", "Social situations", "Avoidance"],
+          "reasoning": "Social anxiety involves fear of social judgment"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 50,
+          "key_features": ["Excessive worry", "Multiple concerns", "Difficulty controlling"],
+          "reasoning": "GAD can involve relationship worries"
+        }
+      ],
+      "red_flags": [
+        "Self-harm to prevent abandonment",
+        "Suicide risk",
+        "Relationship chaos",
+        "Clinginess",
+        "Social isolation",
+        "Impulsive behaviors"
+      ],
+      "investigations": [
+        "Personality assessment",
+        "Attachment history",
+        "Relationship patterns",
+        "Safety assessment",
+        "Collateral information"
+      ]
+    },
+    "65": {
+      "id": 65,
+      "name": "Sexual Dysfunction",
+      "category": "Sexual & Gender",
+      "definition": "Problems with sexual response, pleasure, or function that cause distress or interpersonal difficulty.",
+      "clinical_significance": "Can be primary sexual disorders, secondary to medical conditions, medications, or psychiatric disorders.",
+      "common_descriptions": [
+        "Loss of sexual desire",
+        "Difficulty with arousal",
+        "Problems with orgasm",
+        "Pain during sex",
+        "Erectile dysfunction"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 80,
+          "key_features": ["Loss of libido", "Depressed mood", "Other depressive symptoms"],
+          "reasoning": "Depression commonly causes sexual dysfunction"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 70,
+          "key_features": ["Performance anxiety", "Worry", "Hyperarousal"],
+          "reasoning": "Anxiety can interfere with sexual function"
+        },
+        {
+          "diagnosis": "Sexual Dysfunction Due to Medical Condition",
+          "likelihood": 75,
+          "key_features": ["Medical history", "Physical symptoms", "Medication effects"],
+          "reasoning": "Medical conditions and medications commonly cause sexual dysfunction"
+        },
+        {
+          "diagnosis": "Medication-Induced Sexual Dysfunction",
+          "likelihood": 85,
+          "key_features": ["Antidepressants", "Antipsychotics", "Temporal relationship"],
+          "reasoning": "Many psychiatric medications cause sexual side effects"
+        },
+        {
+          "diagnosis": "Primary Sexual Dysfunction",
+          "likelihood": 60,
+          "key_features": ["Life-long pattern", "Specific sexual dysfunction", "No medical cause"],
+          "reasoning": "Primary sexual disorders without medical or psychological cause"
+        }
+      ],
+      "red_flags": [
+        "Sudden onset",
+        "Pain",
+        "Medical causes",
+        "Medication effects",
+        "Relationship distress",
+        "Suicide risk"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Medication review",
+        "Sexual history",
+        "Laboratory studies",
+        "Psychiatric assessment"
+      ]
+    },
+    "66": {
+      "id": 66,
+      "name": "Gender Dysphoria",
+      "category": "Sexual & Gender",
+      "definition": "Distress or impairment associated with marked incongruence between experienced gender and assigned gender.",
+      "common_descriptions": [
+        "Feel like wrong gender",
+        "Discomfort with body",
+        "Want to be different gender",
+        "Feel trapped in wrong body",
+        "Gender identity confusion"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Gender Dysphoria",
+          "likelihood": 95,
+          "key_features": ["Gender incongruence", "Distress", "Desire to be other gender"],
+          "reasoning": "Primary condition involving gender identity distress"
+        },
+        {
+          "diagnosis": "Gender Nonconformity",
+          "likelihood": 70,
+          "key_features": ["Non-traditional gender expression", "No distress", "Cultural factors"],
+          "reasoning": "Gender expression variation without distress"
+        },
+        {
+          "diagnosis": "Sexual Orientation Confusion",
+          "likelihood": 50,
+          "key_features": ["Same-sex attraction", "Identity exploration", "No gender dysphoria"],
+          "reasoning": "Confusion about sexual orientation rather than gender identity"
+        },
+        {
+          "diagnosis": "Psychotic Disorder",
+          "likelihood": 30,
+          "key_features": ["Psychotic symptoms", "Fixed false beliefs", "Other symptoms"],
+          "reasoning": "Rarely, gender dysphoria can be delusional"
+        },
+        {
+          "diagnosis": "Body Dysmorphic Disorder",
+          "likelihood": 25,
+          "key_features": ["Appearance preoccupation", "Body dissatisfaction", "Specific concerns"],
+          "reasoning": "Body image concerns may be misconstrued as gender dysphoria"
+        }
+      ],
+      "red_flags": [
+        "Suicide risk",
+        "Self-harm behaviors",
+        "Psychotic features",
+        "Social isolation",
+        "Family conflict",
+        "Discrimination"
+      ],
+      "investigations": [
+        "Gender identity assessment",
+        "Mental health evaluation",
+        "Support system evaluation",
+        "Safety assessment",
+        "Treatment planning"
+      ]
+    },
+    "67": {
+      "id": 67,
+      "name": "Poor School Performance",
+      "category": "Child/Adolescent",
+      "definition": "Academic difficulties, declining grades, or inability to meet educational expectations.",
+      "common_descriptions": [
+        "Falling grades",
+        "Can't concentrate in class",
+        "Not completing homework",
+        "Behavioral problems at school",
+        "Learning difficulties"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Attention Deficit Hyperactivity Disorder",
+          "likelihood": 85,
+          "key_features": ["Inattention", "Hyperactivity", "Academic problems"],
+          "reasoning": "ADHD commonly causes academic difficulties"
+        },
+        {
+          "diagnosis": "Learning Disabilities",
+          "likelihood": 80,
+          "key_features": ["Specific learning deficits", "Difficulty with reading/writing/math", "Preserved intelligence"],
+          "reasoning": "Specific learning disorders affect academic performance"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 70,
+          "key_features": ["Depressed mood", "Cognitive slowing", "Concentration problems"],
+          "reasoning": "Depression can significantly impact school performance"
+        },
+        {
+          "diagnosis": "Anxiety Disorders",
+          "likelihood": 75,
+          "key_features": ["School refusal", "Test anxiety", "Social anxiety"],
+          "reasoning": "Anxiety can interfere with academic performance"
+        },
+        {
+          "diagnosis": "Oppositional Defiant Disorder",
+          "likelihood": 65,
+          "key_features": ["Defiant behavior", "Academic refusal", "Authority conflicts"],
+          "reasoning": "Behavioral problems can interfere with learning"
+        }
+      ],
+      "red_flags": [
+        "Sudden academic decline",
+        "Behavioral problems",
+        "Family dysfunction",
+        "Substance use",
+        "Trauma",
+        "Medical causes"
+      ],
+      "investigations": [
+        "Educational assessment",
+        "Learning evaluation",
+        "Psychological testing",
+        "Family assessment",
+        "Medical evaluation"
+      ]
+    },
+    "68": {
+      "id": 68,
+      "name": "Hyperactivity",
+      "category": "Child/Adolescent",
+      "definition": "Excessive motor activity, restlessness, or difficulty staying still in age-inappropriate situations.",
+      "common_descriptions": [
+        "Always moving",
+        "Can't sit still",
+        "Excessive talking",
+        "Running around",
+        "Fidgeting constantly"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Attention Deficit Hyperactivity Disorder",
+          "likelihood": 90,
+          "key_features": ["Excessive activity", "Age-inappropriate", "Functional impairment"],
+          "reasoning": "Hyperactivity is core ADHD symptom"
+        },
+        {
+          "diagnosis": "Anxiety Disorders",
+          "likelihood": 70,
+          "key_features": ["Worry", "Restlessness", "Anxiety symptoms"],
+          "reasoning": "Anxiety can cause hyperactivity and restlessness"
+        },
+        {
+          "diagnosis": "Oppositional Defiant Disorder",
+          "likelihood": 60,
+          "key_features": ["Defiant behavior", "Argumentativeness", "Anger"],
+          "reasoning": "ODD can involve oppositional hyperactivity"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 40,
+          "key_features": ["Manic episodes", "Mood swings", "Family history"],
+          "reasoning": "Mania can cause severe hyperactivity in children"
+        },
+        {
+          "diagnosis": "Normal High Activity",
+          "likelihood": 30,
+          "key_features": ["Age-appropriate", "No impairment", "Situation-specific"],
+          "reasoning": "Some children naturally have high activity levels"
+        }
+      ],
+      "red_flags": [
+        "Injury risk",
+        "Safety concerns",
+        "Social problems",
+        "Family stress",
+        "Academic problems",
+        "Peer difficulties"
+      ],
+      "investigations": [
+        "ADHD assessment",
+        "Behavioral observation",
+        "School evaluation",
+        "Family assessment",
+        "Developmental history"
+      ]
+    },
+    "69": {
+      "id": 69,
+      "name": "Inattention",
+      "category": "Child/Adolescent",
+      "definition": "Difficulty sustaining attention, following instructions, or staying focused on age-inappropriate tasks.",
+      "common_descriptions": [
+        "Can't focus on tasks",
+        "Easily distracted",
+        "Loses things",
+        "Difficulty following directions",
+        "Mind wanders"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Attention Deficit Hyperactivity Disorder",
+          "likelihood": 95,
+          "key_features": ["Sustained inattention", "Age-inappropriate", "Functional impairment"],
+          "reasoning": "Inattention is core ADHD symptom"
+        },
+        {
+          "diagnosis": "Learning Disabilities",
+          "likelihood": 75,
+          "key_features": ["Academic difficulties", "Specific deficits", "Processing problems"],
+          "reasoning": "Learning problems can appear as inattention"
+        },
+        {
+          "diagnosis": "Anxiety Disorders",
+          "likelihood": 65,
+          "key_features": ["Worry", "Racing thoughts", "Distractibility"],
+          "reasoning": "Anxiety can impair attention and concentration"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 60,
+          "key_features": ["Cognitive slowing", "Fatigue", "Low motivation"],
+          "reasoning": "Depression can cause concentration problems"
+        },
+        {
+          "diagnosis": "Developmental Variation",
+          "likelihood": 40,
+          "key_features": ["Age-appropriate", "No impairment", "Normal development"],
+          "reasoning": "Normal developmental variation in attention"
+        }
+      ],
+      "red_flags": [
+        "Academic decline",
+        "Social problems",
+        "Safety issues",
+        "Family conflict",
+        "Emotional problems",
+        "Behavioral issues"
+      ],
+      "investigations": [
+        "ADHD evaluation",
+        "Learning assessment",
+        "Academic testing",
+        "Psychological evaluation",
+        "Developmental assessment"
+      ]
+    },
+    "70": {
+      "id": 70,
+      "name": "Oppositional Behavior",
+      "category": "Child/Adolescent",
+      "definition": "Pattern of defiant, hostile, and disobedient behavior toward authority figures.",
+      "common_descriptions": [
+        "Argues with adults",
+        "Defies rules",
+        "Spiteful and vindictive",
+        "Annoying others",
+        "Blames others"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Oppositional Defiant Disorder",
+          "likelihood": 90,
+          "key_features": ["Pattern of defiance", "Hostility", "Functional impairment"],
+          "reasoning": "ODD is characterized by oppositional behavior"
+        },
+        {
+          "diagnosis": "Conduct Disorder",
+          "likelihood": 70,
+          "key_features": ["Aggression", "Rule violations", "Delinquency"],
+          "reasoning": "CD involves more severe behavioral problems"
+        },
+        {
+          "diagnosis": "ADHD",
+          "likelihood": 75,
+          "key_features": ["Inattention", "Hyperactivity", "Impulsivity"],
+          "reasoning": "ADHD often co-occurs with oppositional behavior"
+        },
+        {
+          "diagnosis": "Anxiety Disorders",
+          "likelihood": 50,
+          "key_features": ["School refusal", "Perfectionism", "Worry"],
+          "reasoning": "Anxiety can manifest as opposition to demands"
+        },
+        {
+          "diagnosis": "Family Dysfunction",
+          "likelihood": 60,
+          "key_features": ["Family conflict", "Inconsistent parenting", "Modeling"],
+          "reasoning": "Family factors can contribute to oppositional behavior"
+        }
+      ],
+      "red_flags": [
+        "Aggressive behavior",
+        "Legal problems",
+        "Family violence",
+        "Substance use",
+        "Academic failure",
+        "Peer rejection"
+      ],
+      "investigations": [
+        "Behavioral assessment",
+        "Family evaluation",
+        "School consultation",
+        "Mental health evaluation",
+        "Risk assessment"
+      ]
+    },
+    "71": {
+      "id": 71,
+      "name": "Memory Loss (Aging)",
+      "category": "Geriatric",
+      "definition": "Age-related memory changes that are normal part of aging versus pathological cognitive decline.",
+      "common_descriptions": [
+        "Occasional forgetfulness",
+        "Difficulty with names",
+        "Misplacing items",
+        "Slower processing",
+        "Mild memory lapses"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Normal Aging",
+          "likelihood": 70,
+          "key_features": ["Age-appropriate", "Stable course", "No functional impact"],
+          "reasoning": "Mild memory changes can be normal part of aging"
+        },
+        {
+          "diagnosis": "Mild Cognitive Impairment",
+          "likelihood": 80,
+          "key_features": ["Objective impairment", "Preserved function", "Progressive"],
+          "reasoning": "MCI involves noticeable cognitive changes"
+        },
+        {
+          "diagnosis": "Alzheimer's Disease",
+          "likelihood": 75,
+          "key_features": ["Progressive decline", "Memory loss", "Other cognitive domains"],
+          "reasoning": "Alzheimer's typically begins with memory problems"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 60,
+          "key_features": ["Pseudodementia", "Depressed mood", "Cognitive slowing"],
+          "reasoning": "Depression can cause cognitive complaints"
+        },
+        {
+          "diagnosis": "Medication Effects",
+          "likelihood": 65,
+          "key_features": ["Polypharmacy", "Anticholinergics", "Temporal relationship"],
+          "reasoning": "Medications commonly affect memory in elderly"
+        }
+      ],
+      "red_flags": [
+        "Rapid progression",
+        "Functional impairment",
+        "Safety concerns",
+        "Behavioral changes",
+        "Language problems",
+        "Getting lost"
+      ],
+      "investigations": [
+        "Cognitive assessment",
+        "Neuropsychological testing",
+        "Medication review",
+        "Medical evaluation",
+        "Functional assessment"
+      ]
+    },
+    "72": {
+      "id": 72,
+      "name": "Behavioral Changes (Geriatric)",
+      "category": "Geriatric",
+      "definition": "Changes in personality, behavior, or social functioning in older adults.",
+      "common_descriptions": [
+        "Personality changes",
+        "Social withdrawal",
+        "Agitation",
+        "Paranoia",
+        "Sleep disturbances"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Dementia",
+          "likelihood": 85,
+          "key_features": ["Progressive decline", "Cognitive impairment", "Behavioral symptoms"],
+          "reasoning": "Dementia commonly presents with behavioral changes"
+        },
+        {
+          "diagnosis": "Major Depression",
+          "likelihood": 75,
+          "key_features": ["Late-onset depression", "Cognitive symptoms", "Somatic complaints"],
+          "reasoning": "Depression can present with behavioral changes in elderly"
+        },
+        {
+          "diagnosis": "Delirium",
+          "likelihood": 80,
+          "key_features": ["Acute onset", "Fluctuating course", "Medical illness"],
+          "reasoning": "Delirium causes acute behavioral changes"
+        },
+        {
+          "diagnosis": "Medication Effects",
+          "likelihood": 70,
+          "key_features": ["Polypharmacy", "Side effects", "Temporal relationship"],
+          "reasoning": "Medications commonly cause behavioral changes"
+        },
+        {
+          "diagnosis": "Stroke",
+          "likelihood": 65,
+          "key_features": ["Focal deficits", "Sudden onset", "Risk factors"],
+          "reasoning": "Stroke can cause personality and behavioral changes"
+        }
+      ],
+      "red_flags": [
+        "Sudden onset",
+        "Safety concerns",
+        "Medical emergency",
+        "Functional decline",
+        "Self-neglect",
+        "Caregiver burden"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Cognitive assessment",
+        "Medication review",
+        "Laboratory studies",
+        "Neuroimaging"
+      ]
+    },
+    "73": {
+      "id": 73,
+      "name": "Late-Onset Psychosis",
+      "category": "Geriatric",
+      "definition": "New onset psychotic symptoms in older adults after age 40.",
+      "common_descriptions": [
+        "New delusions",
+        "Hallucinations",
+        "Suspiciousness",
+        "Disorganized thinking",
+        "Social withdrawal"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Dementia with Lewy Bodies",
+          "likelihood": 75,
+          "key_features": ["Visual hallucinations", "Parkinsonism", "Fluctuating cognition"],
+          "reasoning": "DLB commonly presents with visual hallucinations"
+        },
+        {
+          "diagnosis": "Alzheimer's Disease",
+          "likelihood": 70,
+          "key_features": ["Progressive dementia", "Psychotic symptoms", "Memory loss"],
+          "reasoning": "Alzheimer's can develop psychotic features"
+        },
+        {
+          "diagnosis": "Vascular Dementia",
+          "likelihood": 65,
+          "key_features": ["Stepwise decline", "Focal deficits", "Risk factors"],
+          "reasoning": "Vascular dementia can cause psychotic symptoms"
+        },
+        {
+          "diagnosis": "Late-Onset Schizophrenia",
+          "likelihood": 50,
+          "key_features": ["No cognitive decline", "Functional preservation", "Family history"],
+          "reasoning": "Rarely, schizophrenia can present late in life"
+        },
+        {
+          "diagnosis": "Delirium",
+          "likelihood": 70,
+          "key_features": ["Acute onset", "Medical illness", "Fluctuating course"],
+          "reasoning": "Delirium can cause psychotic symptoms"
+        }
+      ],
+      "red_flags": [
+        "Medical emergency",
+        "Infection",
+        "Medication effects",
+        "Stroke",
+        "Brain tumor",
+        "Metabolic disturbance"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Brain imaging",
+        "Laboratory studies",
+        "Medication review",
+        "Cognitive assessment"
+      ]
+    },
+    "74": {
+      "id": 74,
+      "name": "Acute Agitation",
+      "category": "Emergency",
+      "definition": "Sudden onset of extreme restlessness, anxiety, or motor hyperactivity requiring immediate intervention.",
+      "clinical_significance": "Medical emergency requiring immediate assessment for safety and underlying causes.",
+      "common_descriptions": [
+        "Extremely agitated",
+        "Can't sit still",
+        "Pacing constantly",
+        "Aggressive behavior",
+        "Unsafe behavior"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Manic Episode",
+          "likelihood": 80,
+          "key_features": ["Elevated mood", "Decreased need for sleep", "Grandiosity"],
+          "reasoning": "Mania can cause severe agitation"
+        },
+        {
+          "diagnosis": "Substance Intoxication",
+          "likelihood": 75,
+          "key_features": ["Stimulants", "Hallucinogens", "Temporal relationship"],
+          "reasoning": "Substances commonly cause acute agitation"
+        },
+        {
+          "diagnosis": "Delirium",
+          "likelihood": 85,
+          "key_features": ["Acute onset", "Fluctuating course", "Medical illness"],
+          "reasoning": "Delirium commonly causes severe agitation"
+        },
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 70,
+          "key_features": ["Psychotic symptoms", "Command hallucinations", "Paranoia"],
+          "reasoning": "Psychosis can cause agitation"
+        },
+        {
+          "diagnosis": "Severe Anxiety",
+          "likelihood": 60,
+          "key_features": ["Panic attacks", "Hyperventilation", "Extreme worry"],
+          "reasoning": "Severe anxiety can cause agitation"
+        }
+      ],
+      "red_flags": [
+        "Violence",
+        "Suicide risk",
+        "Medical emergency",
+        "Substance overdose",
+        "Trauma",
+        "Infection"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Toxicology screening",
+        "Vital signs",
+        "Neurological exam",
+        "Emergency stabilization"
+      ]
+    },
+    "75": {
+      "id": 75,
+      "name": "Acute Psychosis",
+      "category": "Emergency",
+      "definition": "Sudden onset of psychotic symptoms including delusions, hallucinations, or disorganized thinking.",
+      "clinical_significance": "Medical emergency requiring immediate evaluation for safety and medical causes.",
+      "common_descriptions": [
+        "Hearing voices",
+        "Paranoid beliefs",
+        "Strange behavior",
+        "Disorganized thinking",
+        "Aggressive behavior"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Brief Psychotic Disorder",
+          "likelihood": 80,
+          "key_features": ["Acute onset", "Duration 1-30 days", "Recovery"],
+          "reasoning": "Brief psychosis with complete recovery"
+        },
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 75,
+          "key_features": ["Progressive course", "Functional decline", "Negative symptoms"],
+          "reasoning": "First episode of schizophrenia"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 70,
+          "key_features": ["Manic episode", "Mood symptoms", "Family history"],
+          "reasoning": "Psychotic features during mood episode"
+        },
+        {
+          "diagnosis": "Substance-Induced Psychosis",
+          "likelihood": 65,
+          "key_features": ["Substance use", "Temporal relationship", "Other effects"],
+          "reasoning": "Psychosis due to substance use"
+        },
+        {
+          "diagnosis": "Medical Causes",
+          "likelihood": 60,
+          "key_features": ["Medical history", "Neurological symptoms", "Acute onset"],
+          "reasoning": "Medical conditions causing psychosis"
+        }
+      ],
+      "red_flags": [
+        "Violence",
+        "Suicide risk",
+        "Medical emergency",
+        "Infection",
+        "Neurological symptoms",
+        "Substance effects"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Substance screening",
+        "Brain imaging",
+        "Neurological exam",
+        "Emergency treatment"
+      ]
+    },
+    "76": {
+      "id": 76,
+      "name": "Catatonia",
+      "category": "Emergency",
+      "definition": "Psychomotor disturbance characterized by immobility, stupor, or purposeless activity.",
+      "clinical_significance": "Life-threatening condition requiring immediate medical intervention.",
+      "common_descriptions": [
+        "Unresponsive",
+        "Staring",
+        "Waxy flexibility",
+        "Automatic obedience",
+        "Agitated movements"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Severe Depression",
+          "likelihood": 85,
+          "key_features": ["Depressed mood", "Psychomotor retardation", "Suicidal risk"],
+          "reasoning": "Catatonia commonly occurs with severe depression"
+        },
+        {
+          "diagnosis": "Bipolar Disorder",
+          "likelihood": 80,
+          "key_features": ["Manic episode", "Mood cycling", "Psychotic features"],
+          "reasoning": "Catatonia can occur in bipolar disorder"
+        },
+        {
+          "diagnosis": "Schizophrenia",
+          "likelihood": 70,
+          "key_features": ["Psychotic symptoms", "Disorganized behavior", "Negative symptoms"],
+          "reasoning": "Catatonia can occur in schizophrenia"
+        },
+        {
+          "diagnosis": "Medical Conditions",
+          "likelihood": 75,
+          "key_features": ["Encephalitis", "Metabolic disorders", "Neurological disease"],
+          "reasoning": "Medical causes of catatonia"
+        },
+        {
+          "diagnosis": "Autoimmune Encephalitis",
+          "likelihood": 60,
+          "key_features": ["Rapid onset", "Neurological symptoms", "CSF findings"],
+          "reasoning": "Autoimmune causes of catatonia"
+        }
+      ],
+      "red_flags": [
+        "Life-threatening",
+        "Medical emergency",
+        "Infection",
+        "Neurological decline",
+        "Respiratory compromise",
+        "Aspiration risk"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Brain imaging",
+        "CSF analysis",
+        "EEG",
+        "Emergency treatment"
+      ]
+    },
+    "77": {
+      "id": 77,
+      "name": "Depression in Chronic Illness",
+      "category": "Liaison/Medical",
+      "definition": "Depressive symptoms occurring in the context of chronic medical illness.",
+      "common_descriptions": [
+        "Feeling down despite treatment",
+        "Fatigue from illness",
+        "Loss of hope",
+        "Worry about future",
+        "Social isolation"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Adjustment Disorder",
+          "likelihood": 80,
+          "key_features": ["Medical diagnosis", "Emotional response", "Time-limited"],
+          "reasoning": "Normal emotional response to medical illness"
+        },
+        {
+          "diagnosis": "Major Depressive Disorder",
+          "likelihood": 70,
+          "key_features": ["Severe symptoms", "Functional impairment", "Treatment-resistant"],
+          "reasoning": "True depression comorbid with medical illness"
+        },
+        {
+          "diagnosis": "Medical Effects",
+          "likelihood": 75,
+          "key_features": ["Disease progression", "Medication effects", "Pain"],
+          "reasoning": "Medical illness causing depressive symptoms"
+        },
+        {
+          "diagnosis": "Medication Effects",
+          "likelihood": 65,
+          "key_features": ["Temporal relationship", "Known side effects", "Dose-response"],
+          "reasoning": "Medications causing depressive symptoms"
+        },
+        {
+          "diagnosis": "Grief Reaction",
+          "likelihood": 60,
+          "key_features": ["Loss of function", "Identity changes", "Chronic grief"],
+          "reasoning": "Grief related to medical losses"
+        }
+      ],
+      "red_flags": [
+        "Suicide risk",
+        "Non-adherence",
+        "Pain",
+        "Functional decline",
+        "Social isolation",
+        "Treatment failure"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Depression screening",
+        "Medication review",
+        "Pain assessment",
+        "Social support"
+      ]
+    },
+    "78": {
+      "id": 78,
+      "name": "Anxiety in Medical Illness",
+      "category": "Liaison/Medical",
+      "definition": "Anxiety symptoms occurring in the context of medical illness or procedures.",
+      "common_descriptions": [
+        "Worry about illness",
+        "Fear of procedures",
+        "Health anxiety",
+        "Anticipatory anxiety",
+        "Panic about symptoms"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Adjustment Disorder",
+          "likelihood": 85,
+          "key_features": ["Medical stressor", "Excessive anxiety", "Functional impairment"],
+          "reasoning": "Normal response to medical stress"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 70,
+          "key_features": ["Excessive worry", "Multiple concerns", "Chronic course"],
+          "reasoning": "GAD comorbid with medical illness"
+        },
+        {
+          "diagnosis": "Illness Anxiety Disorder",
+          "likelihood": 75,
+          "key_features": ["Health preoccupation", "Normal examinations", "Excessive concern"],
+          "reasoning": "Primary health anxiety disorder"
+        },
+        {
+          "diagnosis": "Medical Effects",
+          "likelihood": 65,
+          "key_features": ["Disease progression", "Symptoms", "Course"],
+          "reasoning": "Medical illness causing anxiety"
+        },
+        {
+          "diagnosis": "Medication Effects",
+          "likelihood": 60,
+          "key_features": ["Stimulants", "Steroids", "Temporal relationship"],
+          "reasoning": "Medications causing anxiety"
+        }
+      ],
+      "red_flags": [
+        "Suicide risk",
+        "Treatment non-adherence",
+        "Medical complications",
+        "Functional impairment",
+        "Social isolation",
+        "Pain"
+      ],
+      "investigations": [
+        "Medical evaluation",
+        "Anxiety assessment",
+        "Medication review",
+        "Pain evaluation",
+        "Support assessment"
+      ]
+    },
+    "79": {
+      "id": 79,
+      "name": "Possession-Like Experiences",
+      "category": "Culture-Bound (India)",
+      "definition": "Experiences of being possessed by spirits or supernatural entities within cultural context.",
+      "clinical_significance": "Cultural phenomenon that may be normal within context but can indicate psychiatric disorders.",
+      "common_descriptions": [
+        "Spirit possession",
+        "Divine experiences",
+        "Supernatural powers",
+        "Spirit communication",
+        "Religious experiences"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Cultural/Religious Expression",
+          "likelihood": 85,
+          "key_features": ["Cultural context", "Community acceptance", "Normal functioning"],
+          "reasoning": "Normal cultural or religious practice"
+        },
+        {
+          "diagnosis": "Dissociative Disorder",
+          "likelihood": 70,
+          "key_features": ["Identity disturbance", "Amnesia", "Functional impairment"],
+          "reasoning": "Dissociative disorders can involve possession-like states"
+        },
+        {
+          "diagnosis": "Psychotic Disorder",
+          "likelihood": 50,
+          "key_features": ["Psychotic symptoms", "No cultural context", "Impairment"],
+          "reasoning": "Psychotic disorders can involve grandiose beliefs"
+        },
+        {
+          "diagnosis": "Epilepsy",
+          "likelihood": 40,
+          "key_features": ["Seizure activity", "EEG abnormalities", "Aura phenomena"],
+          "reasoning": "Temporal lobe epilepsy can involve mystical experiences"
+        },
+        {
+          "diagnosis": "Substance Effects",
+          "likelihood": 35,
+          "key_features": ["Substance use", "Temporal relationship", "Other effects"],
+          "reasoning": "Substances can cause mystical experiences"
+        }
+      ],
+      "red_flags": [
+        "Violence",
+        "Self-harm",
+        "Social dysfunction",
+        "Medical complications",
+        "Legal issues",
+        "Community conflict"
+      ],
+      "investigations": [
+        "Cultural assessment",
+        "Religious consultation",
+        "Psychiatric evaluation",
+        "Medical evaluation",
+        "Collateral information"
+      ]
+    },
+    "80": {
+      "id": 80,
+      "name": "Dhat Syndrome Concerns",
+      "category": "Culture-Bound (India)",
+      "definition": "Excessive concern about semen loss, weakness, and related symptoms in Indian cultural context.",
+      "common_descriptions": [
+        "Worry about semen loss",
+        "Weakness and fatigue",
+        "Premature ejaculation",
+        "Sexual dysfunction",
+        "Mental preoccupation"
+      ],
+      "differentials": [
+        {
+          "diagnosis": "Dhat Syndrome",
+          "likelihood": 90,
+          "key_features": ["Cultural context", "Semen loss concerns", "Psychological symptoms"],
+          "reasoning": "Culture-bound syndrome specific to Indian populations"
+        },
+        {
+          "diagnosis": "Sexual Dysfunction",
+          "likelihood": 70,
+          "key_features": ["Erectile dysfunction", "Premature ejaculation", "Performance anxiety"],
+          "reasoning": "Primary sexual dysfunction concerns"
+        },
+        {
+          "diagnosis": "Generalized Anxiety Disorder",
+          "likelihood": 65,
+          "key_features": ["Excessive worry", "Somatic symptoms", "Functional impairment"],
+          "reasoning": "Anxiety disorder manifesting as sexual concerns"
+        },
+        {
+          "diagnosis": "Depression",
+          "likelihood": 60,
+          "key_features": ["Depressed mood", "Sexual dysfunction", "Cognitive symptoms"],
+          "reasoning": "Depression presenting with sexual concerns"
+        },
+        {
+          "diagnosis": "Sexual Obsessive-Compulsive Disorder",
+          "likelihood": 55,
+          "key_features": ["Intrusive thoughts", "Compulsive behaviors", "Anxiety"],
+          "reasoning": "OCD with sexual obsessions"
+        }
+      ],
+      "red_flags": [
+        "Suicide risk",
+        "Self-harm",
+        "Sexual dysfunction",
+        "Relationship problems",
+        "Social isolation",
+        "Functional impairment"
+      ],
+      "investigations": [
+        "Cultural assessment",
+        "Sexual history",
+        "Psychiatric evaluation",
+        "Medical evaluation",
+        "Psychological assessment"
+      ]
+    }
+  }
+}
