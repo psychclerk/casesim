@@ -168,20 +168,27 @@ def main():
         st.session_state.current_symptom = 0  # 0 indicates home screen
         st.rerun()
     
-    # Symptom selector
+    # Comprehensive symptom list in sidebar
     if all_symptoms:
-        symptom_options = ["Select a symptom..."] + [f"{s['id']}: {s['name']}" for s in all_symptoms]
-        selected_symptom = st.sidebar.selectbox(
-            "Jump to symptom:",
-            symptom_options,
-            index=st.session_state.current_symptom if st.session_state.current_symptom > 0 else 0
-        )
+        st.sidebar.markdown("### All Symptoms")
+        # Group symptoms by category for better organization
+        categories = {}
+        for symptom in all_symptoms:
+            category = symptom.get('category', 'Other')
+            if category not in categories:
+                categories[category] = []
+            categories[category].append(symptom)
         
-        if selected_symptom != "Select a symptom...":
-            symptom_id = int(selected_symptom.split(':')[0])
-            st.session_state.current_symptom = symptom_id
-            st.rerun()
-    
+        # Display symptoms by category
+        for category, symptoms in sorted(categories.items()):
+            with st.sidebar.expander(f"{category} ({len(symptoms)})"):
+                for symptom in symptoms:
+                    # Use emoji indicators for completion status
+                    indicator = "✅" if symptom['id'] in st.session_state.completed_symptoms else "🔵"
+                    if st.button(f"{indicator} {symptom['id']:02d}: {symptom['name']}", 
+                               key=f"nav_{symptom['id']}"):
+                        st.session_state.current_symptom = symptom['id']
+                        st.rerun()
     # Random symptom option
     if all_symptoms and st.sidebar.button("🎲 Random Symptom", use_container_width=True):
         import random
@@ -196,10 +203,24 @@ def main():
         st.session_state.user_answers = {}
         st.rerun()
     
+    # Additional navigation info
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### Navigation Tips")
+    st.sidebar.markdown("• Click any symptom below to start")
+    st.sidebar.markdown("• ✅ = Completed, 🔵 = Not started")
+    st.sidebar.markdown("• Use Home button to return to main page")
+    st.sidebar.markdown("• Random button for surprise selection")
+    
     # Main content area
     if st.session_state.current_symptom == 0:
         show_home_screen(all_symptoms, completed_count, total_symptoms)
     else:
+        # Validate current symptom is valid
+        valid_symptom_ids = [s['id'] for s in all_symptoms]
+        if st.session_state.current_symptom not in valid_symptom_ids:
+            # Reset to first valid symptom
+            st.session_state.current_symptom = 1
+        
         show_symptom_analysis(engine, st.session_state.current_symptom)
 
 def show_home_screen(symptoms: List[Dict], completed: int, total: int):
@@ -218,13 +239,13 @@ def show_home_screen(symptoms: List[Dict], completed: int, total: int):
     # Filter options
     st.markdown("### Filter by Category")
     categories = ["All"] + list(set([s.get('category', 'Unknown') for s in symptoms]))
-    selected_category = st.selectbox("Category:", categories)
+    selected_category = st.selectbox("Category:", categories, key="category_filter")
     
     # Filter symptoms
     if selected_category == "All":
         filtered_symptoms = symptoms
     else:
-        filtered_symptoms = [s for s in symptoms if s.get('category') == selected_category == selected_category]
+        filtered_symptoms = [s for s in symptoms if s.get('category') == selected_category]
     
     # Display symptoms in a grid
     st.markdown("### Symptom List")
@@ -240,78 +261,133 @@ def show_home_screen(symptoms: List[Dict], completed: int, total: int):
                 
                 # Check if completed
                 is_completed = symptom_id in st.session_state.completed_symptoms
-                status_icon = "✅" if is_completed else "❌"
+                status_icon = "✅" if is_completed else "🔵"
                 
                 with col:
                     st.markdown(f"""
                     <div class="symptom-card">
-                        <h4>{status_icon} {symptom['id']}: {symptom['name']}</h4>
+                        <h4>{status_icon} {symptom['id']:02d}: {symptom['name']}</h4>
                         <p><strong>Category:</strong> {symptom.get('category', 'Unknown')}</p>
-                        <p>{symptom.get('definition', 'No description available')}</p>
+                        <p>{symptom.get('definition', 'No description available')[:100]}...</p>
                     </div>
                     """, unsafe_allow_html=True)
                     
                     if st.button(f"Analyze {symptom['name']}", key=f"analyze_{symptom_id}"):
                         st.session_state.current_symptom = symptom_id
                         st.rerun()
+    
+    # Quick stats
+    st.markdown("---")
+    st.markdown("### Quick Statistics")
+    
+    # Category breakdown
+    category_counts = {}
+    for symptom in symptoms:
+        category = symptom.get('category', 'Unknown')
+        category_counts[category] = category_counts.get(category, 0) + 1
+    
+    st.markdown("**Symptoms by Category:**")
+    for category, count in sorted(category_counts.items()):
+        st.markdown(f"• {category}: {count} symptoms")
+    
+    # Completion progress
+    st.markdown(f"**Overall Progress:** {completed}/{total} symptoms completed ({completed/total*100:.1f}%)")
+    
+    # Progress bar visualization
+    if completed > 0:
+        progress = completed / total * 100
+        st.progress(progress / 100)
 
 def show_symptom_analysis(engine: DiagnosticEngine, symptom_id: int):
     """Display the detailed symptom analysis interface"""
     
-    # Get symptom details
-    symptom_data = engine.get_symptom_details(symptom_id)
-    if not symptom_data:
-        st.error(f"Symptom {symptom_id} not found. Please select a different symptom.")
+    # Validate symptom_id
+    if not isinstance(symptom_id, int) or symptom_id <= 0:
+        st.error(f"Invalid symptom ID: {symptom_id}")
         return
     
-    st.markdown(f"## {symptom_data.get('name', 'Unknown Symptom')}")
-    st.markdown(f"**Category:** {symptom_data.get('category', 'Unknown')}")
-    
-    # Create tabs for different sections
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "📖 Definition & Context", 
-        "❓ Clarifying Questions", 
-        "🔍 Differentials & Reasoning", 
-        "📚 Educational Content", 
-        "✅ Knowledge Check"
-    ])
-    
-    with tab1:
-        show_definition_tab(symptom_data)
-    
-    with tab2:
-        show_questions_tab(engine, symptom_id, symptom_data)
-    
-    with tab3:
-        show_differentials_tab(engine, symptom_id)
-    
-    with tab4:
-        show_educational_tab(engine, symptom_id)
-    
-    with tab5:
-        show_checkpoint_tab(engine, symptom_id)
-    
-    # Navigation buttons
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        if st.button("⬅️ Previous Symptom"):
-            if symptom_id > 1:
-                st.session_state.current_symptom = symptom_id - 1
-                st.rerun()
-    
-    with col2:
-        if st.button("🏠 Back to Home"):
-            st.session_state.current_symptom = 0
-            st.rerun()
-    
-    with col3:
-        if st.button("Next Symptom ➡️"):
+    # Get symptom details with error handling
+    try:
+        symptom_data = engine.get_symptom_details(symptom_id)
+        if not symptom_data:
+            # Debug information
             all_symptoms = engine.get_all_symptoms()
-            max_id = max([s['id'] for s in all_symptoms]) if all_symptoms else 1
-            if symptom_id < max_id:
-                st.session_state.current_symptom = symptom_id + 1
+            available_ids = [s['id'] for s in all_symptoms]
+            
+            st.error(f"Symptom {symptom_id} not found. Please select a different symptom.")
+            st.info(f"Available symptom IDs: {sorted(available_ids)}")
+            
+            # Show suggestion for closest symptom
+            closest_symptom = min(all_symptoms, key=lambda x: abs(x['id'] - symptom_id))
+            st.info(f"Closest available symptom: {closest_symptom['id']}: {closest_symptom['name']}")
+            
+            if st.button(f"Go to {closest_symptom['id']}: {closest_symptom['name']}"):
+                st.session_state.current_symptom = closest_symptom['id']
                 st.rerun()
+            return
+        
+        # Success - show the symptom
+        st.markdown(f"## {symptom_data.get('name', 'Unknown Symptom')}")
+        st.markdown(f"**Category:** {symptom_data.get('category', 'Unknown')}")
+        
+        # Create tabs for different sections
+        tab1, tab2, tab3, tab4, tab5 = st.tabs([
+            "📖 Definition & Context", 
+            "❓ Clarifying Questions", 
+            "🔍 Differentials & Reasoning", 
+            "📚 Educational Content", 
+            "✅ Knowledge Check"
+        ])
+        
+        with tab1:
+            show_definition_tab(symptom_data)
+        
+        with tab2:
+            show_questions_tab(engine, symptom_id, symptom_data)
+        
+        with tab3:
+            show_differentials_tab(engine, symptom_id)
+        
+        with tab4:
+            show_educational_tab(engine, symptom_id)
+        
+        with tab5:
+            show_checkpoint_tab(engine, symptom_id)
+        
+        # Navigation buttons
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            if st.button("⬅️ Previous Symptom"):
+                if symptom_id > 1:
+                    st.session_state.current_symptom = symptom_id - 1
+                    st.rerun()
+        
+        with col2:
+            if st.button("🏠 Back to Home"):
+                st.session_state.current_symptom = 0
+                st.rerun()
+        
+        with col3:
+            if st.button("Next Symptom ➡️"):
+                all_symptoms = engine.get_all_symptoms()
+                max_id = max([s['id'] for s in all_symptoms]) if all_symptoms else 1
+                if symptom_id < max_id:
+                    st.session_state.current_symptom = symptom_id + 1
+                    st.rerun()
+    
+    except Exception as e:
+        st.error(f"Error loading symptom {symptom_id}: {str(e)}")
+        st.info("Please try refreshing the page or selecting a different symptom.")
+        
+        # Fallback: show available symptoms
+        all_symptoms = engine.get_all_symptoms()
+        if all_symptoms:
+            st.markdown("### Available Symptoms:")
+            for symptom in all_symptoms[:10]:  # Show first 10
+                if st.button(f"{symptom['id']}: {symptom['name']}", key=f"fallback_{symptom['id']}"):
+                    st.session_state.current_symptom = symptom['id']
+                    st.rerun()
 
 def show_definition_tab(symptom_data: Dict):
     """Display symptom definition and clinical context"""
