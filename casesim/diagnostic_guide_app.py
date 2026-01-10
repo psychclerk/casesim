@@ -102,15 +102,30 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-@st.cache_resource
 def initialize_diagnostic_engine():
-    """Initialize the diagnostic engine with caching"""
-    return DiagnosticEngine()
+    """Initialize the diagnostic engine (no caching for debugging)"""
+    try:
+        engine = DiagnosticEngine()
+        # Verify data is loaded
+        symptoms = engine.get_all_symptoms()
+        if not symptoms:
+            st.error("Failed to load symptoms data. Please check the data files.")
+            return None
+        st.success(f"Diagnostic engine initialized with {len(symptoms)} symptoms")
+        return engine
+    except Exception as e:
+        st.error(f"Error initializing diagnostic engine: {str(e)}")
+        return None
 
 def main():
     """Main application function"""
     # Initialize diagnostic engine
     engine = initialize_diagnostic_engine()
+    
+    # Check if engine was initialized successfully
+    if engine is None:
+        st.error("Failed to initialize diagnostic engine. Please check the data files.")
+        return
     
     # Initialize session state for progress tracking
     if 'completed_symptoms' not in st.session_state:
@@ -142,13 +157,24 @@ def main():
     # Sidebar navigation
     st.sidebar.title("Navigation")
     
-    # Get all symptoms for navigation
-    all_symptoms = engine.get_all_symptoms()
-    total_symptoms = len(all_symptoms)
+    # Get all symptoms for navigation with error handling
+    all_symptoms = []
+    total_symptoms = 0
+    
+    try:
+        all_symptoms = engine.get_all_symptoms()
+        total_symptoms = len(all_symptoms)
+        
+        if not all_symptoms:
+            st.sidebar.warning("No symptoms found in database.")
+        
+    except Exception as e:
+        st.sidebar.error(f"Error loading symptoms: {str(e)}")
+        # Continue with empty list instead of returning
     
     # Progress tracking
     completed_count = len(st.session_state.completed_symptoms)
-    progress_percentage = (completed_count / total_symptoms * 100) if total_symptoms > 0 else 0
+    progress_percentage = (completed_count / max(total_symptoms, 1) * 100) if total_symptoms > 0 else 0
     
     st.sidebar.markdown("### Progress Tracking")
     st.sidebar.markdown(f"**Completed: {completed_count}/{total_symptoms} symptoms**")
@@ -189,6 +215,7 @@ def main():
                                key=f"nav_{symptom['id']}"):
                         st.session_state.current_symptom = symptom['id']
                         st.rerun()
+    
     # Random symptom option
     if all_symptoms and st.sidebar.button("🎲 Random Symptom", use_container_width=True):
         import random
@@ -213,10 +240,13 @@ def main():
     
     # Main content area
     if st.session_state.current_symptom == 0:
-        show_home_screen(all_symptoms, completed_count, total_symptoms)
+        if all_symptoms:
+            show_home_screen(all_symptoms, completed_count, total_symptoms)
+        else:
+            st.error("No symptoms available. Please check the database files.")
     else:
         # Validate current symptom is valid
-        valid_symptom_ids = [s['id'] for s in all_symptoms]
+        valid_symptom_ids = [s['id'] for s in all_symptoms] if all_symptoms else []
         if st.session_state.current_symptom not in valid_symptom_ids:
             # Reset to first valid symptom
             st.session_state.current_symptom = 1
@@ -312,18 +342,21 @@ def show_symptom_analysis(engine: DiagnosticEngine, symptom_id: int):
         if not symptom_data:
             # Debug information
             all_symptoms = engine.get_all_symptoms()
-            available_ids = [s['id'] for s in all_symptoms]
+            available_ids = [s['id'] for s in all_symptoms] if all_symptoms else []
             
             st.error(f"Symptom {symptom_id} not found. Please select a different symptom.")
-            st.info(f"Available symptom IDs: {sorted(available_ids)}")
-            
-            # Show suggestion for closest symptom
-            closest_symptom = min(all_symptoms, key=lambda x: abs(x['id'] - symptom_id))
-            st.info(f"Closest available symptom: {closest_symptom['id']}: {closest_symptom['name']}")
-            
-            if st.button(f"Go to {closest_symptom['id']}: {closest_symptom['name']}"):
-                st.session_state.current_symptom = closest_symptom['id']
-                st.rerun()
+            if available_ids:
+                st.info(f"Available symptom IDs: {sorted(available_ids)}")
+                
+                # Show suggestion for closest symptom
+                closest_symptom = min(all_symptoms, key=lambda x: abs(x['id'] - symptom_id))
+                st.info(f"Closest available symptom: {closest_symptom['id']}: {closest_symptom['name']}")
+                
+                if st.button(f"Go to {closest_symptom['id']}: {closest_symptom['name']}"):
+                    st.session_state.current_symptom = closest_symptom['id']
+                    st.rerun()
+            else:
+                st.warning("No symptoms available in database.")
             return
         
         # Success - show the symptom
@@ -371,23 +404,27 @@ def show_symptom_analysis(engine: DiagnosticEngine, symptom_id: int):
         with col3:
             if st.button("Next Symptom ➡️"):
                 all_symptoms = engine.get_all_symptoms()
-                max_id = max([s['id'] for s in all_symptoms]) if all_symptoms else 1
-                if symptom_id < max_id:
-                    st.session_state.current_symptom = symptom_id + 1
-                    st.rerun()
+                if all_symptoms:
+                    max_id = max([s['id'] for s in all_symptoms])
+                    if symptom_id < max_id:
+                        st.session_state.current_symptom = symptom_id + 1
+                        st.rerun()
     
     except Exception as e:
         st.error(f"Error loading symptom {symptom_id}: {str(e)}")
         st.info("Please try refreshing the page or selecting a different symptom.")
         
         # Fallback: show available symptoms
-        all_symptoms = engine.get_all_symptoms()
-        if all_symptoms:
-            st.markdown("### Available Symptoms:")
-            for symptom in all_symptoms[:10]:  # Show first 10
-                if st.button(f"{symptom['id']}: {symptom['name']}", key=f"fallback_{symptom['id']}"):
-                    st.session_state.current_symptom = symptom['id']
-                    st.rerun()
+        try:
+            all_symptoms = engine.get_all_symptoms()
+            if all_symptoms:
+                st.markdown("### Available Symptoms:")
+                for symptom in all_symptoms[:10]:  # Show first 10
+                    if st.button(f"{symptom['id']}: {symptom['name']}", key=f"fallback_{symptom['id']}"):
+                        st.session_state.current_symptom = symptom['id']
+                        st.rerun()
+        except:
+            st.warning("Unable to load symptom list. Please check database files.")
 
 def show_definition_tab(symptom_data: Dict):
     """Display symptom definition and clinical context"""

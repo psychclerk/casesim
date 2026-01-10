@@ -9,18 +9,20 @@ from typing import Dict, List, Tuple, Any, Optional
 import random
 
 class DiagnosticEngine:
-    def __init__(self, symptoms_file: str = "symptoms_database.json",
-                 questions_file: str = "questions_database.json",
-                 content_file: str = "diagnostic_content.json"):
+    def __init__(self, symptoms_file: str = None,
+                 questions_file: str = None,
+                 content_file: str = None):
         """Initialize the diagnostic engine with data files"""
-        self.symptoms_file = symptoms_file
-        self.questions_file = questions_file
-        self.content_file = content_file
+        
+        # Set default file paths
+        self.symptoms_file = symptoms_file or "symptoms_database.json"
+        self.questions_file = questions_file or "questions_database.json"
+        self.content_file = content_file or "diagnostic_content.json"
         
         # Load all data
-        self.symptoms_data = self._load_json(symptoms_file)
-        self.questions_data = self._load_json(questions_file)
-        self.content_data = self._load_json(content_file)
+        self.symptoms_data = self._load_json(self.symptoms_file)
+        self.questions_data = self._load_json(self.questions_file)
+        self.content_data = self._load_json(self.content_file)
         
         # Initialize checkpoint questions
         self.checkpoint_questions = self._load_checkpoint_questions()
@@ -28,13 +30,30 @@ class DiagnosticEngine:
     def _load_json(self, file_path: str) -> Dict:
         """Load JSON data from file"""
         try:
-            with open(file_path, 'r') as f:
-                return json.load(f)
+            # Try different paths
+            possible_paths = [
+                file_path,
+                os.path.join(os.path.dirname(__file__), file_path),
+                os.path.join(os.getcwd(), file_path)
+            ]
+            
+            for path in possible_paths:
+                if os.path.exists(path):
+                    with open(path, 'r') as f:
+                        data = json.load(f)
+                    return data
+            
+            print(f"Warning: File {file_path} not found in any location")
+            return {}
+            
         except FileNotFoundError:
             print(f"Warning: File {file_path} not found. Using empty data.")
             return {}
         except json.JSONDecodeError as e:
             print(f"Error loading {file_path}: {e}")
+            return {}
+        except Exception as e:
+            print(f"Unexpected error loading {file_path}: {e}")
             return {}
     
     def get_all_symptoms(self) -> List[Dict]:
